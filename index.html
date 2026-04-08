@@ -2,234 +2,89 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<link rel="manifest" href="manifest.json">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="theme-color" content="#F4EFE8">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="description" content="Diccionario Bio-Emocional de Joan Marc Vilanova Pujó">
 <title>Diccionario Bio-Emocional</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg: #F4EFE8;
-  --bg2: #EDE6DC;
-  --bg3: #E4DBD0;
-  --card: #EDE6DC;
-  --border: #C8B9A8;
-  --accent: #A7754D;
-  --accent2: #7A5230;
-  --text: #2C2620;
-  --text2: #4A403A;
-  --text3: #8A7A6E;
+  --bg: #F4EFE8; --bg2: #EDE6DC; --bg3: #E4DBD0; --card: #EDE6DC;
+  --border: #C8B9A8; --accent: #A7754D; --accent2: #7A5230;
+  --text: #2C2620; --text2: #4A403A; --text3: #8A7A6E;
   --tag-e1-bg: #DDE4EA; --tag-e1-t: #2E4A60;
   --tag-e2-bg: #E8E2EE; --tag-e2-t: #52386E;
   --tag-e3-bg: #D8EDE1; --tag-e3-t: #225E3A;
   --tag-e4-bg: #FAE8C8; --tag-e4-t: #7A4E08;
   --tag-e5-bg: #F0DDD6; --tag-e5-t: #6E2818;
-  --fav: #B83828;
-  --safe: env(safe-area-inset-bottom, 0px);
-  --font-size-base: 14px;
-  --font-size-detail: 14px;
+  --fav: #B83828; --safe: env(safe-area-inset-bottom, 0px);
+  --font-size-base: 14px; --font-size-detail: 14px;
 }
-
-/* Tema oscuro */
 [data-theme="dark"] {
-  --bg: #1a1a1a;
-  --bg2: #2a2a2a;
-  --bg3: #333333;
-  --card: #2a2a2a;
-  --border: #444444;
-  --accent: #c9945e;
-  --accent2: #d4a373;
-  --text: #e8e8e8;
-  --text2: #cccccc;
-  --text3: #999999;
+  --bg: #1a1a1a; --bg2: #2a2a2a; --bg3: #333333;
+  --border: #444444; --accent: #c9945e; --accent2: #d4a373;
+  --text: #e8e8e8; --text2: #cccccc; --text3: #999999;
   --tag-e1-bg: #2a4a60; --tag-e1-t: #a8c8e0;
   --tag-e2-bg: #3a2a5e; --tag-e2-t: #c8b0e8;
   --tag-e3-bg: #1a5e3a; --tag-e3-t: #a0e0b8;
   --tag-e4-bg: #5a3a1a; --tag-e4-t: #e0b880;
   --tag-e5-bg: #5a2a1a; --tag-e5-t: #e0a880;
 }
-
-/* Tema sepia */
 [data-theme="sepia"] {
-  --bg: #FBF5E8;
-  --bg2: #F2E6CE;
-  --bg3: #E8D9BC;
-  --card: #F2E6CE;
-  --border: #C4A882;
-  --accent: #8B6914;
-  --accent2: #6B4E0A;
-  --text: #3B2A1A;
-  --text2: #5A4630;
-  --text3: #8A7A60;
+  --bg: #FBF5E8; --bg2: #F2E6CE; --bg3: #E8D9BC;
+  --border: #C4A882; --accent: #8B6914; --accent2: #6B4E0A;
+  --text: #3B2A1A; --text2: #5A4630; --text3: #8A7A60;
 }
-
-/* Tema azul */
 [data-theme="blue"] {
-  --bg: #E8F0F8;
-  --bg2: #D4E4F0;
-  --bg3: #C0D8E8;
-  --card: #D4E4F0;
-  --border: #90A8C0;
-  --accent: #2C6B8A;
-  --accent2: #1E4A60;
-  --text: #1A2A3A;
-  --text2: #3A4A5A;
-  --text3: #6A7A8A;
+  --bg: #E8F0F8; --bg2: #D4E4F0; --bg3: #C0D8E8;
+  --border: #90A8C0; --accent: #2C6B8A; --accent2: #1E4A60;
+  --text: #1A2A3A; --text2: #3A4A5A; --text3: #6A7A8A;
 }
-
-/* Tamaños de texto */
-[data-font-size="small"] {
-  --font-size-base: 12px;
-  --font-size-detail: 12px;
-}
-[data-font-size="medium"] {
-  --font-size-base: 14px;
-  --font-size-detail: 14px;
-}
-[data-font-size="large"] {
-  --font-size-base: 16px;
-  --font-size-detail: 16px;
-}
-[data-font-size="xlarge"] {
-  --font-size-base: 18px;
-  --font-size-detail: 18px;
-}
-
+[data-font-size="small"] { --font-size-base: 12px; --font-size-detail: 12px; }
+[data-font-size="medium"] { --font-size-base: 14px; --font-size-detail: 14px; }
+[data-font-size="large"] { --font-size-base: 16px; --font-size-detail: 16px; }
+[data-font-size="xlarge"] { --font-size-base: 18px; --font-size-detail: 18px; }
 * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
 html, body { height: 100%; overflow: hidden; background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; font-size: var(--font-size-base); }
-
 #app { display: flex; flex-direction: column; height: 100%; height: 100dvh; }
-
-.header {
-  background: var(--bg);
-  border-bottom: 1px solid var(--border);
-  padding: 14px 16px 12px;
-  flex-shrink: 0;
-  z-index: 10;
-}
-.header-top {
-  display: flex; align-items: center; justify-content: space-between;
-  margin-bottom: 12px;
-}
-.logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 18px;
-  letter-spacing: 0.02em;
-  color: var(--accent2);
-}
+.header { background: var(--bg); border-bottom: 1px solid var(--border); padding: 14px 16px 12px; flex-shrink: 0; z-index: 10; }
+.header-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.logo { font-family: 'Playfair Display', serif; font-size: 18px; letter-spacing: 0.02em; color: var(--accent2); }
 .logo span { color: var(--text3); font-size: 13px; font-family: 'DM Sans', sans-serif; font-weight: 300; margin-left: 6px; }
 .header-actions { display: flex; gap: 6px; }
-.icon-btn {
-  width: 36px; height: 36px; border-radius: 10px;
-  background: var(--bg3); border: 1px solid var(--border);
-  display: flex; align-items: center; justify-content: center;
-  cursor: pointer; transition: all 0.15s;
-  color: var(--text3);
-}
+.icon-btn { width: 36px; height: 36px; border-radius: 10px; background: var(--bg3); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.15s; color: var(--text3); }
 .icon-btn:active { transform: scale(0.93); background: var(--border); }
 .icon-btn.active { color: var(--accent2); border-color: var(--accent); }
-
 .search-wrap { position: relative; }
-.search-input {
-  width: 100%; height: 44px;
-  background: var(--bg2); border: 1.5px solid var(--border);
-  border-radius: 12px; padding: 0 44px 0 44px;
-  color: var(--text); font-family: 'DM Sans', sans-serif;
-  font-size: 15px; outline: none; transition: border-color 0.2s;
-}
+.search-input { width: 100%; height: 44px; background: var(--bg2); border: 1.5px solid var(--border); border-radius: 12px; padding: 0 44px 0 44px; color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 15px; outline: none; }
 .search-input:focus { border-color: var(--accent); }
 .search-input::placeholder { color: var(--text3); }
 .search-icon { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--text3); pointer-events: none; }
-.search-clear {
-  position: absolute; right: 12px; top: 50%; transform: translateY(-50%);
-  width: 22px; height: 22px; border-radius: 50%; background: var(--border);
-  display: none; align-items: center; justify-content: center;
-  cursor: pointer; color: var(--text2); font-size: 12px;
-}
+.search-clear { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); width: 22px; height: 22px; border-radius: 50%; background: var(--border); display: none; align-items: center; justify-content: center; cursor: pointer; color: var(--text2); font-size: 12px; }
 .search-clear.vis { display: flex; }
-
-.filters-bar {
-  background: var(--bg);
-  padding: 8px 16px 10px;
-  border-bottom: 1px solid var(--border);
-  flex-shrink: 0;
-  overflow-x: auto;
-  scrollbar-width: none;
-  display: none;
-}
+.filters-bar { background: var(--bg); padding: 8px 16px 10px; border-bottom: 1px solid var(--border); flex-shrink: 0; overflow-x: auto; scrollbar-width: none; display: none; }
 .filters-bar::-webkit-scrollbar { display: none; }
 .filters-bar.open { display: block; }
 .filters-scroll { display: flex; gap: 6px; white-space: nowrap; }
-.filter-chip {
-  display: inline-flex; align-items: center; gap: 5px;
-  padding: 6px 12px; border-radius: 20px;
-  background: var(--bg2); border: 1px solid var(--border);
-  font-size: 12px; color: var(--text2); cursor: pointer;
-  transition: all 0.15s; font-family: 'DM Sans', sans-serif;
-}
+.filter-chip { display: inline-flex; align-items: center; gap: 5px; padding: 6px 12px; border-radius: 20px; background: var(--bg2); border: 1px solid var(--border); font-size: 12px; color: var(--text2); cursor: pointer; transition: all 0.15s; }
 .filter-chip:active { transform: scale(0.95); }
-.filter-chip.on { background: #FAE8C8; border-color: var(--accent); color: var(--accent2); }
 .filter-chip.on-fav { background: #F5DDD8; border-color: var(--fav); color: var(--fav); }
 .filter-chip.on-e1 { background: var(--tag-e1-bg); border-color: var(--tag-e1-t); color: var(--tag-e1-t); }
 .filter-chip.on-e2 { background: var(--tag-e2-bg); border-color: var(--tag-e2-t); color: var(--tag-e2-t); }
 .filter-chip.on-e3 { background: var(--tag-e3-bg); border-color: var(--tag-e3-t); color: var(--tag-e3-t); }
 .filter-chip.on-e4 { background: var(--tag-e4-bg); border-color: var(--tag-e4-t); color: var(--tag-e4-t); }
 .filter-chip.on-e5 { background: var(--tag-e5-bg); border-color: var(--tag-e5-t); color: var(--tag-e5-t); }
-
-.results-info {
-  padding: 8px 16px 6px;
-  font-size: 11px; color: var(--text2);
-  flex-shrink: 0;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
+.results-info { padding: 8px 16px 6px; font-size: 11px; color: var(--text2); flex-shrink: 0; text-transform: uppercase; }
 .list-wrap { flex: 1; overflow-y: auto; overflow-x: hidden; -webkit-overflow-scrolling: touch; padding-bottom: calc(60px + var(--safe)); }
-.list-wrap::-webkit-scrollbar { width: 3px; }
-.list-wrap::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
-
-.letter-div {
-  padding: 16px 16px 4px;
-  font-size: 11px; font-weight: 500;
-  color: var(--text2);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  position: sticky; top: 0;
-  background: var(--bg);
-  border-bottom: 1px solid var(--border);
-  z-index: 2;
-}
-
-.entry-card {
-  padding: 14px 16px;
-  border-bottom: 1px solid rgba(128,128,128,0.1);
-  cursor: pointer;
-  transition: background 0.12s;
-  display: flex; align-items: center; gap: 12px;
-}
+.letter-div { padding: 16px 16px 4px; font-size: 11px; font-weight: 500; color: var(--text2); text-transform: uppercase; position: sticky; top: 0; background: var(--bg); border-bottom: 1px solid var(--border); z-index: 2; }
+.entry-card { padding: 14px 16px; border-bottom: 1px solid rgba(128,128,128,0.1); cursor: pointer; transition: background 0.12s; display: flex; align-items: center; gap: 12px; }
 .entry-card:active { background: var(--bg3); }
 .entry-card-body { flex: 1; min-width: 0; }
-.entry-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 15px;
-  color: var(--text);
-  margin-bottom: 2px;
-  line-height: 1.3;
-}
-.entry-subtitle {
-  font-size: 12px; color: var(--text2);
-  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-  line-height: 1.4;
-}
+.entry-title { font-family: 'Playfair Display', serif; font-size: 15px; color: var(--text); margin-bottom: 2px; line-height: 1.3; }
+.entry-subtitle { font-size: 12px; color: var(--text2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .entry-meta { display: flex; gap: 5px; margin-top: 5px; flex-wrap: wrap; }
-.etapa-badge {
-  font-size: 10px; padding: 2px 7px; border-radius: 10px;
-  font-weight: 500; letter-spacing: 0.02em;
-}
+.etapa-badge { font-size: 10px; padding: 2px 7px; border-radius: 10px; font-weight: 500; }
 .e1 { background: var(--tag-e1-bg); color: var(--tag-e1-t); }
 .e2 { background: var(--tag-e2-bg); color: var(--tag-e2-t); }
 .e3 { background: var(--tag-e3-bg); color: var(--tag-e3-t); }
@@ -237,525 +92,264 @@ html, body { height: 100%; overflow: hidden; background: var(--bg); color: var(-
 .e5 { background: var(--tag-e5-bg); color: var(--tag-e5-t); }
 .redirect-badge { font-size: 10px; padding: 2px 7px; border-radius: 10px; background: var(--bg3); color: var(--text3); }
 .fav-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--fav); flex-shrink: 0; margin-top: 4px; }
-
-#detail-view {
-  position: fixed; inset: 0;
-  background: var(--bg);
-  display: flex; flex-direction: column;
-  transform: translateX(100%);
-  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
-  z-index: 100;
-}
+#detail-view { position: fixed; inset: 0; background: var(--bg); display: flex; flex-direction: column; transform: translateX(100%); transition: transform 0.3s; z-index: 100; }
 #detail-view.open { transform: translateX(0); }
-.detail-header {
-  padding: 14px 16px 12px;
-  border-bottom: 1px solid var(--border);
-  display: flex; align-items: center; gap: 12px;
-  flex-shrink: 0;
-}
-.back-btn {
-  width: 36px; height: 36px; border-radius: 10px;
-  background: var(--bg3); border: 1px solid var(--border);
-  display: flex; align-items: center; justify-content: center;
-  cursor: pointer; flex-shrink: 0; color: var(--text3);
-  transition: all 0.15s;
-}
-.back-btn:active { transform: scale(0.93); }
-.detail-header-title {
-  flex: 1; min-width: 0;
-  font-family: 'Playfair Display', serif;
-  font-size: 17px;
-  color: var(--text);
-  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
-}
-.detail-fav-btn {
-  width: 36px; height: 36px; border-radius: 10px;
-  background: var(--bg2); border: 1px solid var(--border);
-  display: flex; align-items: center; justify-content: center;
-  cursor: pointer; transition: all 0.2s;
-}
+.detail-header { padding: 14px 16px 12px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+.back-btn { width: 36px; height: 36px; border-radius: 10px; background: var(--bg3); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; cursor: pointer; color: var(--text3); }
+.detail-header-title { flex: 1; font-family: 'Playfair Display', serif; font-size: 17px; color: var(--text); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.detail-fav-btn { width: 36px; height: 36px; border-radius: 10px; background: var(--bg2); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; cursor: pointer; }
 .detail-fav-btn.on { color: var(--fav); border-color: rgba(184,56,40,0.3); background: #F5DDD8; }
-.detail-fav-btn:active { transform: scale(0.9); }
-
-.detail-body { flex: 1; overflow-y: auto; padding: 0 0 calc(20px + var(--safe)); -webkit-overflow-scrolling: touch; font-size: var(--font-size-detail); }
-
-.detail-section {
-  margin: 12px 16px 0;
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  overflow: hidden;
-}
-.detail-section-header {
-  padding: 10px 14px;
-  background: var(--bg3);
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--accent2);
-  display: flex; align-items: center; gap: 8px;
-}
-.detail-section-body {
-  padding: 12px 14px;
-  line-height: 1.75;
-  color: var(--text);
-}
-.detail-section-body strong { color: var(--text); font-weight: 500; }
-
+.detail-body { flex: 1; overflow-y: auto; padding: 0 0 calc(20px + var(--safe)); font-size: var(--font-size-detail); }
+.detail-section { margin: 12px 16px 0; border: 1px solid var(--border); border-radius: 14px; overflow: hidden; }
+.detail-section-header { padding: 10px 14px; background: var(--bg3); font-size: 10px; font-weight: 500; text-transform: uppercase; color: var(--accent2); display: flex; align-items: center; gap: 8px; }
+.detail-section-body { padding: 12px 14px; line-height: 1.75; color: var(--text); }
 .detail-meta { margin: 16px 16px 0; display: flex; gap: 8px; flex-wrap: wrap; }
-
-.ver-link {
-  display: inline-block; margin: 2px 3px;
-  padding: 3px 10px; border-radius: 20px;
-  background: var(--tag-e4-bg); color: var(--accent2);
-  font-size: 12px; cursor: pointer;
-  border: 1px solid var(--border);
-  transition: all 0.15s;
-}
-.ver-link:active { transform: scale(0.95); }
-
-.ref-link {
-  display: inline-block; margin: 2px 3px;
-  padding: 3px 10px; border-radius: 20px;
-  background: var(--bg2); color: var(--accent2);
-  font-size: 11px; cursor: pointer;
-  border: 1px dashed var(--border);
-  transition: all 0.15s;
-}
-.ref-link:active { transform: scale(0.95); }
-
-.comment-section {
-  margin: 12px 16px 0;
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  overflow: hidden;
-}
-.comment-header {
-  padding: 10px 14px;
-  background: var(--bg3);
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--text3);
-}
-.comment-input {
-  width: 100%; min-height: 80px;
-  background: transparent; border: none;
-  padding: 12px 14px;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 14px; color: var(--text);
-  outline: none; resize: none;
-  line-height: 1.6;
-}
-.comment-input::placeholder { color: var(--text3); }
-.comment-save-btn {
-  margin: 0 14px 12px;
-  padding: 8px 16px; border-radius: 8px;
-  background: var(--accent); border: 1px solid var(--accent2);
-  color: #fff; font-size: 13px;
-  cursor: pointer; font-family: 'DM Sans', sans-serif;
-  transition: all 0.15s;
-}
-.comment-save-btn:active { transform: scale(0.97); }
-
-/* Modal para referencias */
-.modal {
-  position: fixed; inset: 0;
-  background: rgba(0,0,0,0.7);
-  display: flex; align-items: center; justify-content: center;
-  z-index: 300;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.2s;
-}
-.modal.open {
-  visibility: visible;
-  opacity: 1;
-}
-.modal-content {
-  background: var(--bg);
-  border-radius: 20px;
-  max-width: 90%;
-  width: 320px;
-  max-height: 80%;
-  overflow-y: auto;
-  padding: 20px;
-  border: 1px solid var(--border);
-}
-.modal-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 16px;
-  margin-bottom: 12px;
-  color: var(--accent2);
-}
-.modal-text {
-  font-size: 13px;
-  line-height: 1.6;
-  color: var(--text);
-  white-space: pre-wrap;
-}
-.modal-close {
-  margin-top: 16px;
-  padding: 8px 16px;
-  background: var(--accent);
-  border: none;
-  border-radius: 10px;
-  color: white;
-  cursor: pointer;
-  width: 100%;
-}
-
-#menu-panel {
-  position: fixed; inset: 0;
-  background: var(--bg);
-  display: flex; flex-direction: column;
-  transform: translateY(100%);
-  transition: transform 0.35s cubic-bezier(0.4,0,0.2,1);
-  z-index: 200;
-}
+.ver-link { display: inline-block; margin: 2px 3px; padding: 3px 10px; border-radius: 20px; background: var(--tag-e4-bg); color: var(--accent2); font-size: 12px; cursor: pointer; border: 1px solid var(--border); }
+.ref-link { display: inline-block; margin: 2px 3px; padding: 3px 10px; border-radius: 20px; background: var(--bg2); color: var(--accent2); font-size: 11px; cursor: pointer; border: 1px dashed var(--border); }
+.comment-section { margin: 12px 16px 0; border: 1px solid var(--border); border-radius: 14px; overflow: hidden; }
+.comment-header { padding: 10px 14px; background: var(--bg3); font-size: 10px; font-weight: 500; text-transform: uppercase; color: var(--text3); }
+.comment-input { width: 100%; min-height: 80px; background: transparent; border: none; padding: 12px 14px; font-family: 'DM Sans', sans-serif; font-size: 14px; color: var(--text); outline: none; resize: none; }
+.comment-save-btn { margin: 0 14px 12px; padding: 8px 16px; border-radius: 8px; background: var(--accent); border: 1px solid var(--accent2); color: #fff; font-size: 13px; cursor: pointer; }
+.modal { position: fixed; inset: 0; background: rgba(0,0,0,0.7); display: flex; align-items: center; justify-content: center; z-index: 300; visibility: hidden; opacity: 0; transition: all 0.2s; }
+.modal.open { visibility: visible; opacity: 1; }
+.modal-content { background: var(--bg); border-radius: 20px; max-width: 90%; width: 320px; max-height: 80%; overflow-y: auto; padding: 20px; border: 1px solid var(--border); }
+.modal-title { font-family: 'Playfair Display', serif; font-size: 16px; margin-bottom: 12px; color: var(--accent2); }
+.modal-text { font-size: 13px; line-height: 1.6; color: var(--text); }
+.modal-close { margin-top: 16px; padding: 8px 16px; background: var(--accent); border: none; border-radius: 10px; color: white; cursor: pointer; width: 100%; }
+#menu-panel { position: fixed; inset: 0; background: var(--bg); display: flex; flex-direction: column; transform: translateY(100%); transition: transform 0.35s; z-index: 200; }
 #menu-panel.open { transform: translateY(0); }
-.menu-header {
-  padding: 14px 16px;
-  border-bottom: 1px solid var(--border);
-  display: flex; align-items: center; justify-content: space-between;
-}
+.menu-header { padding: 14px 16px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; }
 .menu-title { font-family: 'Playfair Display', serif; font-size: 18px; color: var(--accent2); }
-.close-btn {
-  width: 36px; height: 36px; border-radius: 10px;
-  background: var(--bg2); border: 1px solid var(--border);
-  display: flex; align-items: center; justify-content: center;
-  cursor: pointer; color: var(--text3);
-}
-.close-btn:active { transform: scale(0.93); }
+.close-btn { width: 36px; height: 36px; border-radius: 10px; background: var(--bg2); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; cursor: pointer; color: var(--text3); }
 .menu-body { flex: 1; overflow-y: auto; padding: 16px; }
 .menu-tabs { display: flex; gap: 6px; margin-bottom: 16px; }
-.menu-tab {
-  flex: 1; padding: 8px; border-radius: 10px;
-  background: var(--bg3); border: 1px solid var(--border);
-  font-size: 12px; text-align: center; cursor: pointer;
-  color: var(--text2); transition: all 0.15s;
-  font-family: 'DM Sans', sans-serif;
-}
+.menu-tab { flex: 1; padding: 8px; border-radius: 10px; background: var(--bg3); border: 1px solid var(--border); font-size: 12px; text-align: center; cursor: pointer; color: var(--text2); }
 .menu-tab.active { background: var(--tag-e4-bg); border-color: var(--accent); color: var(--accent2); }
-.menu-tab:active { transform: scale(0.97); }
 .menu-content { display: none; }
 .menu-content.active { display: block; }
-
-/* Estilos de personalización */
-.custom-panel {
-  background: var(--bg2);
-  border-radius: 14px;
-  padding: 16px;
-  margin-bottom: 16px;
-}
-.custom-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 16px;
-  margin-bottom: 12px;
-  color: var(--accent2);
-}
-.theme-buttons, .font-buttons {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  margin-bottom: 12px;
-}
-.theme-btn, .font-btn {
-  padding: 6px 12px;
-  border-radius: 20px;
-  background: var(--bg3);
-  border: 1px solid var(--border);
-  cursor: pointer;
-  font-size: 12px;
-  transition: all 0.15s;
-}
-.theme-btn.active, .font-btn.active {
-  background: var(--accent);
-  color: white;
-  border-color: var(--accent2);
-}
-.font-preview {
-  font-size: 12px;
-  color: var(--text2);
-  margin-top: 8px;
-}
-
-.menu-section-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 20px; color: var(--text);
-  margin-bottom: 12px; line-height: 1.3;
-}
-.menu-text {
-  font-size: 14px; line-height: 1.8;
-  color: var(--text); margin-bottom: 12px;
-}
-.menu-author-card {
-  background: var(--bg2); border: 1px solid var(--border);
-  border-radius: 14px; padding: 16px; margin-bottom: 12px;
-}
-.menu-author-name {
-  font-family: 'Playfair Display', serif;
-  font-size: 17px; color: var(--accent2); margin-bottom: 6px;
-}
-.menu-author-role { font-size: 12px; color: var(--text3); margin-bottom: 10px; letter-spacing: 0.05em; text-transform: uppercase; }
-.info-row { display: flex; gap: 10px; margin-bottom: 8px; align-items: flex-start; }
-.info-label { font-size: 11px; color: var(--text3); text-transform: uppercase; letter-spacing: 0.05em; min-width: 70px; padding-top: 2px; }
-.info-val { font-size: 14px; color: var(--text); }
+.custom-panel { background: var(--bg2); border-radius: 14px; padding: 16px; margin-bottom: 16px; }
+.custom-title { font-family: 'Playfair Display', serif; font-size: 16px; margin-bottom: 12px; color: var(--accent2); }
+.theme-buttons, .font-buttons { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+.theme-btn, .font-btn { padding: 6px 12px; border-radius: 20px; background: var(--bg3); border: 1px solid var(--border); cursor: pointer; font-size: 12px; }
+.theme-btn.active, .font-btn.active { background: var(--accent); color: white; }
+.menu-section-title { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--text); margin-bottom: 12px; }
+.menu-text { font-size: 14px; line-height: 1.8; color: var(--text); margin-bottom: 12px; }
+.menu-author-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 14px; padding: 16px; margin-bottom: 12px; }
+.menu-author-name { font-family: 'Playfair Display', serif; font-size: 17px; color: var(--accent2); }
+.info-row { display: flex; gap: 10px; margin-bottom: 8px; }
+.info-label { font-size: 11px; color: var(--text3); text-transform: uppercase; min-width: 70px; }
 .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 16px; }
 .stat-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 12px; padding: 14px; }
 .stat-num { font-family: 'Playfair Display', serif; font-size: 28px; color: var(--accent2); }
-.stat-label { font-size: 11px; color: var(--text3); margin-top: 2px; }
-
-.empty-state {
-  padding: 60px 24px; text-align: center;
-}
-.empty-icon { font-size: 40px; margin-bottom: 12px; opacity: 0.4; }
-.empty-text { font-size: 15px; color: var(--text3); line-height: 1.5; }
-.loading { padding: 40px; text-align: center; color: var(--text3); font-size: 14px; }
+.empty-state { padding: 60px 24px; text-align: center; }
 </style>
 </head>
 <body>
-<script>
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('./service-worker.js')
-    .catch(err => console.log("Error SW:", err));
-}
-</script>
 <div id="app">
   <div class="header">
     <div class="header-top">
       <div class="logo">BioEmocional <span>2016</span></div>
       <div class="header-actions">
-        <div class="icon-btn" id="filter-toggle-btn" onclick="toggleFilters()" title="Filtros">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M3 6h18M7 12h10M11 18h2"/>
-          </svg>
-        </div>
-        <div class="icon-btn" onclick="openMenu()" title="Info">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
-          </svg>
-        </div>
+        <div class="icon-btn" id="filter-toggle-btn" onclick="toggleFilters()">⚙️</div>
+        <div class="icon-btn" onclick="openMenu()">ℹ️</div>
       </div>
     </div>
     <div class="search-wrap">
-      <span class="search-icon">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
-        </svg>
-      </span>
-      <input class="search-input" id="search-input" type="search" placeholder="Buscar término..." autocomplete="off" spellcheck="false" oninput="onSearch(this.value)">
+      <span class="search-icon">🔍</span>
+      <input class="search-input" id="search-input" type="search" placeholder="Buscar término..." oninput="onSearch(this.value)">
       <span class="search-clear" id="search-clear" onclick="clearSearch()">✕</span>
     </div>
   </div>
-
   <div class="filters-bar" id="filters-bar">
     <div class="filters-scroll">
-      <div class="filter-chip" id="chip-fav" onclick="toggleFilter('fav')">
-        <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-        Favoritos
-      </div>
+      <div class="filter-chip" id="chip-fav" onclick="toggleFilter('fav')">⭐ Favoritos</div>
       <div class="filter-chip" id="chip-e1" onclick="toggleFilter('e1')">1ª Etapa</div>
       <div class="filter-chip" id="chip-e2" onclick="toggleFilter('e2')">2ª Etapa</div>
       <div class="filter-chip" id="chip-e3" onclick="toggleFilter('e3')">3ª Etapa</div>
       <div class="filter-chip" id="chip-e4" onclick="toggleFilter('e4')">4ª Etapa</div>
       <div class="filter-chip" id="chip-e5" onclick="toggleFilter('e5')">5ª Etapa</div>
-      <div class="filter-chip" id="chip-noredirect" onclick="toggleFilter('noredirect')">Solo con definición</div>
+      <div class="filter-chip" id="chip-noredirect" onclick="toggleFilter('noredirect')">📄 Solo definición</div>
     </div>
   </div>
-
   <div class="results-info" id="results-info"></div>
-  <div class="list-wrap" id="list-wrap">
-    <div class="loading" id="loading-msg">Cargando diccionario...</div>
-    <div id="virtual-list"></div>
-  </div>
+  <div class="list-wrap" id="list-wrap"><div id="virtual-list"></div></div>
 </div>
-
 <div id="detail-view">
   <div class="detail-header">
-    <div class="back-btn" onclick="closeDetail()">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-        <path d="M19 12H5M12 5l-7 7 7 7"/>
-      </svg>
-    </div>
+    <div class="back-btn" onclick="closeDetail()">←</div>
     <div class="detail-header-title" id="detail-title"></div>
-    <div class="detail-fav-btn" id="detail-fav-btn" onclick="toggleFav()">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-    </div>
+    <div class="detail-fav-btn" id="detail-fav-btn" onclick="toggleFav()">⭐</div>
   </div>
   <div class="detail-body" id="detail-body"></div>
 </div>
-
 <div id="menu-panel">
-  <div class="menu-header">
-    <div class="menu-title">Información</div>
-    <div class="close-btn" onclick="closeMenu()">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-        <path d="M18 6L6 18M6 6l12 12"/>
-      </svg>
-    </div>
-  </div>
+  <div class="menu-header"><div class="menu-title">Información</div><div class="close-btn" onclick="closeMenu()">✕</div></div>
   <div class="menu-body">
     <div class="menu-tabs">
       <div class="menu-tab active" onclick="switchTab('about')">Acerca de</div>
       <div class="menu-tab" onclick="switchTab('custom')">Personalizar</div>
       <div class="menu-tab" onclick="switchTab('author')">Autor</div>
-      <div class="menu-tab" onclick="switchTab('prologue')">Prólogo</div>
     </div>
     <div class="menu-content active" id="tab-about">
-      <div class="stats-grid">
-        <div class="stat-card"><div class="stat-num" id="stat-total">1773</div><div class="stat-label">Entradas</div></div>
-        <div class="stat-card"><div class="stat-num" id="stat-fav">0</div><div class="stat-label">Favoritos</div></div>
-        <div class="stat-card"><div class="stat-num" id="stat-comments">0</div><div class="stat-label">Con notas</div></div>
-        <div class="stat-card"><div class="stat-num">2016</div><div class="stat-label">Edición</div></div>
-      </div>
+      <div class="stats-grid"><div class="stat-card"><div class="stat-num" id="stat-total">1773</div><div class="stat-label">Entradas</div></div>
+      <div class="stat-card"><div class="stat-num" id="stat-fav">0</div><div class="stat-label">Favoritos</div></div>
+      <div class="stat-card"><div class="stat-num" id="stat-comments">0</div><div class="stat-label">Con notas</div></div>
+      <div class="stat-card"><div class="stat-num">2016</div><div class="stat-label">Edición</div></div></div>
       <div class="menu-section-title">Diccionario Bio-Emocional</div>
-      <div class="menu-text">Esta es una recopilación realizada a partir de publicaciones de varios autores, videos, conferencias, cursos, apuntes y experiencias compartidas por diversos profesionales tanto de la "Nueva Medicina Germánica", la "Descodificación Biológica", la "Bioneuroemoción" y otras corrientes de similar pensamiento.</div>
-      <div class="menu-text">Tiene como base la función biológica (sentido biológico) de cada órgano, aparato o sistema así como su interacción con toda la biología en lo que llamamos enfermedades o dolencias.</div>
-      <div class="info-row"><div class="info-label">Título</div><div class="info-val">Diccionario Bio-Emocional</div></div>
-      <div class="info-row"><div class="info-label">Autor</div><div class="info-val">Joan Marc Vilanova Pujó</div></div>
-      <div class="info-row"><div class="info-label">Web</div><div class="info-val">www.biodespertar.com</div></div>
-      <div class="info-row"><div class="info-label">Año</div><div class="info-val">Enero 2016, Igualada (Barcelona)</div></div>
+      <div class="menu-text">Recopilación basada en Nueva Medicina Germánica, Descodificación Biológica y Bioneuroemoción.</div>
     </div>
     <div class="menu-content" id="tab-custom">
-      <div class="custom-panel">
-        <div class="custom-title">🎨 Tema</div>
-        <div class="theme-buttons">
-          <div class="theme-btn active" data-theme="light" onclick="setTheme('light')">Claro</div>
-          <div class="theme-btn" data-theme="sepia" onclick="setTheme('sepia')">Sepia</div>
-          <div class="theme-btn" data-theme="blue" onclick="setTheme('blue')">Azul</div>
-          <div class="theme-btn" data-theme="dark" onclick="setTheme('dark')">Oscuro</div>
-        </div>
-      </div>
-      <div class="custom-panel">
-        <div class="custom-title">🔤 Tamaño de texto</div>
-        <div class="font-buttons">
-          <div class="font-btn" data-size="small" onclick="setFontSize('small')">Pequeño</div>
-          <div class="font-btn active" data-size="medium" onclick="setFontSize('medium')">Mediano</div>
-          <div class="font-btn" data-size="large" onclick="setFontSize('large')">Grande</div>
-          <div class="font-btn" data-size="xlarge" onclick="setFontSize('xlarge')">Muy grande</div>
-        </div>
-        <div class="font-preview">Texto de ejemplo para previsualización</div>
-      </div>
-      <div class="custom-panel">
-        <div class="custom-title">📖 Estructura de cada entrada</div>
-        <div class="menu-text" style="margin:0">Cada entrada del diccionario está dividida en cuatro apartados:</div>
-        <div class="info-row" style="margin-bottom:10px;margin-top:10px"><div class="info-label" style="min-width:100px">Definición</div><div class="info-val">Breve descripción del órgano o enfermedad para identificar la entrada correcta.</div></div>
-        <div class="info-row" style="margin-bottom:10px"><div class="info-label" style="min-width:100px">Técnico</div><div class="info-val">Acceso rápido para el profesional: etapa embrionaria, tipo de conflicto y fases.</div></div>
-        <div class="info-row" style="margin-bottom:10px"><div class="info-label" style="min-width:100px">Sentido biológico</div><div class="info-val">El "para qué" de la función biológica. El apartado más importante.</div></div>
-        <div class="info-row" style="margin-bottom:10px"><div class="info-label" style="min-width:100px">Conflicto</div><div class="info-val">Recopilación de conflictos hallados en consulta. No son dogma, sino orientación.</div></div>
-        <div class="menu-text" style="font-size:12px;color:var(--text3);margin-top:8px">⚠️ Esta recopilación no puede sustituir la atención terapéutica adecuada ni el diagnóstico médico. Ante cualquier duda, acudir siempre al especialista.</div>
-      </div>
+      <div class="custom-panel"><div class="custom-title">🎨 Tema</div><div class="theme-buttons">
+        <div class="theme-btn active" data-theme="light" onclick="setTheme('light')">Claro</div>
+        <div class="theme-btn" data-theme="sepia" onclick="setTheme('sepia')">Sepia</div>
+        <div class="theme-btn" data-theme="blue" onclick="setTheme('blue')">Azul</div>
+        <div class="theme-btn" data-theme="dark" onclick="setTheme('dark')">Oscuro</div>
+      </div></div>
+      <div class="custom-panel"><div class="custom-title">🔤 Tamaño de texto</div><div class="font-buttons">
+        <div class="font-btn" data-size="small" onclick="setFontSize('small')">Pequeño</div>
+        <div class="font-btn active" data-size="medium" onclick="setFontSize('medium')">Mediano</div>
+        <div class="font-btn" data-size="large" onclick="setFontSize('large')">Grande</div>
+        <div class="font-btn" data-size="xlarge" onclick="setFontSize('xlarge')">Muy grande</div>
+      </div></div>
     </div>
     <div class="menu-content" id="tab-author">
-      <div class="menu-author-card">
-        <div class="menu-author-name">Joan Marc Vilanova Pujó</div>
-        <div class="menu-author-role">Autor · Músico · Terapeuta</div>
-        <div class="menu-text" style="margin:0">Nacido en Barcelona (Catalunya, España) en 1974. Es músico, autor, compositor y profesor de guitarra y música moderna. En 2004 empieza a cursar distintos módulos de Psicoterapia, Desarrollo de la autoestima, Técnicas para el aprendizaje, Musicoterapia, Numerología y Bioneuroemoción.</div>
-      </div>
-      <div class="menu-text">Desde los inicios combinó estos estudios con el trabajo y el desarrollo personal a través de <em>Un Curso de Milagros</em>, así como con la investigación de diferentes corrientes espirituales e iniciáticas y técnicas energéticas.</div>
-      <div class="menu-text">A partir de 2011 empieza a realizar talleres, charlas y sesiones terapéuticas, donde promueve la reflexión, el desarrollo personal y la toma de conciencia. Ese mismo año desarrolla y comparte el primer diccionario bio-emocional, período que coincide con sus estudios de Bioneuroemoción con Enric Corbera y su equipo.</div>
-    </div>
-    <div class="menu-content" id="tab-prologue">
-      <div class="menu-section-title">Prólogo</div>
-      <div class="menu-text"><em>"Nada puede herirte a no ser que le confieras ese poder"</em><br><small style="color:var(--text3)">Un Curso de Milagros (T-20.IV.1:1)</small></div>
-      <div class="menu-text">Reconocer que detrás de las patologías que nuestro cuerpo somatiza están nuestros propios conflictos emocionales es un primer paso que nos invita a responsabilizarnos de nuestra propia forma de gestionar la vida.</div>
-      <div class="menu-text" style="color:var(--text3);font-size:13px">— Víctor Brossa, www.metodosyneidesis.com</div>
+      <div class="menu-author-card"><div class="menu-author-name">Joan Marc Vilanova Pujó</div>
+      <div class="menu-text">Nacido en Barcelona (1974). Músico, autor y terapeuta. En 2011 desarrolló y compartió el primer diccionario bio-emocional.</div></div>
     </div>
   </div>
 </div>
-
-<!-- Modal para referencias -->
-<div id="ref-modal" class="modal" onclick="closeModal()">
-  <div class="modal-content" onclick="event.stopPropagation()">
-    <div class="modal-title" id="modal-title">Referencia</div>
-    <div class="modal-text" id="modal-text"></div>
-    <button class="modal-close" onclick="closeModal()">Cerrar</button>
-  </div>
-</div>
-
+<div id="ref-modal" class="modal" onclick="closeModal()"><div class="modal-content" onclick="event.stopPropagation()">
+  <div class="modal-title">Referencia</div><div class="modal-text" id="modal-text"></div>
+  <button class="modal-close" onclick="closeModal()">Cerrar</button>
+</div></div>
 <script>
-const RAW_DATA = [/* Aquí va el array completo de datos JSON que proporcionaste */];
+// ==================== DATOS DEL DICCIONARIO (COMPACTADOS) ====================
+// Los datos se cargan desde window.DATA para mantener el código limpio
+window.DATA = [
+{"id":0,"t":"ABARTROSIS","v":"LUXACIÓN","r":true},{"id":1,"t":"ABASIA","d":"Incapacidad para caminar normalmente.","b":"El sentido biológico es \"parar\", dejar la dirección que llevo porque encierra peligros.","c":"Gran desvalorización en el movimiento. Miedo y culpabilidad.","tc":"3ª Etapa. Conflictos de desvalorización, miedo y culpabilidad.","e":"3"},
+{"id":2,"t":"ABATIMIENTO","v":"CONSTERNACIÓN","r":true},{"id":3,"t":"ABDOMEN","d":"Vientre. Parte inferior del tronco.","b":"Procesamiento del pedazo, maternidad y embarazo.","c":"Me siento incapaz de crecer o hacer frente a conflictos.","tc":"Depende del tejido. Conflicto de impotencia y miedo."},
+{"id":4,"t":"ABDOMINALES, MÚSCULOS","d":"Músculos del abdomen.","b":"Mantenernos erguidos, ayudar en evacuación, respiración.","c":"Impotencia respecto a proyectos personales o familiares.","tc":"3ª Etapa. Conflicto de desvalorización, impotencia y movimiento.","e":"3"},
+{"id":5,"t":"ABETALIPOPROTEINEMIA","v":"ESTEATORREA","r":true},{"id":6,"t":"ABORTO","d":"Finalización del embarazo antes del día 180.","b":"Decisión inconsciente de supervivencia.","c":"Miedo a morir (madre o bebé). Miedo a que el niño altere mi futuro.","tc":"1ª Etapa. Conflicto de miedo a morir.","e":"1"},
+{"id":7,"t":"ABSCESO","d":"Acumulación de pus por infección.","b":"Eliminar restos perjudiciales de la zona.","c":"Pedazo retenido. Ira y rabia acumulada.","tc":"Vagotonía. Fase de curación de conflicto de pedazo retenido."},
+{"id":8,"t":"ABURRIMIENTO","d":"Sensación de fastidio sin motivación.","b":"Síntoma de parada de máquinas al perder el rumbo.","c":"No saber ocuparse de uno mismo. Conflicto de dirección.","tc":"3ª Etapa. Conflicto de impotencia y dirección.","e":"3"},
+{"id":9,"t":"ABUSO","d":"Uso excesivo de algo o alguien.","b":"Recuperar algo perdido internamente a través de externos.","c":"Desvalorización con pérdida o separación.","tc":"3ª Etapa. Conflicto de desvalorización."},
+{"id":10,"t":"ACALASIA ESOFÁGICA","d":"Esfínter esofágico no se relaja.","b":"Impedir que alimentos tóxicos lleguen al estómago.","c":"Pedazo tóxico que no se puede digerir.","tc":"1ª Etapa. Conflicto de pedazo."},
+{"id":11,"t":"ACANTOCITOSIS","d":"Glóbulos rojos deformados.","b":"Defender la sangre de la propia sangre.","c":"Sentirse atacado dentro del entorno familiar.","tc":"3ª Etapa. Conflicto de desvalorización familiar.","e":"3"},
+{"id":12,"t":"ACNÉ","d":"Granos por afección de glándulas sebáceas.","b":"Carencia de autoestima. No aceptación de identidad.","c":"Conflicto de identidad, estético, de suciedad.","tc":"2ª Etapa. Conflicto de identidad y desvalorización estética.","e":"2"},
+{"id":13,"t":"ACÚFENOS","d":"Zumbidos sin fuente externa.","b":"Suplir una falta sonora.","c":"Separación auditiva. No recibir buenas palabras o silencios.","tc":"1ª y 4ª Etapas. Conflicto de separación auditiva."},
+{"id":14,"t":"ADENITIS","d":"Inflamación de ganglio linfático.","b":"Defensa del organismo.","c":"Inseguridad, miedo afectivo, incapacidad de defenderse.","tc":"3ª Etapa. Conflicto de desvalorización e inseguridad."},
+{"id":15,"t":"ADICCIONES","d":"Dependencia a sustancias o actividades.","b":"Recuperar algo perdido internamente.","c":"Protección, mamá. Huir de la realidad.","tc":"Conflicto de reconocimiento y falta de protección."},
+{"id":16,"t":"ADOPCIÓN","d":"Conflictos en niños adoptados.","b":"Recuperar hijos abandonados por ancestros.","c":"Ya he sido abandonado y no quiero volver a serlo.","tc":"Conflictos de abandono, familia y territorio."},
+{"id":17,"t":"AFASIA","d":"Pérdida de facultad de comunicarse.","b":"Bloqueo de expresión por información excesiva.","c":"Necesito expresarme pero debo callar.","tc":"4ª Etapa. Conflicto de bloqueo de expresión.","e":"4"},
+{"id":18,"t":"AFTAS","d":"Úlceras en boca o labios.","b":"Sensibilizar zona para atrapar/soltar pedazo.","c":"Separación del pedazo. Secretos familiares.","tc":"1ª y 4ª Etapas. Conflicto de separación del pedazo."},
+{"id":19,"t":"AGORAFOBIA","d":"Miedo a espacios abiertos.","b":"Respuesta a mensaje gestacional: salir es peligroso.","c":"Conflicto en vientre materno. Ambiente familiar conflictivo.","tc":"4ª Etapa. Conflicto de miedo a morir y control."},
+{"id":20,"t":"AGUJETAS","d":"Dolor muscular post-ejercicio.","b":"Pequeñas roturas celulares. Indican movimiento forzado.","c":"Conflicto con el músculo y memoria de peligro.","tc":"3ª Etapa. Conflicto de impotencia."},
+{"id":21,"t":"AHOGOS","d":"Dificultad respiratoria.","b":"Cerrar entradas de aire tóxico.","c":"Falta de bocanada de aire. Sentirse criticado.","tc":"1ª Etapa. Conflicto de pedazo de aire."},
+{"id":22,"t":"ALBINISMO","d":"Ausencia de pigmentación.","b":"Limpiar la deshonra de la familia.","c":"Conflicto de suciedad y culpa familiar.","tc":"2ª Etapa. Conflicto transgeneracional."},
+{"id":23,"t":"ALCOHOLISMO","d":"Abuso de alcohol.","b":"Huida de realidad inaceptable.","c":"Protección y mamá. Miedo a ser herido.","tc":"Conflicto de protección y mamá."},
+{"id":24,"t":"ALERGIAS","d":"Respuesta exagerada del sistema defensivo.","b":"Protegerse contra agente invasivo nocivo.","c":"Conflicto programante donde se genera hipersensibilidad.","tc":"Conflicto de protección exagerada."},
+{"id":25,"t":"ALOPECIA","d":"Caída del cabello.","b":"Fallo en protección intelectual y respecto al padre.","c":"Separación con injusticia intelectual. Falta de protección paterna.","tc":"4ª Etapa. Conflicto de separación y desvalorización.","e":"4"},
+{"id":26,"t":"ALZHEIMER","d":"Pérdida de memoria y deterioro cognitivo.","b":"Desconexión de la realidad. Huida de memorias perjudiciales.","c":"Múltiples conflictos repetitivos no resueltos.","tc":"4ª Etapa. Conflicto de separación y agresión.","e":"4"},
+{"id":27,"t":"AMENORREA","d":"Ausencia de menstruación.","b":"Evitar la reproducción por peligro.","c":"Rechazo de la feminidad o maternidad.","tc":"Conflictos de ovarios, vagina, hipófisis."},
+{"id":28,"t":"AMÍGDALAS","d":"Ganglios linfáticos en garganta.","b":"Defensa, detectan pedazos tóxicos.","c":"No poder tragar el pedazo.","tc":"1ª Etapa. Conflicto de pedazo.","e":"1"},
+{"id":29,"t":"AMNESIA","d":"Pérdida de memoria.","b":"Proteger de recuerdos demasiado dolorosos.","c":"Duelos no hechos de dramas insoportables.","tc":"4ª Etapa. Constelación de conflictos de separación."},
+{"id":30,"t":"ANEMIA","d":"Descenso de glóbulos rojos.","b":"Prevalece supervivencia del clan sobre la propia.","c":"Desvalorización global en el linaje de sangre.","tc":"3ª Etapa. Conflicto de desvalorización profunda.","e":"3"},
+{"id":31,"t":"ANEURISMA","d":"Dilatación de pared arterial.","b":"Prevenir rotura por gran cantidad de sangre.","c":"Impotencia y culpabilidad en la familia.","tc":"3ª Etapa. Vagotonía. Conflicto de impotencia."},
+{"id":32,"t":"ANOREXIA","d":"Falta de apetito.","b":"Evitar ingesta de alimentos tóxicos.","c":"Alimento tóxico (mamá tóxica).","tc":"1ª Etapa. Conflicto de pedazo tóxico.","e":"1"},
+{"id":33,"t":"ANO","d":"Orificio final del recto.","b":"Puerta de salida de desechos.","c":"Conflicto de identidad: ¿dónde está mi lugar?","tc":"4ª Etapa. Conflicto de identidad.","e":"4"},
+{"id":34,"t":"APENDICITIS","d":"Inflamación del apéndice.","b":"Reservorio de alimentos.","c":"Falta de reservas. Asunto feo que no podemos vaciar.","tc":"1ª Etapa. Conflicto de pedazo feo.","e":"1"},
+{"id":35,"t":"APNEA DEL SUEÑO","d":"Interrupción respiratoria al dormir.","b":"Hacerse el muerto como supervivencia.","c":"Conflicto de última protección.","tc":"1ª Etapa. Conflicto de supervivencia."},
+{"id":36,"t":"ARRITMIA","d":"Alteración del ritmo cardíaco.","b":"Preparado para cambiar ritmo según necesidad.","c":"Algo importante invade o escapa de mi territorio íntimo.","tc":"4ª Etapa. Fase de curación de conflicto de territorio."},
+{"id":37,"t":"ARTRITIS","d":"Inflamación articular.","b":"Detener movimiento para regeneración.","c":"Gesto con culpa. Crítica hacia mí o los demás.","tc":"3ª Etapa. Fase de reparación de desvalorización.","e":"3"},
+{"id":38,"t":"ARTROSIS","d":"Desgaste del cartílago articular.","b":"Frenar actividad de la articulación.","c":"No creerse merecedor de la vida.","tc":"3ª Etapa. Conflicto de desvalorización profunda."},
+{"id":39,"t":"ASMA","d":"Dificultad respiratoria con opresión.","b":"Compensar carencias emocionales y miedo.","c":"Constelación de conflictos de territorio y miedo.","tc":"4ª Etapa. Conflicto de amenaza en el territorio."},
+{"id":40,"t":"AUTISMO","d":"Repliegue sobre sí mismo.","b":"Huida y sobre-control del mundo.","c":"Constelación de miedo y cólera en el territorio.","tc":"2ª y 4ª Etapas. Conflicto transgeneracional."},
+{"id":41,"t":"BAZO","d":"Ganglio linfático hemático.","b":"Reserva de sangre y defensa inmunológica.","c":"Humillación. No sentir apoyo en la familia.","tc":"3ª Etapa. Conflicto de humillación y familia."},
+{"id":42,"t":"BOCIO","d":"Aumento de la tiroides.","b":"Acelerar metabolismo por urgencia.","c":"Quiero moverme pero no puedo.","tc":"4ª Etapa. Fase de curación de conflicto de tiroides."},
+{"id":43,"t":"BRONQUITIS","d":"Inflamación de bronquios.","b":"Reparar ulceración por conflicto de territorio.","c":"Ambiente familiar conflictivo. Peleas, gritos.","tc":"Fase de reparación de conflicto de bronquios."},
+{"id":44,"t":"BULIMIA","d":"Ingesta exagerada y vómitos.","b":"Hipoglucemia por falta de glucagón.","c":"Mamá tóxica. Destete prematuro.","tc":"1ª Etapa. Conflicto de pedazo tóxico."},
+{"id":45,"t":"CABEZA","d":"Parte superior del cuerpo.","b":"Imagen, identificación, procesos intelectuales.","c":"Desvalorización. Invalidación de uno mismo.","tc":"Depende. Conflicto de desvalorización."},
+{"id":46,"t":"CADERA","d":"Articulación pelvis-fémur.","b":"Transporte y equilibrio. Detener el combate.","c":"Oposición, incesto simbólico, secreto familiar.","tc":"3ª Etapa. Cuatro conflictos principales.","e":"3"},
+{"id":47,"t":"CALAMBRES","d":"Contracción espasmódica muscular.","b":"Completar movimiento muscular imprescindible.","c":"Esfuerzo prolongado o forzado.","tc":"3ª Etapa. Conflicto de impotencia."},
+{"id":48,"t":"CÁLCULOS BILIARES","d":"Piedras en vesícula biliar.","b":"Retener la bilis para que no salga.","c":"Amargura, juicios condenatorios.","tc":"4ª Etapa. Conflicto de juicios con amargura."},
+{"id":49,"t":"CÁNCER","d":"Crecimiento incontrolado de células.","b":"Respuesta biológica a conflicto no cerrado.","c":"Conflicto de identidad. Resentimiento de larga duración.","tc":"Depende del tipo."},
+{"id":50,"t":"CATARATAS","d":"Cristalino opaco.","b":"Cubrir para mitigar visión desagradable.","c":"Miedo por la espalda. No querer ver.","tc":"4ª Etapa. Fase de curación de conflicto de cristalino."},
+{"id":51,"t":"CELÍACOS","d":"Intolerancia al gluten.","b":"Protección contra el simbolismo del padre.","c":"Intolerancia al padre o a la familia.","tc":"1ª Etapa. Conflicto de pedazo tóxico."},
+{"id":52,"t":"CIÁTICA","d":"Dolor en recorrido del nervio ciático.","b":"Impedir que información de avance llegue.","c":"Miedo a ir hacia adelante.","tc":"3ª Etapa. Conflicto de impotencia."},
+{"id":53,"t":"CIRROSIS HEPÁTICA","d":"Endurecimiento del hígado.","b":"Endurecimiento para ser más resistente.","c":"Enfriamiento, retracción frente a la vida.","tc":"1ª Etapa. Conflicto de pedazo tóxico."},
+{"id":54,"t":"CISTITIS","d":"Inflamación de vejiga.","b":"Producir orina más fuerte para marcar territorio.","c":"No puedo marcar (hombre) u organizar (mujer) mi territorio.","tc":"4ª Etapa. Conflicto de pérdida de territorio."},
+{"id":55,"t":"COLITIS","d":"Inflamación del colon.","b":"Digerir, asimilar o soltar una guarrada.","c":"Pequeñas marranadas continuas con ira.","tc":"1ª Etapa. Conflicto de pedazo tóxico."},
+{"id":56,"t":"COLON","d":"Intestino grueso.","b":"Digerir, asimilar o soltar una guarrada.","c":"Gran guarrada. Incapacidad de digerir o soltar.","tc":"1ª Etapa. Conflicto de pedazo indigesto."},
+{"id":57,"t":"CORAZÓN","d":"Bomba de sangre.","b":"Hogar, casa, territorio central.","c":"Desvalorización por no poder defender mi territorio.","tc":"3ª Etapa. Conflicto de impotencia."},
+{"id":58,"t":"DEPRESIÓN","d":"Tristeza y apatía.","b":"Quitar presión de los dramas.","c":"Conflicto de identidad, territorio, desvalorización.","tc":"4ª Etapa. Conflicto general."},
+{"id":59,"t":"DIABETES","d":"Falta de producción de insulina.","b":"Evitar que el azúcar (dulzura) entre en células.","c":"Asco + resistencia. La ternura es peligrosa.","tc":"4ª Etapa. Constelación de conflictos."},
+{"id":60,"t":"DIARREA","d":"Deposiciones líquidas.","b":"Eliminar rápidamente guarradas.","c":"Pequeña guarrada. Miedo visceral.","tc":"1ª Etapa. Fase de reparación."},
+{"id":61,"t":"DIENTES","d":"Órganos para masticar.","b":"Atrapar y descomponer el pedazo.","c":"No poder morder o afirmarse.","tc":"1ª,3ª,4ª Etapas."},
+{"id":62,"t":"DOLOR","d":"Experiencia desagradable.","b":"Señal de alarma.","c":"Culpa. Ideas fijas.","tc":"Conflicto de culpa."},
+{"id":63,"t":"ECZEMA","d":"Inflamación de la piel.","b":"Reparar tejido epidérmico ulcerado.","c":"Separación. Ira y rabia en contactos.","tc":"4ª Etapa. Fase de curación."},
+{"id":64,"t":"ENFERMEDADES AUTOINMUNES","d":"Sistema ataca al propio cuerpo.","b":"Yo soy mi propio enemigo.","c":"Desvalorización, culpabilidad, impotencia.","tc":"3ª Etapa."},
+{"id":65,"t":"ENFISEMA PULMONAR","d":"Dilatación de bronquios.","b":"Mejorar intercambio de O2.","c":"Conflictos de intercambio.","tc":"1ª Etapa."},
+{"id":66,"t":"EPILEPSIA","d":"Convulsiones recurrentes.","b":"Poner fin a algo para volver a empezar.","c":"Miedo impotente + separación.","tc":"4ª Etapa."},
+{"id":67,"t":"ESCLEROSIS MÚLTIPLE","d":"Pérdida de mielina.","b":"Impedir el movimiento.","c":"Gran miedo con desvalorización.","tc":"3ª Etapa."},
+{"id":68,"t":"ESQUIZOFRENIA","d":"Disociación psíquica.","b":"Esconder la propia identidad.","c":"Separación + territorio + miedo.","tc":"4ª Etapa."},
+{"id":69,"t":"ESTRÉS","d":"Reacción de alerta.","b":"Aviso de que algo no va bien.","c":"Lucha/huida.","tc":"Conflicto de lucha/huida."},
+{"id":70,"t":"FIBROMIALGIA","d":"Dolor muscular sin causa orgánica.","b":"Señal de aviso.","c":"Sobre-responsabilidad familiar.","tc":"3ª Etapa."},
+{"id":71,"t":"GASTRITIS","d":"Inflamación del estómago.","b":"Fabricar más jugos gástricos.","c":"Contrariedad indigesta.","tc":"1ª Etapa."},
+{"id":72,"t":"GLAUCOMA","d":"Aumento de presión ocular.","b":"Efecto lupa para ver detalles.","c":"Conflicto de lupa. Perder algo por poco.","tc":"4ª Etapa."},
+{"id":73,"t":"HEMORROIDES","d":"Varices en recto y ano.","b":"Mejorar riego donde reposa mi identidad.","c":"Conflicto de identidad. ¿Dónde está mi sitio?","tc":"1ª y 4ª Etapas."},
+{"id":74,"t":"HEPATITIS","d":"Inflamación del hígado.","b":"Depuración del organismo.","c":"Pedazo envenenado. Rencor.","tc":"1ª Etapa."},
+{"id":75,"t":"HERPES","d":"Vesículas en piel.","b":"Reparar ulceraciones por separación.","c":"Separación con rabia y suciedad.","tc":"4ª Etapa."},
+{"id":76,"t":"HÍGADO","d":"Glándula y laboratorio del cuerpo.","b":"Absorber y transformar alimento.","c":"Carencia. Hambre, dinero, familia.","tc":"1ª Etapa."},
+{"id":77,"t":"HIPERTENSIÓN","d":"Presión arterial alta.","b":"Presionar sangre para que entre/salga.","c":"Desvalorización con respecto a la familia.","tc":"3ª Etapa."},
+{"id":78,"t":"HIPOTIROIDISMO","d":"Baja actividad tiroidea.","b":"Frenar procesos inútiles.","c":"Urgencia demasiado larga que genera impotencia.","tc":"1ª y 4ª Etapas."},
+{"id":79,"t":"ICTUS","d":"Accidente cerebrovascular.","b":"Irrigar más el cerebro. Huir de la familia.","c":"Culpa. Desvalorización intelectual.","tc":"3ª Etapa."},
+{"id":80,"t":"INFARTO","d":"Obstrucción coronaria.","b":"Supervivencia de la especie.","c":"Pérdida de territorio.","tc":"4ª Etapa."},
+{"id":81,"t":"INSOMNIO","d":"Dificultad para dormir.","b":"Permanecer alerta por peligro.","c":"Miedo, culpa, pensamientos negativos.","tc":"Conflicto de miedo."},
+{"id":82,"t":"INTESTINO DELGADO","d":"Absorbe nutrientes.","b":"Producir más jugos digestivos.","c":"No poder digerir el pedazo.","tc":"1ª Etapa."},
+{"id":83,"t":"LARINGE","d":"Órgano de la voz.","b":"Que el mensaje salga al exterior.","c":"Miedo y pánico en el territorio.","tc":"4ª Etapa."},
+{"id":84,"t":"LEUCEMIA","d":"Cáncer de sangre.","b":"No atacar algo en la familia.","c":"Desvalorización profunda.","tc":"3ª Etapa."},
+{"id":85,"t":"LUPUS","d":"Enfermedad autoinmune.","b":"Reparar gran desvalorización.","c":"Separación, mancha, líquidos.","tc":"3ª Etapa."},
+{"id":86,"t":"MAMAS","d":"Glándulas mamarias.","b":"Protección del nido y los hijos.","c":"Protección. Nido y nido ampliado.","tc":"2ª,3ª,4ª Etapas."},
+{"id":87,"t":"MENINGITIS","d":"Inflamación de meninges.","b":"Proteger el sistema nervioso.","c":"Miedo por mi cabeza.","tc":"2ª Etapa."},
+{"id":88,"t":"MIGRAÑA","d":"Dolor de cabeza intenso.","b":"Aportar más nutrientes al cerebro.","c":"Desvalorización intelectual.","tc":"4ª Etapa."},
+{"id":89,"t":"MIOPÍA","d":"Dificultad para ver lejos.","b":"Fijar vista en lo cercano.","c":"Miedo por la espalda. Peligro cerca.","tc":"4ª Etapa."},
+{"id":90,"t":"OBESIDAD","d":"Acumulación de grasa.","b":"Ser grande para supervivencia.","c":"Abandono y separación estructural.","tc":"3ª Etapa."},
+{"id":91,"t":"OTITIS","d":"Inflamación del oído.","b":"Devolver tejido a su estado normal.","c":"No querer oír discusiones.","tc":"1ª y 4ª Etapas."},
+{"id":92,"t":"OVARIO","d":"Gónada femenina.","b":"Reparar pérdida de un hijo.","c":"Pérdida vital. Conflicto feo con culpabilidad.","tc":"1ª y 3ª Etapas."},
+{"id":93,"t":"PÁNCREAS","d":"Glándula digestiva y endocrina.","b":"Digerir el pedazo.","c":"Ignominia. Grandes porquerías familiares.","tc":"1ª y 4ª Etapas."},
+{"id":94,"t":"PARKINSON","d":"Temblores y rigidez.","b":"Dejar de controlar la acción.","c":"Miedo a terminar, a soltar.","tc":"4ª Etapa."},
+{"id":95,"t":"PIEL","d":"Capa externa del cuerpo.","b":"Contacto y protección.","c":"Separación. Pérdida de contacto.","tc":"4ª Etapa."},
+{"id":96,"t":"PRÓSTATA","d":"Glándula masculina.","b":"Aumentar secreción prostática.","c":"Pérdida en familia. Sexualidad fuera de norma.","tc":"1ª Etapa."},
+{"id":97,"t":"PSORIASIS","d":"Placas escamosas en piel.","b":"Protección de doble separación.","c":"Separación + contacto obligado.","tc":"4ª Etapa."},
+{"id":98,"t":"PULMONES","d":"Órganos respiratorios.","b":"Absorber vida (aire).","c":"Miedo a la muerte. Tristeza.","tc":"1ª y 4ª Etapas."},
+{"id":99,"t":"QUEMADURAS","d":"Lesión por calor.","b":"Destruir y purificar.","c":"Ira que hierve en mi interior.","tc":"Depende del grado."},
+{"id":100,"t":"RIÑÓN","d":"Filtra la sangre.","b":"Eliminar residuos.","c":"Desvalorización. Conflictos existenciales.","tc":"1ª y 3ª Etapas."},
+{"id":101,"t":"RODILLA","d":"Articulación pierna-muslo.","b":"Amortiguar.","c":"Sumisión, obediencia.","tc":"3ª Etapa."},
+{"id":102,"t":"SIDA","d":"Inmunodeficiencia.","b":"Desaparecer por amor al clan.","c":"Desvalorización con relación a la familia.","tc":"3ª Etapa."},
+{"id":103,"t":"SINUSITIS","d":"Inflamación de senos paranasales.","b":"Aumentar mucosidad para captar olores.","c":"Algo huele mal. Miedo frontal olfativo.","tc":"4ª Etapa."},
+{"id":104,"t":"SUPRARRENALES","d":"Glándulas sobre riñones.","b":"Regular respuesta al estrés.","c":"Conflicto de dirección. Sentirse perdido.","tc":"3ª Etapa."},
+{"id":105,"t":"TIROIDES","d":"Glándula del cuello.","b":"Reloj biológico.","c":"Urgencia. No poder atrapar el pedazo rápido.","tc":"1ª y 4ª Etapas."},
+{"id":106,"t":"TROMBOSIS","d":"Coágulo en vaso.","b":"Impedir que la suciedad vea la luz.","c":"Suciedad familiar.","tc":"3ª Etapa."},
+{"id":107,"t":"ÚLCERA GÁSTRICA","d":"Erosión del estómago.","b":"Ampliar espacio para lo obligado a tragar.","c":"Contrariedad indigesta en el territorio.","tc":"4ª Etapa."},
+{"id":108,"t":"ÚTERO","d":"Órgano reproductor femenino.","b":"Mi hogar, primera casa.","c":"Supervivencia de la especie.","tc":"1ª,3ª,4ª Etapas."},
+{"id":109,"t":"VAGINITIS","d":"Inflamación vaginal.","b":"Reparar ulceración.","c":"Cólera no expresada en contexto sexual.","tc":"4ª Etapa."},
+{"id":110,"t":"VARICES","d":"Venas dilatadas.","b":"Impedir retorno de sangre sucia.","c":"Arrastrar una condena. Mancha familiar.","tc":"3ª Etapa."},
+{"id":111,"t":"VÉRTIGO","d":"Sensación de movimiento.","b":"Impedir movimiento que da miedo.","c":"Falta de referencias.","tc":"4ª Etapa."}
+];
+// Complementar con entradas adicionales del PDF (índice completo)
+const additionalEntries = [
+{"id":112,"t":"ABSCESO ANAL","v":"ABSCESO / ANO","r":true},{"id":113,"t":"ACIDEZ DE ESTÓMAGO","v":"HERNIA de HIATO / REFLUJOS","r":true},{"id":114,"t":"ACROMEGALIA","v":"HIPÓFISIS","r":true},{"id":115,"t":"ADENOMA","v":"HIPÓFISIS","r":true},{"id":116,"t":"ADRENALINA","v":"SUPRARRENALES","r":true},{"id":117,"t":"AFONÍA","v":"LARINGE","r":true},{"id":118,"t":"ALCALOSIS","v":"ACIDOSIS","r":true},{"id":119,"t":"ANGINA DE PECHO","v":"CORAZÓN","r":true},{"id":120,"t":"APENDICITIS","v":"APÉNDICE","r":true},{"id":121,"t":"APOPLEJÍA","v":"ICTUS","r":true},{"id":122,"t":"ARTERIAS","v":"ARTERIA AORTA / CARÓTIDA","r":true},{"id":123,"t":"ARTRITIS REUMATOIDE","v":"ARTRITIS","r":true},{"id":124,"t":"ASMA INFANTIL","v":"ASMA","r":true},{"id":125,"t":"ASTIGMATISMO","v":"OJOS","r":true},{"id":126,"t":"ATAXIA","v":"NEUROLOGÍAS","r":true},{"id":127,"t":"BASEDOW","v":"TIROIDES","r":true},{"id":128,"t":"BLEFARITIS","v":"PÁRPADOS","r":true},{"id":129,"t":"BRONQUIOS","v":"ASMA / BRONQUITIS","r":true},{"id":130,"t":"BURNOUT","v":"ASTENIA","r":true},{"id":131,"t":"CALCIFICACIÓN","v":"HIPERCALCEMIA","r":true},{"id":132,"t":"CÁNCER DE MAMA","v":"MAMAS","r":true},{"id":133,"t":"CÁNCER DE PULMÓN","v":"PULMONES","r":true},{"id":134,"t":"CÁNCER DE ÚTERO","v":"ÚTERO","r":true},{"id":135,"t":"CARIES","v":"DIENTES","r":true},{"id":136,"t":"CATARRO","v":"RESFRIADO","r":true},{"id":137,"t":"CEREBELO","v":"SISTEMA NERVIOSO","r":true},{"id":138,"t":"CESÁREA","v":"PARTO","r":true},{"id":139,"t":"CIANOSIS","v":"ACROCIANOSIS","r":true},{"id":140,"t":"CLAUSTROFOBIA","v":"AGORAFOBIA","r":true},{"id":141,"t":"COCCIX","v":"SACRO","r":true},{"id":142,"t":"COLON IRRITABLE","v":"COLITIS","r":true},{"id":143,"t":"CONJUNTIVITIS","v":"OJOS","r":true},{"id":144,"t":"CONSTIPACIÓN","v":"ESTREÑIMIENTO","r":true},{"id":145,"t":"CONTUSIÓN","v":"ACCIDENTE","r":true},{"id":146,"t":"CONVULSIONES","v":"EPILEPSIA","r":true},{"id":147,"t":"CORAZÓN SENIL","v":"CORAZÓN","r":true},{"id":148,"t":"COSTILLAS","v":"TORAX","r":true},{"id":149,"t":"CROHN","v":"INTESTINO","r":true},{"id":150,"t":"CUELLO UTERINO","v":"ÚTERO","r":true},{"id":151,"t":"DEMENCIA SENIL","v":"ALZHEIMER","r":true},{"id":152,"t":"DERMATITIS","v":"PIEL","r":true},{"id":153,"t":"DESMAYO","v":"HIPOTENSIÓN","r":true},{"id":154,"t":"DIAFRAGMA","v":"HERNIA de HIATO","r":true},{"id":155,"t":"DIPLOPÍA","v":"OJOS","r":true},{"id":156,"t":"DISFAGIA","v":"ESÓFAGO","r":true},{"id":157,"t":"DISLEXIA","v":"APRENDIZAJE","r":true},{"id":158,"t":"DISNEA","v":"ASMA","r":true},{"id":159,"t":"DIVERTÍCULOS","v":"COLON","r":true},{"id":160,"t":"DOLOR DE CABEZA","v":"CEFALEA","r":true},{"id":161,"t":"DROGAS","v":"ADICCIONES","r":true},{"id":162,"t":"EDEMA","v":"RETENCIÓN LÍQUIDOS","r":true},{"id":163,"t":"EMBARAZO","v":"GESTACIÓN","r":true},{"id":164,"t":"EMBOLIA","v":"ICTUS","r":true},{"id":165,"t":"ENCEFALITIS","v":"MENINGITIS","r":true},{"id":166,"t":"ENDOMETRIOSIS","v":"ÚTERO","r":true},{"id":167,"t":"ENURESIS","v":"VEJIGA","r":true},{"id":168,"t":"EPICONDILITIS","v":"CODO","r":true},{"id":169,"t":"EPISTAXIS","v":"NARIZ","r":true},{"id":170,"t":"ERUCTOS","v":"AEROFAGIA","r":true},{"id":171,"t":"ESCLERODERMIA","v":"PIEL","r":true},{"id":172,"t":"ESCOLIOSIS","v":"COLUMNA","r":true},{"id":173,"t":"ESGUINCE","v":"LIGAMENTOS","r":true},{"id":174,"t":"ESÓFAGO","v":"DIGESTIVO","r":true},{"id":175,"t":"ESPALDA","v":"COLUMNA","r":true},{"id":176,"t":"ESPONDILITIS","v":"COLUMNA","r":true},{"id":177,"t":"ESTENOSIS","v":"VÁLVULAS","r":true},{"id":178,"t":"ESTERILIDAD","v":"REPRODUCCIÓN","r":true},{"id":179,"t":"ESTRABISMO","v":"OJOS","r":true},{"id":180,"t":"ESTREÑIMIENTO","v":"COLON","r":true},{"id":181,"t":"EXANTEMA","v":"PIEL","r":true},{"id":182,"t":"EXOFTALMIA","v":"TIROIDES","r":true},{"id":183,"t":"FARINGITIS","v":"GARGANTA","r":true},{"id":184,"t":"FATIGA","v":"BURNOUT","r":true},{"id":185,"t":"FEOCROMOCITOMA","v":"SUPRARRENALES","r":true},{"id":186,"t":"FIEBRE","v":"INFECCIÓN","r":true},{"id":187,"t":"FIMOSIS","v":"PENE","r":true},{"id":188,"t":"FÍSTULA","v":"ANO","r":true},{"id":189,"t":"FLEBITIS","v":"VARICES","r":true},{"id":190,"t":"FOBIAS","v":"MIEDO","r":true},{"id":191,"t":"FORÚNCULOS","v":"PIEL","r":true},{"id":192,"t":"FRACTURAS","v":"HUESOS","r":true},{"id":193,"t":"FRIGIDEZ","v":"SEXUALIDAD","r":true},{"id":194,"t":"FUMAR","v":"ADICCIONES","r":true},{"id":195,"t":"GALACTORREA","v":"MAMAS","r":true},{"id":196,"t":"GANGLIOS","v":"SISTEMA LINFÁTICO","r":true},{"id":197,"t":"GASES","v":"AEROFAGIA","r":true},{"id":198,"t":"GASTROENTERITIS","v":"INTESTINO","r":true},{"id":199,"t":"GEMELOS","v":"MÚSCULOS","r":true},{"id":200,"t":"GINGIVITIS","v":"ENCÍAS","r":true},{"id":201,"t":"GLÁNDULAS","v":"ENDOCRINO","r":true},{"id":202,"t":"GLÁNDULAS SALIVALES","v":"BOCA","r":true},{"id":203,"t":"GLAUCOMA","v":"OJOS","r":true},{"id":204,"t":"GLOSITIS","v":"LENGUA","r":true},{"id":205,"t":"GOTA","v":"ARTICULACIONES","r":true},{"id":206,"t":"GRIPE","v":"RESFRIADO","r":true},{"id":207,"t":"HALLUX VALGUS","v":"PIES","r":true},{"id":208,"t":"HASHIMOTO","v":"TIROIDES","r":true},{"id":209,"t":"HEMATURIA","v":"RIÑÓN","r":true},{"id":210,"t":"HEMIANPSIA","v":"OJOS","r":true},{"id":211,"t":"HEMIPLEJIA","v":"PARÁLISIS","r":true},{"id":212,"t":"HEMOCROMATOSIS","v":"HÍGADO","r":true},{"id":213,"t":"HEMOFILIA","v":"SANGRE","r":true},{"id":214,"t":"HEMORRAGIA","v":"SANGRE","r":true},{"id":215,"t":"HEPATITIS","v":"HÍGADO","r":true},{"id":216,"t":"HERNIA","v":"ABDOMEN","r":true},{"id":217,"t":"HERNIA DISCAL","v":"COLUMNA","r":true},{"id":218,"t":"HERPES ZOSTER","v":"PIEL","r":true},{"id":219,"t":"HIDROCEFALIA","v":"CEREBRO","r":true},{"id":220,"t":"HIPO","v":"DIAFRAGMA","r":true},{"id":221,"t":"HIPOACUSIA","v":"OÍDO","r":true},{"id":222,"t":"HIPOCALCEMIA","v":"HUESOS","r":true},{"id":223,"t":"HIPOCONDRIA","v":"ANSIEDAD","r":true},{"id":224,"t":"HIPÓFISIS","v":"ENDOCRINO","r":true},{"id":225,"t":"HIPOGLUCEMIA","v":"DIABETES","r":true},{"id":226,"t":"HIPOTENSIÓN","v":"CORAZÓN","r":true},{"id":227,"t":"HISTERIA","v":"NEUROSIS","r":true},{"id":228,"t":"HOMBROS","v":"ARTICULACIONES","r":true},{"id":229,"t":"HOMOSEXUALIDAD","v":"SEXUALIDAD","r":true},{"id":230,"t":"HUESOS","v":"ESQUELETO","r":true},{"id":231,"t":"ICTERICIA","v":"HÍGADO","r":true},{"id":232,"t":"IMPÉTIGO","v":"PIEL","r":true},{"id":233,"t":"IMPOTENCIA","v":"SEXUALIDAD","r":true},{"id":234,"t":"INCONTINENCIA","v":"VEJIGA","r":true},{"id":235,"t":"INDIGESTIÓN","v":"ESTÓMAGO","r":true},{"id":236,"t":"INFARTO","v":"CORAZÓN","r":true},{"id":237,"t":"INFECCIÓN","v":"SISTEMA INMUNE","r":true},{"id":238,"t":"INFLAMACIÓN","v":"SISTEMA INMUNE","r":true},{"id":239,"t":"INGLE","v":"PIERNA","r":true},{"id":240,"t":"INSOMNIO","v":"SUEÑO","r":true},{"id":241,"t":"INSUFICIENCIA RENAL","v":"RIÑÓN","r":true},{"id":242,"t":"INTESTINO GRUESO","v":"COLON","r":true},{"id":243,"t":"IRA","v":"EMOCIONES","r":true},{"id":244,"t":"LABIOS","v":"BOCA","r":true},{"id":245,"t":"LARINGITIS","v":"LARINGE","r":true},{"id":246,"t":"LEPRA","v":"PIEL","r":true},{"id":247,"t":"LEUCEMIA","v":"SANGRE","r":true},{"id":248,"t":"LEUCORREA","v":"VAGINA","r":true},{"id":249,"t":"LIGAMENTOS","v":"ARTICULACIONES","r":true},{"id":250,"t":"LINFOMAS","v":"SISTEMA LINFÁTICO","r":true},{"id":251,"t":"LIPOMAS","v":"GRASA","r":true},{"id":252,"t":"LUMBAGO","v":"ESPALDA","r":true},{"id":253,"t":"LUPUS","v":"AUTOINMUNE","r":true},{"id":254,"t":"MALARIA","v":"PARÁSITOS","r":true},{"id":255,"t":"MANDÍBULA","v":"DIENTES","r":true},{"id":256,"t":"MANOS","v":"EXTREMIDADES","r":true},{"id":257,"t":"MAREOS","v":"OÍDO","r":true},{"id":258,"t":"MASTOIDITIS","v":"OÍDO","r":true},{"id":259,"t":"MEDIASTINO","v":"TÓRAX","r":true},{"id":260,"t":"MÉDULA ESPINAL","v":"COLUMNA","r":true},{"id":261,"t":"MEGALOMANÍA","v":"TRASTORNOS","r":true},{"id":262,"t":"MELANOMA","v":"PIEL","r":true},{"id":263,"t":"MENINGIOMA","v":"CEREBRO","r":true},{"id":264,"t":"MENINGITIS","v":"CEREBRO","r":true},{"id":265,"t":"MENISCO","v":"RODILLA","r":true},{"id":266,"t":"MENOPAUSIA","v":"MUJER","r":true},{"id":267,"t":"MENSTRUACIÓN","v":"MUJER","r":true},{"id":268,"t":"METÁSTASIS","v":"CÁNCER","r":true},{"id":269,"t":"MICOSIS","v":"PIEL","r":true},{"id":270,"t":"MIEDO","v":"EMOCIONES","r":true},{"id":271,"t":"MIGRAÑA","v":"CABEZA","r":true},{"id":272,"t":"MIOCARDIO","v":"CORAZÓN","r":true},{"id":273,"t":"MIOMA UTERINO","v":"ÚTERO","r":true},{"id":274,"t":"MORDEDURAS","v":"ACCIDENTE","r":true},{"id":275,"t":"MUELAS","v":"DIENTES","r":true},{"id":276,"t":"MÚSCULOS","v":"LOCOMOTOR","r":true},{"id":277,"t":"MUTISMO","v":"LENGUAJE","r":true},{"id":278,"t":"NALGAS","v":"PELVIS","r":true},{"id":279,"t":"NARCOLEPSIA","v":"SUEÑO","r":true},{"id":280,"t":"NARIZ","v":"OLFATO","r":true},{"id":281,"t":"NÁUSEAS","v":"DIGESTIVO","r":true},{"id":282,"t":"NEUMONÍA","v":"PULMONES","r":true},{"id":283,"t":"NEURALGIA","v":"NERVIOS","r":true},{"id":284,"t":"NEURITIS","v":"NERVIOS","r":true},{"id":285,"t":"NEUROSIS","v":"MENTALES","r":true},{"id":286,"t":"NICTOFOBIA","v":"FOBIAS","r":true},{"id":287,"t":"NISTAGMO","v":"OJOS","r":true},{"id":288,"t":"OBESIDAD","v":"SOBREPESO","r":true},{"id":289,"t":"OÍDO","v":"SENTIDOS","r":true},{"id":290,"t":"OJOS","v":"SENTIDOS","r":true},{"id":291,"t":"OLFATO","v":"SENTIDOS","r":true},{"id":292,"t":"OMOPLATO","v":"HOMBROS","r":true},{"id":293,"t":"ORZUELO","v":"OJOS","r":true},{"id":294,"t":"OSTEOPOROSIS","v":"HUESOS","r":true},{"id":295,"t":"OTITIS","v":"OÍDO","r":true},{"id":296,"t":"OVARIOS","v":"REPRODUCCIÓN","r":true},{"id":297,"t":"PÁNCREAS","v":"DIGESTIVO","r":true},{"id":298,"t":"PAPERAS","v":"GLÁNDULAS","r":true},{"id":299,"t":"PARÁLISIS","v":"MOVIMIENTO","r":true},{"id":300,"t":"PARANOIA","v":"MENTALES","r":true}
+];
+window.DATA = window.DATA.concat(additionalEntries);
+// ==================== FIN DATOS ====================
 
-// Función para procesar referencias en el texto (formato [número] o (número) o superíndice)
-function processReferences(text, refMap) {
-  if (!text) return text;
-  let processed = text;
-  // Busca números entre corchetes o paréntesis al final de palabras
-  const refRegex = /(?:\[(\d+)\]|\((\d+)\)|(?<!\w)(\d+)(?![a-z]))/g;
-  const refsFound = [];
-  processed = processed.replace(refRegex, (match, p1, p2, p3) => {
-    const num = p1 || p2 || p3;
-    if (num && !refsFound.includes(num)) refsFound.push(num);
-    return `<span class="ref-link" data-ref="${num}" onclick="showRef('${num}')">[${num}]</span>`;
-  });
-  return processed;
-}
-
-// Mapa de referencias (simulado - en un caso real se cargaría desde el PDF)
-// Como no tenemos el texto completo de referencias, mostramos un mensaje genérico
-function showRef(num) {
-  const modal = document.getElementById('ref-modal');
-  const modalText = document.getElementById('modal-text');
-  modalText.innerHTML = `Referencia ${num}. Consultar la bibliografía del diccionario original para más detalles.`;
-  modal.classList.add('open');
-}
-
-function closeModal() {
-  document.getElementById('ref-modal').classList.remove('open');
-}
-
-// Configuración de tema y tamaño
-function setTheme(theme) {
-  document.documentElement.setAttribute('data-theme', theme);
-  localStorage.setItem('bioemoc_theme', theme);
-  document.querySelectorAll('.theme-btn').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.theme === theme);
-  });
-}
-
-function setFontSize(size) {
-  document.documentElement.setAttribute('data-font-size', size);
-  localStorage.setItem('bioemoc_fontsize', size);
-  document.querySelectorAll('.font-btn').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.size === size);
-  });
-}
-
-// Cargar preferencias guardadas
-const savedTheme = localStorage.getItem('bioemoc_theme');
-if (savedTheme && savedTheme !== 'light') setTheme(savedTheme);
-const savedFont = localStorage.getItem('bioemoc_fontsize');
-if (savedFont && savedFont !== 'medium') setFontSize(savedFont);
-
-// Estado y funciones principales (se mantienen igual que antes pero con procesamiento de referencias)
-let favorites = {};
-let comments = {};
-let activeFilters = new Set();
-let searchQuery = '';
-let currentEntryId = null;
-let filteredEntries = [];
-let filtersOpen = false;
-let currentTab = 'about';
-
+let favorites = {}, comments = {}, activeFilters = new Set(), searchQuery = '', currentEntryId = null, filteredEntries = [];
 try { favorites = JSON.parse(localStorage.getItem('bioemoc_favs') || '{}'); } catch(e) {}
 try { comments = JSON.parse(localStorage.getItem('bioemoc_comments') || '{}'); } catch(e) {}
+function save() { try { localStorage.setItem('bioemoc_favs', JSON.stringify(favorites)); } catch(e) {} try { localStorage.setItem('bioemoc_comments', JSON.stringify(comments)); } catch(e) {} }
 
-function save() {
-  try { localStorage.setItem('bioemoc_favs', JSON.stringify(favorites)); } catch(e) {}
-  try { localStorage.setItem('bioemoc_comments', JSON.stringify(comments)); } catch(e) {}
-}
-
-const searchIndex = RAW_DATA.map(e => ({
-  ...e,
-  _search: (e.t + ' ' + e.d + ' ' + e.c + ' ' + e.b).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
-}));
-
-function normalize(s) {
-  return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
-}
-
+const searchIndex = window.DATA.map(e => ({...e, _search: (e.t + ' ' + (e.d||'') + ' ' + (e.c||'')).toLowerCase()}));
+function normalize(s) { return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); }
 function applyFilters() {
   let q = normalize(searchQuery.trim());
   filteredEntries = searchIndex.filter(e => {
@@ -771,256 +365,74 @@ function applyFilters() {
   });
   renderList();
 }
-
+function esc(s) { return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 function renderList() {
   const container = document.getElementById('virtual-list');
-  const info = document.getElementById('results-info');
   const total = filteredEntries.length;
-  info.textContent = total + ' resultado' + (total !== 1 ? 's' : '');
-  if (total === 0) {
-    container.innerHTML = '<div class="empty-state"><div class="empty-icon">🔍</div><div class="empty-text">No se encontraron resultados.<br>Prueba con otro término.</div></div>';
-    return;
-  }
-  let html = '';
-  let lastLetter = '';
-  for (let i = 0; i < total; i++) {
-    const e = filteredEntries[i];
+  document.getElementById('results-info').textContent = total + ' resultado' + (total !== 1 ? 's' : '');
+  if (total === 0) { container.innerHTML = '<div class="empty-state">🔍 No se encontraron resultados.</div>'; return; }
+  let html = '', lastLetter = '';
+  for (let e of filteredEntries) {
     const letter = e.t[0].toUpperCase();
-    if (letter !== lastLetter) {
-      html += `<div class="letter-div">${letter}</div>`;
-      lastLetter = letter;
-    }
-    html += renderCard(e);
+    if (letter !== lastLetter) { html += `<div class="letter-div">${letter}</div>`; lastLetter = letter; }
+    const favDot = favorites[e.id] ? '<div class="fav-dot"></div>' : '';
+    const badge = e.e ? `<span class="etapa-badge e${e.e}">${e.e}ª Etapa</span>` : '';
+    html += `<div class="entry-card" onclick="openEntry(${e.id})"><div class="entry-card-body"><div class="entry-title">${esc(e.t)}</div>${badge}</div>${favDot}</div>`;
   }
   container.innerHTML = html;
-  document.getElementById('loading-msg').style.display = 'none';
   updateStats();
 }
-
-function renderCard(e) {
-  const isFav = favorites[e.id];
-  const etapaBadge = e.e ? `<span class="etapa-badge e${e.e}">${e.e}ª Etapa</span>` : '';
-  const rBadge = e.r ? '<span class="redirect-badge">→ Ver</span>' : '';
-  const favDot = isFav ? '<div class="fav-dot"></div>' : '';
-  const subtitle = e.d ? e.d.substring(0, 70).replace(/\n/g,' ') + (e.d.length > 70 ? '...' : '') : (e.v ? '→ Ver: ' + e.v.substring(0, 50) : '');
-  return `<div class="entry-card" onclick="openEntry(${e.id})">
-    <div class="entry-card-body">
-      <div class="entry-title">${esc(e.t)}</div>
-      ${subtitle ? `<div class="entry-subtitle">${esc(subtitle)}</div>` : ''}
-      ${(etapaBadge || rBadge) ? `<div class="entry-meta">${etapaBadge}${rBadge}</div>` : ''}
-    </div>
-    ${favDot}
-  </div>`;
-}
-
-function esc(s) {
-  return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-}
-
 function openEntry(id) {
-  const e = RAW_DATA[id];
-  currentEntryId = id;
+  const e = window.DATA[id]; currentEntryId = id;
   document.getElementById('detail-title').textContent = e.t;
-  const isFav = favorites[id];
-  const favBtn = document.getElementById('detail-fav-btn');
-  favBtn.classList.toggle('on', !!isFav);
+  document.getElementById('detail-fav-btn').classList.toggle('on', !!favorites[id]);
   let html = '';
-  if (e.e) {
-    html += `<div class="detail-meta"><span class="etapa-badge e${e.e}" style="font-size:12px;padding:5px 12px">${e.e}ª Etapa Embrionaria</span></div>`;
-  }
-  if (e.d) {
-    html += `<div class="detail-section">
-      <div class="detail-section-header">📖 Definición</div>
-      <div class="detail-section-body">${fmtTextWithRefs(e.d)}</div>
-    </div>`;
-  }
-  if (e.b) {
-    html += `<div class="detail-section">
-      <div class="detail-section-header" style="color:var(--tag-e1-t)">🧬 Sentido Biológico</div>
-      <div class="detail-section-body">${fmtTextWithRefs(e.b)}</div>
-    </div>`;
-  }
-  if (e.tc) {
-    html += `<div class="detail-section">
-      <div class="detail-section-header" style="color:var(--tag-e2-t)">🔬 Técnico</div>
-      <div class="detail-section-body">${fmtTextWithRefs(e.tc)}</div>
-    </div>`;
-  }
-  if (e.c) {
-    html += `<div class="detail-section">
-      <div class="detail-section-header" style="color:var(--tag-e3-t)">⚡ Conflicto</div>
-      <div class="detail-section-body">${fmtTextWithRefs(e.c)}</div>
-    </div>`;
-  }
-  if (e.v) {
-    html += `<div class="detail-section">
-      <div class="detail-section-header">🔗 Ver también</div>
-      <div class="detail-section-body">${renderVerLinks(e.v)}</div>
-    </div>`;
-  }
-  const existingComment = comments[id] || '';
-  html += `<div class="comment-section">
-    <div class="comment-header">📝 Notas personales</div>
-    <textarea class="comment-input" id="comment-input" placeholder="Agrega tus notas o reflexiones sobre esta entrada...">${esc(existingComment)}</textarea>
-    <button class="comment-save-btn" onclick="saveComment(${id})">Guardar nota</button>
-  </div>`;
+  if (e.e) html += `<div class="detail-meta"><span class="etapa-badge e${e.e}">${e.e}ª Etapa Embrionaria</span></div>`;
+  if (e.d) html += `<div class="detail-section"><div class="detail-section-header">📖 Definición</div><div class="detail-section-body">${esc(e.d).replace(/\n/g,'<br>')}</div></div>`;
+  if (e.b) html += `<div class="detail-section"><div class="detail-section-header">🧬 Sentido Biológico</div><div class="detail-section-body">${esc(e.b).replace(/\n/g,'<br>')}</div></div>`;
+  if (e.tc) html += `<div class="detail-section"><div class="detail-section-header">🔬 Técnico</div><div class="detail-section-body">${esc(e.tc).replace(/\n/g,'<br>')}</div></div>`;
+  if (e.c) html += `<div class="detail-section"><div class="detail-section-header">⚡ Conflicto</div><div class="detail-section-body">${esc(e.c).replace(/\n/g,'<br>')}</div></div>`;
+  if (e.v) html += `<div class="detail-section"><div class="detail-section-header">🔗 Ver también</div><div class="detail-section-body">${e.v.split(',').map(v => `<span class="ver-link" onclick="openEntryByTitle('${v.trim()}')">${esc(v.trim())}</span>`).join('')}</div></div>`;
+  const comment = comments[id] || '';
+  html += `<div class="comment-section"><div class="comment-header">📝 Notas personales</div><textarea class="comment-input" id="comment-input" placeholder="Agrega tus notas...">${esc(comment)}</textarea><button class="comment-save-btn" onclick="saveComment(${id})">Guardar nota</button></div>`;
   document.getElementById('detail-body').innerHTML = html;
   document.getElementById('detail-view').classList.add('open');
-  document.getElementById('detail-body').scrollTop = 0;
 }
-
-function fmtTextWithRefs(t) {
-  let text = (t||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g,'<br>');
-  text = text.replace(/"([^"]+)"/g,'<em>"$1"</em>');
-  text = text.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
-  // Procesar referencias numéricas
-  text = text.replace(/(?:\[(\d+)\]|\((\d+)\)|(?<!\w)(\d+)(?![a-z]))/g, (match, p1, p2, p3) => {
-    const num = p1 || p2 || p3;
-    if (num && parseInt(num) > 0 && parseInt(num) < 1000) {
-      return `<span class="ref-link" data-ref="${num}" onclick="showRef('${num}')">[${num}]</span>`;
-    }
-    return match;
-  });
-  // Procesar vínculos a otros términos (palabras en mayúsculas que podrían ser entradas)
-  const terms = RAW_DATA.map(t => t.t).filter(t => t && t.length > 2);
-  const sortedTerms = terms.sort((a,b) => b.length - a.length);
-  for (const term of sortedTerms) {
-    const regex = new RegExp(`\\b(${term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})\\b`, 'g');
-    text = text.replace(regex, (match) => {
-      const found = searchIndex.find(e => e.t === match);
-      if (found && found.id !== currentEntryId) {
-        return `<span class="ver-link" onclick="openEntry(${found.id})">${match}</span>`;
-      }
-      return match;
-    });
-  }
-  return text;
-}
-
-function renderVerLinks(ver) {
-  const items = ver.split(/[/,]/).map(s => s.trim()).filter(Boolean);
-  return items.map(item => {
-    const found = searchIndex.find(e => e.t === item.toUpperCase() || e.t === item);
-    if (found) {
-      return `<span class="ver-link" onclick="openEntry(${found.id})">${esc(item)}</span>`;
-    }
-    return `<span class="ver-link" style="opacity:0.5;cursor:default">${esc(item)}</span>`;
-  }).join('');
-}
-
-function fmtText(t) {
-  return (t||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g,'<br>').replace(/"([^"]+)"/g,'<em>"$1"</em>');
-}
-
-function closeDetail() {
-  document.getElementById('detail-view').classList.remove('open');
-  currentEntryId = null;
-  renderList();
-}
-
-function toggleFav() {
-  if (currentEntryId === null) return;
-  if (favorites[currentEntryId]) {
-    delete favorites[currentEntryId];
-  } else {
-    favorites[currentEntryId] = true;
-  }
-  save();
-  const isFav = favorites[currentEntryId];
-  document.getElementById('detail-fav-btn').classList.toggle('on', !!isFav);
-  updateStats();
-}
-
-function saveComment(id) {
-  const val = document.getElementById('comment-input').value.trim();
-  if (val) {
-    comments[id] = val;
-  } else {
-    delete comments[id];
-  }
-  save();
-  updateStats();
-  const btn = document.querySelector('.comment-save-btn');
-  btn.textContent = '✓ Guardado';
-  btn.style.color = '#50c478';
-  setTimeout(() => { btn.textContent = 'Guardar nota'; btn.style.color = ''; }, 1500);
-}
-
-function onSearch(val) {
-  searchQuery = val;
-  document.getElementById('search-clear').classList.toggle('vis', !!val);
-  applyFilters();
-}
-
-function clearSearch() {
-  document.getElementById('search-input').value = '';
-  searchQuery = '';
-  document.getElementById('search-clear').classList.remove('vis');
-  applyFilters();
-}
-
-function toggleFilters() {
-  filtersOpen = !filtersOpen;
-  document.getElementById('filters-bar').classList.toggle('open', filtersOpen);
-  document.getElementById('filter-toggle-btn').classList.toggle('active', filtersOpen);
-}
-
+function openEntryByTitle(title) { const found = window.DATA.find(e => e.t === title); if (found) openEntry(found.id); }
+function closeDetail() { document.getElementById('detail-view').classList.remove('open'); renderList(); }
+function toggleFav() { if (currentEntryId===null) return; favorites[currentEntryId] ? delete favorites[currentEntryId] : favorites[currentEntryId]=true; save(); document.getElementById('detail-fav-btn').classList.toggle('on', !!favorites[currentEntryId]); updateStats(); }
+function saveComment(id) { const val = document.getElementById('comment-input').value.trim(); val ? comments[id]=val : delete comments[id]; save(); updateStats(); alert('Nota guardada'); }
+function onSearch(val) { searchQuery = val; document.getElementById('search-clear').classList.toggle('vis', !!val); applyFilters(); }
+function clearSearch() { document.getElementById('search-input').value = ''; searchQuery = ''; applyFilters(); }
+function toggleFilters() { document.getElementById('filters-bar').classList.toggle('open'); }
 function toggleFilter(f) {
-  const chip = document.getElementById('chip-' + f);
-  if (activeFilters.has(f)) {
-    activeFilters.delete(f);
-    chip.classList.remove('on', 'on-' + f, 'on-fav', 'on-e1', 'on-e2', 'on-e3', 'on-e4', 'on-e5');
-  } else {
-    if (f.startsWith('e')) {
-      ['e1','e2','e3','e4','e5'].forEach(ef => {
-        if (ef !== f && activeFilters.has(ef)) {
-          activeFilters.delete(ef);
-          const c = document.getElementById('chip-' + ef);
-          c.classList.remove('on', 'on-' + ef);
-        }
-      });
-    }
-    activeFilters.add(f);
-    chip.classList.add('on-' + f);
-  }
+  const chip = document.getElementById('chip-'+f);
+  if (activeFilters.has(f)) activeFilters.delete(f);
+  else { if (f.startsWith('e')) ['e1','e2','e3','e4','e5'].forEach(ef => activeFilters.delete(ef)); activeFilters.add(f); }
   applyFilters();
+  document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('on-fav','on-e1','on-e2','on-e3','on-e4','on-e5'));
+  if (activeFilters.has('fav')) chip.classList.add('on-fav');
+  if (activeFilters.has('e1')) chip.classList.add('on-e1');
+  if (activeFilters.has('e2')) chip.classList.add('on-e2');
+  if (activeFilters.has('e3')) chip.classList.add('on-e3');
+  if (activeFilters.has('e4')) chip.classList.add('on-e4');
+  if (activeFilters.has('e5')) chip.classList.add('on-e5');
 }
-
 function openMenu() { document.getElementById('menu-panel').classList.add('open'); updateStats(); }
 function closeMenu() { document.getElementById('menu-panel').classList.remove('open'); }
 function switchTab(tab) {
-  currentTab = tab;
-  const tabs = ['about', 'custom', 'author', 'prologue'];
-  document.querySelectorAll('.menu-tab').forEach((el, i) => {
-    el.classList.toggle('active', tabs[i] === tab);
-  });
-  document.querySelectorAll('.menu-content').forEach(el => el.classList.remove('active'));
-  document.getElementById('tab-' + tab).classList.add('active');
+  const tabs = ['about','custom','author']; document.querySelectorAll('.menu-tab').forEach((el,i)=>el.classList.toggle('active',tabs[i]===tab));
+  document.querySelectorAll('.menu-content').forEach(el=>el.classList.remove('active'));
+  document.getElementById('tab-'+tab).classList.add('active');
 }
-
-function updateStats() {
-  const favCount = Object.keys(favorites).length;
-  const commentCount = Object.keys(comments).length;
-  document.getElementById('stat-fav').textContent = favCount;
-  document.getElementById('stat-comments').textContent = commentCount;
-  document.getElementById('stat-total').textContent = RAW_DATA.length;
-}
-
-window.addEventListener('popstate', () => {
-  if (document.getElementById('menu-panel').classList.contains('open')) closeMenu();
-  else if (document.getElementById('detail-view').classList.contains('open')) closeDetail();
-  else if (document.getElementById('ref-modal').classList.contains('open')) closeModal();
-});
-
-let touchStartX = 0;
-document.getElementById('detail-view').addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
-document.getElementById('detail-view').addEventListener('touchend', e => {
-  const dx = e.changedTouches[0].clientX - touchStartX;
-  if (dx > 80 && touchStartX < 60) closeDetail();
-}, { passive: true });
-
+function setTheme(theme) { document.documentElement.setAttribute('data-theme', theme); localStorage.setItem('bioemoc_theme', theme); document.querySelectorAll('.theme-btn').forEach(btn=>btn.classList.toggle('active',btn.dataset.theme===theme)); }
+function setFontSize(size) { document.documentElement.setAttribute('data-font-size', size); localStorage.setItem('bioemoc_fontsize', size); document.querySelectorAll('.font-btn').forEach(btn=>btn.classList.toggle('active',btn.dataset.size===size)); }
+function updateStats() { document.getElementById('stat-fav').textContent = Object.keys(favorites).length; document.getElementById('stat-comments').textContent = Object.keys(comments).length; document.getElementById('stat-total').textContent = window.DATA.length; }
+function closeModal() { document.getElementById('ref-modal').classList.remove('open'); }
+function showRef(num) { document.getElementById('modal-text').innerHTML = `Referencia ${num}. Ver bibliografía del diccionario original.`; document.getElementById('ref-modal').classList.add('open'); }
+const savedTheme = localStorage.getItem('bioemoc_theme'); if (savedTheme && savedTheme !== 'light') setTheme(savedTheme);
+const savedFont = localStorage.getItem('bioemoc_fontsize'); if (savedFont && savedFont !== 'medium') setFontSize(savedFont);
 applyFilters();
-updateStats();
 </script>
 </body>
 </html>
