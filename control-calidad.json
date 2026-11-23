@@ -1,0 +1,5691 @@
+{
+  "source": {
+    "file": "Diccionario-BioEmocional-2016.pdf",
+    "pages": 721,
+    "sha256": "b4c3fb262667b67f71e3e7494bf76642c3cca1a23f350aa79c2cf279f446630e",
+    "dictionary_page_range": [
+      15,
+      667
+    ],
+    "references_page_range": [
+      673,
+      720
+    ]
+  },
+  "repository": {
+    "url": "https://github.com/rodrigofranzetti-beep/DiccionarioBio",
+    "commit": "b0cd6a9777a66c8113b00de39f5c876dbe9cf664",
+    "read_only": true,
+    "deployment": "https://diccionario-bio.vercel.app/"
+  },
+  "counts": {
+    "source_headings": 2097,
+    "unique_entries": 2096,
+    "full_entries": 1216,
+    "redirect_entries": 880,
+    "cross_references": 3273,
+    "resolved_cross_references": 3199,
+    "unresolved_cross_references": 66,
+    "source_self_references": 8,
+    "bibliography_notes": 2065,
+    "entry_bibliography_links": 2530,
+    "missing_bibliography_links": 3
+  },
+  "completeness_checks": {
+    "header_count": 2097,
+    "unique_entries": 2096,
+    "unassigned_source_lines": 0,
+    "heading_misses_independent_extraction": [],
+    "redirect_cycles": [
+      [
+        "ARTROSIS de RODILLA"
+      ],
+      [
+        "EDEMA MACULAR"
+      ],
+      [
+        "HEMORRAGIA SUBARACNOIDEA"
+      ]
+    ]
+  },
+  "deduplication": [
+    {
+      "title": "PARESTESIA",
+      "pages": [
+        510,
+        511
+      ],
+      "reason": "Mismo título y misma remisión a ADORMECIMIENTO en el PDF."
+    }
+  ],
+  "unresolved_references": [
+    {
+      "entry_id": 7,
+      "entry_title": "ABRIKOSSOF, Tumor",
+      "source_pages": [
+        17
+      ],
+      "label": "MIOBLASTOMA",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 26,
+      "entry_title": "ACIDOSIS",
+      "source_pages": [
+        24
+      ],
+      "label": "REUMA MUSCULAR",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 54,
+      "entry_title": "ADORMECIMIENTO",
+      "source_pages": [
+        34,
+        35
+      ],
+      "label": "REUMA MUSCULAR",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 128,
+      "entry_title": "ANEMIA del PERÚ",
+      "source_pages": [
+        66
+      ],
+      "label": "BARTONELOSIS",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 208,
+      "entry_title": "ARTROSIS de RODILLA",
+      "source_pages": [
+        92
+      ],
+      "label": "RODILLA, ARTROSIS",
+      "target_id": null,
+      "target_title": null,
+      "status": "self_reference_in_source",
+      "source_target_id": 208,
+      "source_target_title": "ARTROSIS de RODILLA"
+    },
+    {
+      "entry_id": 241,
+      "entry_title": "AVULSIÓN DENTAL.",
+      "source_pages": [
+        103
+      ],
+      "label": "DOLOR de MUELAS",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 262,
+      "entry_title": "BEST, ENFERMEDAD",
+      "source_pages": [
+        109
+      ],
+      "label": "DISTROFIA MACULAR VITELIFORME",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 267,
+      "entry_title": "BILIAR, Red",
+      "source_pages": [
+        110
+      ],
+      "label": "BILIRRUBINA",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 282,
+      "entry_title": "BOLA EN LA GARGANTA",
+      "source_pages": [
+        113
+      ],
+      "label": "SENSACIÖN DE BOLA EN LA GARGANTA",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 358,
+      "entry_title": "CÁNCER de PULMÓN",
+      "source_pages": [
+        145,
+        146
+      ],
+      "label": "CÁNCER de PULMÓN",
+      "target_id": null,
+      "target_title": null,
+      "status": "self_reference_in_source",
+      "source_target_id": 358,
+      "source_target_title": "CÁNCER de PULMÓN"
+    },
+    {
+      "entry_id": 387,
+      "entry_title": "CARRIÓN, ENFERMEDAD de",
+      "source_pages": [
+        156
+      ],
+      "label": "BARTONELOSIS",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 410,
+      "entry_title": "CERVIZ UTERINA (Cérvix Uterina)",
+      "source_pages": [
+        164
+      ],
+      "label": "PÓLIPOS en el CUELLO del ÚTERO",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 423,
+      "entry_title": "CICLO ANOVULATORIO",
+      "source_pages": [
+        168
+      ],
+      "label": "INSUFICIENCIA OVÁRICA",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 423,
+      "entry_title": "CICLO ANOVULATORIO",
+      "source_pages": [
+        168
+      ],
+      "label": "TRASTORNOS HORMONALES de la MUJER",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 432,
+      "entry_title": "CIRCULACIÓN SANGUÍNEA",
+      "source_pages": [
+        170
+      ],
+      "label": "SISTEMA CIRCULATORIO",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 442,
+      "entry_title": "CLIMATERIO PRECOZ",
+      "source_pages": [
+        174
+      ],
+      "label": "TRASTORNOS del CLIMATERIO",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 479,
+      "entry_title": "COLUMNA VERTEBRAL",
+      "source_pages": [
+        186,
+        187
+      ],
+      "label": "RAQUIS Dorsal y lumbar",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 492,
+      "entry_title": "CONDUCTO BILIAR INTRAHEPÁTICO Y EXTRAHEPÁTICO",
+      "source_pages": [
+        191
+      ],
+      "label": "BILIRRUBINA",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 551,
+      "entry_title": "CROHN, ENFERMEDAD de",
+      "source_pages": [
+        208
+      ],
+      "label": "INTESTINO",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 640,
+      "entry_title": "DISFAGIA",
+      "source_pages": [
+        240
+      ],
+      "label": "CARDIASTENOSIS",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 673,
+      "entry_title": "DOLORES MENSTRUALES",
+      "source_pages": [
+        249
+      ],
+      "label": "SÍNDROME PREMENSTRUAL",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 674,
+      "entry_title": "DOLOR REUMATOLÓGICO",
+      "source_pages": [
+        249
+      ],
+      "label": "REUMA MUSCULAR",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 697,
+      "entry_title": "EDEMA MACULAR",
+      "source_pages": [
+        257
+      ],
+      "label": "EDEMA MACULAR",
+      "target_id": null,
+      "target_title": null,
+      "status": "self_reference_in_source",
+      "source_target_id": 697,
+      "source_target_title": "EDEMA MACULAR"
+    },
+    {
+      "entry_id": 733,
+      "entry_title": "ENFERMEDAD de BEST",
+      "source_pages": [
+        265
+      ],
+      "label": "DISTROFIA MACULAR VITELIFORME",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 736,
+      "entry_title": "ENFERMEDAD de CARRIÓN.",
+      "source_pages": [
+        265
+      ],
+      "label": "BARTONELOSIS",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 739,
+      "entry_title": "ENFERMEDAD de DUPUYTREN",
+      "source_pages": [
+        266
+      ],
+      "label": "DEDOS",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 754,
+      "entry_title": "ENFERMEDAD de STARGARDT",
+      "source_pages": [
+        268
+      ],
+      "label": "DISTROFIA MACULAR VITELIFORME",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 800,
+      "entry_title": "EPITELIOMA ESPINOCELULAR",
+      "source_pages": [
+        279
+      ],
+      "label": "BASILOMA (en la mucosa)",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 809,
+      "entry_title": "ERITROCITOSIS",
+      "source_pages": [
+        281
+      ],
+      "label": "HIPERGLOBULEMIA",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 836,
+      "entry_title": "ESGUINCES",
+      "source_pages": [
+        289
+      ],
+      "label": "ESGUINCES",
+      "target_id": null,
+      "target_title": null,
+      "status": "self_reference_in_source",
+      "source_target_id": 836,
+      "source_target_title": "ESGUINCES"
+    },
+    {
+      "entry_id": 934,
+      "entry_title": "FÍSTULA ANAL",
+      "source_pages": [
+        318,
+        319
+      ],
+      "label": "FÍSTULAS",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 978,
+      "entry_title": "GENU VALGO",
+      "source_pages": [
+        332
+      ],
+      "label": "DUELO",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 978,
+      "entry_title": "GENU VALGO",
+      "source_pages": [
+        332
+      ],
+      "label": "TRANSGENERACIONAL",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 979,
+      "entry_title": "GENU VARO",
+      "source_pages": [
+        332,
+        333
+      ],
+      "label": "DUELO",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 979,
+      "entry_title": "GENU VARO",
+      "source_pages": [
+        332,
+        333
+      ],
+      "label": "TRANSGENERACIONAL",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 1008,
+      "entry_title": "GLENOHUMERAL",
+      "source_pages": [
+        340
+      ],
+      "label": "ARTICULACIÓN DEL HOMBRO",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 1013,
+      "entry_title": "GLÓBULOS ROJOS",
+      "source_pages": [
+        341
+      ],
+      "label": "GLÓBULOS ROJOS",
+      "target_id": null,
+      "target_title": null,
+      "status": "self_reference_in_source",
+      "source_target_id": 1013,
+      "source_target_title": "GLÓBULOS ROJOS"
+    },
+    {
+      "entry_id": 1058,
+      "entry_title": "HEMORRAGIA SUBARACNOIDEA",
+      "source_pages": [
+        354
+      ],
+      "label": "HEMORRAGIA SUBARACNOIDEA",
+      "target_id": null,
+      "target_title": null,
+      "status": "self_reference_in_source",
+      "source_target_id": 1058,
+      "source_target_title": "HEMORRAGIA SUBARACNOIDEA"
+    },
+    {
+      "entry_id": 1064,
+      "entry_title": "HERNIA de la LÍNEA BLANCA",
+      "source_pages": [
+        357
+      ],
+      "label": "HERNIA EPIGÁSTRICA",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 1080,
+      "entry_title": "HÍGADO",
+      "source_pages": [
+        362
+      ],
+      "label": "CONDUCTOS BILIARES",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 1100,
+      "entry_title": "HIPEROSTOSIS DIFUSA IDIOPÁTICA.",
+      "source_pages": [
+        368
+      ],
+      "label": "FORESTIER, ENFERMEDAD de",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 1130,
+      "entry_title": "HOMBROS",
+      "source_pages": [
+        379,
+        380
+      ],
+      "label": "ARTICULACIÓN del HOMBRO",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 1130,
+      "entry_title": "HOMBROS",
+      "source_pages": [
+        379,
+        380
+      ],
+      "label": "ENDURECIMIENTO del HOMBRO",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 1130,
+      "entry_title": "HOMBROS",
+      "source_pages": [
+        379,
+        380
+      ],
+      "label": "SÍNDROME de HOMBRO-BRAZO",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 1169,
+      "entry_title": "INFECCIÓN RESPIRATORIA ALTA",
+      "source_pages": [
+        392
+      ],
+      "label": "RINOFARINGITIS",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 1268,
+      "entry_title": "LITIASIS BILIAR",
+      "source_pages": [
+        420
+      ],
+      "label": "LITIASIS",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 1269,
+      "entry_title": "LITIASIS RENAL",
+      "source_pages": [
+        420
+      ],
+      "label": "LITIASIS",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 1333,
+      "entry_title": "MEDULOBLASTOMA",
+      "source_pages": [
+        442
+      ],
+      "label": "ENCÉFALO",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 1350,
+      "entry_title": "MENSTRUACIÓN",
+      "source_pages": [
+        447
+      ],
+      "label": "SÍNDROME PREMENSTRUAL",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 1393,
+      "entry_title": "MIOMA MIOBLÁSTICO",
+      "source_pages": [
+        458
+      ],
+      "label": "MIOBLASTOMA",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 1403,
+      "entry_title": "MONONUCLEOSIS INFECCIOSA",
+      "source_pages": [
+        460,
+        461
+      ],
+      "label": "MONONUCLEOSIS INFECCIOSA",
+      "target_id": null,
+      "target_title": null,
+      "status": "self_reference_in_source",
+      "source_target_id": 1403,
+      "source_target_title": "MONONUCLEOSIS INFECCIOSA"
+    },
+    {
+      "entry_id": 1407,
+      "entry_title": "MORNING GLORY, SÍNDROME de",
+      "source_pages": [
+        461
+      ],
+      "label": "COLOBOMA ESTÁTICO de PAPILA",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 1472,
+      "entry_title": "NIÑO DE REEMPLAZO (Fantasma horizontal)",
+      "source_pages": [
+        481
+      ],
+      "label": "FIESTAMANÍA (La Cripta)",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 1501,
+      "entry_title": "OMOHIOIDEO",
+      "source_pages": [
+        492
+      ],
+      "label": "ESTERNOHIOIDEO",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 1660,
+      "entry_title": "POLIARTRITIS REUMATOIDE",
+      "source_pages": [
+        538,
+        539
+      ],
+      "label": "REUMA MUSCULAR",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 1668,
+      "entry_title": "PÓLIPOS",
+      "source_pages": [
+        540
+      ],
+      "label": "WOAKES, PÓLIPOS",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 1674,
+      "entry_title": "POLIRADICULONEURITIS AGUDA",
+      "source_pages": [
+        541
+      ],
+      "label": "GUILLAIN BARRÉ (SÍNDROME)",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 1685,
+      "entry_title": "PROBLEMAS OCULARES",
+      "source_pages": [
+        544
+      ],
+      "label": "RETINOPATÍA",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 1744,
+      "entry_title": "RED BILIAR",
+      "source_pages": [
+        562
+      ],
+      "label": "BILIRRUBINA",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 1759,
+      "entry_title": "RETINITIS",
+      "source_pages": [
+        565
+      ],
+      "label": "RETINITIS MACULAR",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 1820,
+      "entry_title": "SEPSIS BILIAR",
+      "source_pages": [
+        583
+      ],
+      "label": "COLANGITIS",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 1854,
+      "entry_title": "SÍNDROME de MORNING GLORY",
+      "source_pages": [
+        590
+      ],
+      "label": "COLOBOMA ESTÁTICO de PAPILA",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 1873,
+      "entry_title": "SISTEMA LÍMBICO",
+      "source_pages": [
+        594
+      ],
+      "label": "LÍMBICO, SISTEMA",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 1876,
+      "entry_title": "SISTEMA NERVIOSOS",
+      "source_pages": [
+        595
+      ],
+      "label": "NERVIOS",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 1883,
+      "entry_title": "SOFOCOS",
+      "source_pages": [
+        597
+      ],
+      "label": "CALOR",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 1892,
+      "entry_title": "STARGARDT, ENFERMEDAD de",
+      "source_pages": [
+        598
+      ],
+      "label": "DISTROFIA MACULAR VITELIFORME",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 1900,
+      "entry_title": "SUDORACIÓN",
+      "source_pages": [
+        600
+      ],
+      "label": "HIPERHIDROSIS",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 1958,
+      "entry_title": "TORTÍCOLIS",
+      "source_pages": [
+        619,
+        620
+      ],
+      "label": "ESTERNOCLEIDOMASTOIDEO",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 1962,
+      "entry_title": "TOXICIDAD",
+      "source_pages": [
+        621
+      ],
+      "label": "INTOXICACIÓN ALIMENTARIA",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 1967,
+      "entry_title": "TRANSPIRACIÓN",
+      "source_pages": [
+        622
+      ],
+      "label": "HIPERHIDROSIS",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 2024,
+      "entry_title": "URÉTER",
+      "source_pages": [
+        638
+      ],
+      "label": "LITIASIS",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 2043,
+      "entry_title": "VAGOTONÍA",
+      "source_pages": [
+        644
+      ],
+      "label": "VAGOTONÍA",
+      "target_id": null,
+      "target_title": null,
+      "status": "self_reference_in_source",
+      "source_target_id": 2043,
+      "source_target_title": "VAGOTONÍA"
+    },
+    {
+      "entry_id": 2044,
+      "entry_title": "VAINA DE MIELINA",
+      "source_pages": [
+        645
+      ],
+      "label": "NERVIOS",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    },
+    {
+      "entry_id": 2081,
+      "entry_title": "VISTA, PROBLEMAS",
+      "source_pages": [
+        658
+      ],
+      "label": "RETINOPATÍA",
+      "target_id": null,
+      "target_title": null,
+      "status": "unresolved_source_reference"
+    }
+  ],
+  "bibliography_missing_in_source": [
+    {
+      "entry_id": 667,
+      "entry_title": "DOLOR",
+      "key": "D:241",
+      "status": "not_found_in_source_appendix"
+    },
+    {
+      "entry_id": 999,
+      "entry_title": "GLÁNDULAS SALIVALES",
+      "key": "G:127",
+      "status": "not_found_in_source_appendix"
+    },
+    {
+      "entry_id": 1275,
+      "entry_title": "LORDOSIS",
+      "key": "L:427",
+      "status": "not_found_in_source_appendix"
+    }
+  ],
+  "resolved_title_variants": [
+    {
+      "entry_id": 3,
+      "entry_title": "ABDOMEN",
+      "source_pages": [
+        15,
+        16
+      ],
+      "label": "ABDOMINAL RECTO",
+      "target_id": 4,
+      "target_title": "ABDOMINALES, MÚSCULOS",
+      "status": "resolved",
+      "resolution": "explicit_subtopic_in_source"
+    },
+    {
+      "entry_id": 3,
+      "entry_title": "ABDOMEN",
+      "source_pages": [
+        15,
+        16
+      ],
+      "label": "ABDOMINAL TRANSVERSO",
+      "target_id": 4,
+      "target_title": "ABDOMINALES, MÚSCULOS",
+      "status": "resolved",
+      "resolution": "explicit_subtopic_in_source"
+    },
+    {
+      "entry_id": 9,
+      "entry_title": "ABSCESO ANAL",
+      "source_pages": [
+        18
+      ],
+      "label": "GLÓBULSO BLANCOS",
+      "target_id": 1012,
+      "target_title": "GLÓBULOS BLANCOS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 12,
+      "entry_title": "ABUSO",
+      "source_pages": [
+        19
+      ],
+      "label": "ADDICCIONES",
+      "target_id": 51,
+      "target_title": "ADICCIONES",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 13,
+      "entry_title": "ACALASIA ESOFÁGICA",
+      "source_pages": [
+        19,
+        20
+      ],
+      "label": "ESÓFAGO",
+      "target_id": 839,
+      "target_title": "ESÓFAGO en GENERAL",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 19,
+      "entry_title": "ACCIDENTE CEREBRO-VASCULAR",
+      "source_pages": [
+        21
+      ],
+      "label": "EMBÓLIAS",
+      "target_id": 708,
+      "target_title": "EMBOLIA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 23,
+      "entry_title": "ACETÁBULO",
+      "source_pages": [
+        23
+      ],
+      "label": "CADERA",
+      "target_id": 315,
+      "target_title": "CADERA, ARTICULACIÓN",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 23,
+      "entry_title": "ACETÁBULO",
+      "source_pages": [
+        23
+      ],
+      "label": "FÉMUR, CABEZA",
+      "target_id": 912,
+      "target_title": "FÉMUR, CABEZA y GENERAL",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 25,
+      "entry_title": "ACIDEZ DE ESTÓMAGO",
+      "source_pages": [
+        23,
+        24
+      ],
+      "label": "HERNIA de HIATO O DIAFRAGMÁTICA (Acidez de estómago)",
+      "target_id": 1063,
+      "target_title": "HERNIA de HIATO O DIAFRAGMÁTICA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 27,
+      "entry_title": "ACNÉ",
+      "source_pages": [
+        24,
+        25
+      ],
+      "label": "ROSÁCEA UNI o BILATERAL",
+      "target_id": 1782,
+      "target_title": "ROSÁCEA UNILATERAL O BILATERAL",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 28,
+      "entry_title": "ACNÉ DE LA PUBERTAD",
+      "source_pages": [
+        25,
+        26
+      ],
+      "label": "ROSÁCEA UNI o BILATERAL",
+      "target_id": 1782,
+      "target_title": "ROSÁCEA UNILATERAL O BILATERAL",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 31,
+      "entry_title": "ACRODERMATITIS",
+      "source_pages": [
+        26,
+        27
+      ],
+      "label": "PIEL. La dermis",
+      "target_id": 1627,
+      "target_title": "PIEL, DERMIS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 33,
+      "entry_title": "ACROMEGALIA",
+      "source_pages": [
+        27
+      ],
+      "label": "ADENOORTICOTROPA",
+      "target_id": 56,
+      "target_title": "ADRENOCORTICOTROPA (ACTH)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 34,
+      "entry_title": "ACROMION",
+      "source_pages": [
+        28
+      ],
+      "label": "HOMBRO",
+      "target_id": 1130,
+      "target_title": "HOMBROS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 35,
+      "entry_title": "ACROQUERATOSIS",
+      "source_pages": [
+        28
+      ],
+      "label": "PIEL. La dermis",
+      "target_id": 1627,
+      "target_title": "PIEL, DERMIS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 37,
+      "entry_title": "ACTINOMICOSIS",
+      "source_pages": [
+        29
+      ],
+      "label": "ABSCESOS",
+      "target_id": 8,
+      "target_title": "ABSCESO",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 60,
+      "entry_title": "AFECCIONES GÁSTRICAS",
+      "source_pages": [
+        37
+      ],
+      "label": "ESTÓMAGO",
+      "target_id": 870,
+      "target_title": "ESTÓMAGO, GENERAL",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 62,
+      "entry_title": "AFTAS",
+      "source_pages": [
+        38
+      ],
+      "label": "ÚLCERAS",
+      "target_id": 2012,
+      "target_title": "ÚLCERA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 66,
+      "entry_title": "AGORAFOBIA",
+      "source_pages": [
+        39,
+        40
+      ],
+      "label": "ANSIEDAD",
+      "target_id": 151,
+      "target_title": "ANSIEDAD Angustia",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 73,
+      "entry_title": "AHOGOS",
+      "source_pages": [
+        42
+      ],
+      "label": "ANSIEDAD",
+      "target_id": 151,
+      "target_title": "ANSIEDAD Angustia",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 75,
+      "entry_title": "ALBUMINURIA",
+      "source_pages": [
+        43
+      ],
+      "label": "PARÉNQUIMA RENAL",
+      "target_id": 1564,
+      "target_title": "PARÉNQUIMA RENAL (RIÑÓN)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 106,
+      "entry_title": "ALOPECIA",
+      "source_pages": [
+        56,
+        57
+      ],
+      "label": "CABELLOS",
+      "target_id": 311,
+      "target_title": "CABELLO",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 109,
+      "entry_title": "ALVEOLOS PULMONARES",
+      "source_pages": [
+        58
+      ],
+      "label": "SISTEMA RESPIRATORIO (Alveolos)",
+      "target_id": 1877,
+      "target_title": "SISTEMA RESPIRATORIO.",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 113,
+      "entry_title": "AMENORREA",
+      "source_pages": [
+        60,
+        61
+      ],
+      "label": "HIOPÓFISIS",
+      "target_id": 1118,
+      "target_title": "HIPÓFISIS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 113,
+      "entry_title": "AMENORREA",
+      "source_pages": [
+        60,
+        61
+      ],
+      "label": "OVARIOS",
+      "target_id": 1531,
+      "target_title": "OVARIO",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 135,
+      "entry_title": "ANEURISMA",
+      "source_pages": [
+        68
+      ],
+      "label": "LEBER, ANEURISMA",
+      "target_id": 1232,
+      "target_title": "LEBER, ANEURISMA de",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 136,
+      "entry_title": "ANEURISMA de LEBER",
+      "source_pages": [
+        68
+      ],
+      "label": "LEBER, ANEURISMA",
+      "target_id": 1232,
+      "target_title": "LEBER, ANEURISMA de",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 152,
+      "entry_title": "ANTEBRAZO",
+      "source_pages": [
+        74
+      ],
+      "label": "EXTREMIDAD SUPERIOR",
+      "target_id": 894,
+      "target_title": "EXTREMIDADES SUPERIORES",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 153,
+      "entry_title": "ANTHRAX",
+      "source_pages": [
+        74
+      ],
+      "label": "CARBUNCO",
+      "target_id": 375,
+      "target_title": "CARBUNCO (antrax)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 154,
+      "entry_title": "ANTRAX",
+      "source_pages": [
+        74
+      ],
+      "label": "FORÚNCULO",
+      "target_id": 946,
+      "target_title": "FORÚNCULOS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 164,
+      "entry_title": "APETITO",
+      "source_pages": [
+        77,
+        78
+      ],
+      "label": "ANOREXIA NERVIOSA",
+      "target_id": 147,
+      "target_title": "ANOREXIA",
+      "status": "resolved",
+      "resolution": "explicit_subtopic_in_source"
+    },
+    {
+      "entry_id": 167,
+      "entry_title": "APLASTAMIENTO",
+      "source_pages": [
+        79
+      ],
+      "label": "ACCIDENTE DEPORTIVO",
+      "target_id": 21,
+      "target_title": "ACCIDENTE DEPORTIVO / DOMÉSTICO",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 167,
+      "entry_title": "APLASTAMIENTO",
+      "source_pages": [
+        79
+      ],
+      "label": "DOMÉSTICO",
+      "target_id": 21,
+      "target_title": "ACCIDENTE DEPORTIVO / DOMÉSTICO",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 171,
+      "entry_title": "APÓFISIS PTERIGOIDES",
+      "source_pages": [
+        80
+      ],
+      "label": "CALOTA",
+      "target_id": 330,
+      "target_title": "CALOTA (Bóveda craneal)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 181,
+      "entry_title": "ARENILLAS",
+      "source_pages": [
+        83
+      ],
+      "label": "CÁLCULOS RENALES",
+      "target_id": 327,
+      "target_title": "CÁLCULOS RENALES, ARENILLAS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 191,
+      "entry_title": "ARTERIAS",
+      "source_pages": [
+        86,
+        87
+      ],
+      "label": "HIPOTENSIÓN",
+      "target_id": 1124,
+      "target_title": "HIPOTENSIÓN ARTERIAL",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 192,
+      "entry_title": "ARTERIAS CORONARIAS",
+      "source_pages": [
+        87,
+        88
+      ],
+      "label": "BRANQUICARDIA",
+      "target_id": 289,
+      "target_title": "BRADICARDIA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 211,
+      "entry_title": "ASFIXIA",
+      "source_pages": [
+        93
+      ],
+      "label": "ANSIEDAD",
+      "target_id": 151,
+      "target_title": "ANSIEDAD Angustia",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 217,
+      "entry_title": "ASTERIÓN",
+      "source_pages": [
+        95
+      ],
+      "label": "CALOTA",
+      "target_id": 330,
+      "target_title": "CALOTA (Bóveda craneal)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 225,
+      "entry_title": "ATEROSCLEROSIS",
+      "source_pages": [
+        97
+      ],
+      "label": "ARTERIOSCLEROSIS",
+      "target_id": 194,
+      "target_title": "ARTERIOESCLEROSIS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 233,
+      "entry_title": "ATROFIA ÓPTICA HEREDITARIA de LEBER",
+      "source_pages": [
+        100
+      ],
+      "label": "LEBER, ANEURISMA",
+      "target_id": 1232,
+      "target_title": "LEBER, ANEURISMA de",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 252,
+      "entry_title": "BASEDOW, Enfermedad de",
+      "source_pages": [
+        107
+      ],
+      "label": "BOCIO",
+      "target_id": 279,
+      "target_title": "BOCIO (Nódulos múltiples)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 253,
+      "entry_title": "BASIÓN",
+      "source_pages": [
+        107
+      ],
+      "label": "CALOTA",
+      "target_id": 330,
+      "target_title": "CALOTA (Bóveda craneal)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 259,
+      "entry_title": "BECHTEREW, Enfermedad de",
+      "source_pages": [
+        109
+      ],
+      "label": "ESPONDILITIS ANQUISOLANTE",
+      "target_id": 857,
+      "target_title": "ESPONDILITIS ANQUILOSANTE",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 264,
+      "entry_title": "BÍCEPS CRURAL",
+      "source_pages": [
+        110
+      ],
+      "label": "BÍCEPS FEMORAL",
+      "target_id": 265,
+      "target_title": "BÍCEPS FEMORAL O CRURAL",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 267,
+      "entry_title": "BILIAR, Red",
+      "source_pages": [
+        110
+      ],
+      "label": "CÁNCER de BESÍCULA BILIAR",
+      "target_id": 365,
+      "target_title": "CÁNCER de VESÍCULA BILIAR",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 271,
+      "entry_title": "BLEFARITIS",
+      "source_pages": [
+        110,
+        111
+      ],
+      "label": "PÁRPADOS",
+      "target_id": 1573,
+      "target_title": "PÁRPADO",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 277,
+      "entry_title": "BOCA",
+      "source_pages": [
+        112,
+        113
+      ],
+      "label": "ALIENTO",
+      "target_id": 103,
+      "target_title": "ALIENTO (mal)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 289,
+      "entry_title": "BRADICARDIA",
+      "source_pages": [
+        115
+      ],
+      "label": "ARRITMIAS",
+      "target_id": 183,
+      "target_title": "ARRITMIA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 293,
+      "entry_title": "BRAZO",
+      "source_pages": [
+        116,
+        117
+      ],
+      "label": "EXTREMIDAD SUPERIOR",
+      "target_id": 894,
+      "target_title": "EXTREMIDADES SUPERIORES",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 294,
+      "entry_title": "BREGMA",
+      "source_pages": [
+        117
+      ],
+      "label": "CALOTA",
+      "target_id": 330,
+      "target_title": "CALOTA (Bóveda craneal)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 300,
+      "entry_title": "BRONQUIOLITIS",
+      "source_pages": [
+        118
+      ],
+      "label": "BRONQUITIS",
+      "target_id": 302,
+      "target_title": "BRONQUITIS y BRONQUITIS CRÓNICA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 305,
+      "entry_title": "BULBO DUODENAL",
+      "source_pages": [
+        120
+      ],
+      "label": "DUODENO",
+      "target_id": 680,
+      "target_title": "DUODENO (Excepto bulbo)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 307,
+      "entry_title": "BUNIO",
+      "source_pages": [
+        121
+      ],
+      "label": "HALLUX VALGUS",
+      "target_id": 1038,
+      "target_title": "HALLUX VALGUS (JUANETES, CALLOS)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 313,
+      "entry_title": "CABEZA",
+      "source_pages": [
+        126
+      ],
+      "label": "CALOTA",
+      "target_id": 330,
+      "target_title": "CALOTA (Bóveda craneal)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 313,
+      "entry_title": "CABEZA",
+      "source_pages": [
+        126
+      ],
+      "label": "CARA",
+      "target_id": 374,
+      "target_title": "CARA (Parálisis facial).",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 313,
+      "entry_title": "CABEZA",
+      "source_pages": [
+        126
+      ],
+      "label": "MIGRAÑA",
+      "target_id": 1388,
+      "target_title": "MIGRAÑAS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 314,
+      "entry_title": "CABEZA DEL FÉMUR",
+      "source_pages": [
+        126
+      ],
+      "label": "FÉMUR CABEZA",
+      "target_id": 912,
+      "target_title": "FÉMUR, CABEZA y GENERAL",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 315,
+      "entry_title": "CADERA, ARTICULACIÓN",
+      "source_pages": [
+        126,
+        127
+      ],
+      "label": "FÉMUR, Cabeza",
+      "target_id": 912,
+      "target_title": "FÉMUR, CABEZA y GENERAL",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 326,
+      "entry_title": "CÁLCULOS en la VEJIGA URINARIA",
+      "source_pages": [
+        129,
+        130
+      ],
+      "label": "VEJIGA URINARIA",
+      "target_id": 2057,
+      "target_title": "VEJIGA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 329,
+      "entry_title": "CALLOS",
+      "source_pages": [
+        130
+      ],
+      "label": "HALLUX VALGUS",
+      "target_id": 1038,
+      "target_title": "HALLUX VALGUS (JUANETES, CALLOS)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 336,
+      "entry_title": "CANALES COLECTORES DEL RIÑÓN",
+      "source_pages": [
+        133
+      ],
+      "label": "RIÑÓN, CANALES COLECTORES",
+      "target_id": 1777,
+      "target_title": "RIÑÓN (El canal colector)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 344,
+      "entry_title": "CÁNCER de ESTÓMAGO",
+      "source_pages": [
+        137
+      ],
+      "label": "ESTÓMAGO",
+      "target_id": 870,
+      "target_title": "ESTÓMAGO, GENERAL",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 346,
+      "entry_title": "CÁNCER de HÍGADO",
+      "source_pages": [
+        138,
+        139
+      ],
+      "label": "CIRROSIS HEPÁTICA",
+      "target_id": 433,
+      "target_title": "CIRROSIS HEPÁTICA / CIRRITIS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 348,
+      "entry_title": "CÁNCER de INTESTINO",
+      "source_pages": [
+        139,
+        140
+      ],
+      "label": "ÍLEON",
+      "target_id": 1151,
+      "target_title": "ÍLEON (Intestino delgado inferior)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 348,
+      "entry_title": "CÁNCER de INTESTINO",
+      "source_pages": [
+        139,
+        140
+      ],
+      "label": "YEYUNO",
+      "target_id": 2091,
+      "target_title": "YEYUNO (intestino delgado superior)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 351,
+      "entry_title": "CÁNCER de MAMA",
+      "source_pages": [
+        141,
+        142
+      ],
+      "label": "MAMAS – TERMINACIONES NERVIOSAS",
+      "target_id": 1309,
+      "target_title": "MAMAS – TERMINACIONES NERVIOSAS DEL PECHO",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 360,
+      "entry_title": "CÁNCER de RIÑÓN",
+      "source_pages": [
+        146,
+        147
+      ],
+      "label": "PARÉNQUIMA RENAL",
+      "target_id": 1564,
+      "target_title": "PARÉNQUIMA RENAL (RIÑÓN)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 360,
+      "entry_title": "CÁNCER de RIÑÓN",
+      "source_pages": [
+        146,
+        147
+      ],
+      "label": "RIÑÓN, CANALES COLECTORES",
+      "target_id": 1777,
+      "target_title": "RIÑÓN (El canal colector)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 361,
+      "entry_title": "CANCER de TESTÍCULOS",
+      "source_pages": [
+        147,
+        148
+      ],
+      "label": "HIDROCELE",
+      "target_id": 1077,
+      "target_title": "HIDROCELE TESTICULAR",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 361,
+      "entry_title": "CANCER de TESTÍCULOS",
+      "source_pages": [
+        147,
+        148
+      ],
+      "label": "TESTÍCULO",
+      "target_id": 1928,
+      "target_title": "TESTÍCULOS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 374,
+      "entry_title": "CARA (Parálisis facial).",
+      "source_pages": [
+        153
+      ],
+      "label": "ACCIDENTE CEREBROVASCULAR (ACV)",
+      "target_id": 19,
+      "target_title": "ACCIDENTE CEREBRO-VASCULAR",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 378,
+      "entry_title": "CARCINOMA EPINOCELULAR",
+      "source_pages": [
+        154
+      ],
+      "label": "EPITELIOMA EPINOCELULAR",
+      "target_id": 800,
+      "target_title": "EPITELIOMA ESPINOCELULAR",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 382,
+      "entry_title": "CARDITIS",
+      "source_pages": [
+        154
+      ],
+      "label": "PERICARDITIS",
+      "target_id": 1600,
+      "target_title": "PERICARDIO, Pericarditis",
+      "status": "resolved",
+      "resolution": "explicit_subtopic_in_source"
+    },
+    {
+      "entry_id": 383,
+      "entry_title": "CARIES",
+      "source_pages": [
+        155
+      ],
+      "label": "ESMALTE",
+      "target_id": 837,
+      "target_title": "ESMALTE DE LOS DIENTES",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 385,
+      "entry_title": "CARPOS",
+      "source_pages": [
+        155,
+        156
+      ],
+      "label": "METACARPOS",
+      "target_id": 1360,
+      "target_title": "METACARPIANOS, HUESOS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 385,
+      "entry_title": "CARPOS",
+      "source_pages": [
+        155,
+        156
+      ],
+      "label": "PALMAS de la MANO",
+      "target_id": 1536,
+      "target_title": "PALMAS DE LAS MANOS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 393,
+      "entry_title": "CATALEPSIA",
+      "source_pages": [
+        158
+      ],
+      "label": "MÚSCULO-ESQUELÉTICO",
+      "target_id": 1420,
+      "target_title": "MÚSCULOS ESQUELÉTICO (Estriado)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 405,
+      "entry_title": "CÉLULAS GERMINALES",
+      "source_pages": [
+        163
+      ],
+      "label": "OVARIO (CÉLULAS GERMINATIVAS)",
+      "target_id": 1531,
+      "target_title": "OVARIO",
+      "status": "resolved",
+      "resolution": "explicit_subtopic_in_source"
+    },
+    {
+      "entry_id": 414,
+      "entry_title": "CHARCOT, ENFERMEDAD de",
+      "source_pages": [
+        165
+      ],
+      "label": "ESCLEROSIS LATERAL AMIOTRÓFICA",
+      "target_id": 825,
+      "target_title": "ESCLEROSIS LATERAL AMIOTRÓFICA (ELA)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 420,
+      "entry_title": "CIÁTICA DELANTERA",
+      "source_pages": [
+        167
+      ],
+      "label": "CRURALGIAS Lumbares",
+      "target_id": 552,
+      "target_title": "CRURALGIAS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 452,
+      "entry_title": "COFOSIS",
+      "source_pages": [
+        177
+      ],
+      "label": "SORDERA",
+      "target_id": 1888,
+      "target_title": "SORDERA (sordomudez)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 455,
+      "entry_title": "COLAPSO",
+      "source_pages": [
+        178
+      ],
+      "label": "HIPOTENSIÓN",
+      "target_id": 1124,
+      "target_title": "HIPOTENSIÓN ARTERIAL",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 467,
+      "entry_title": "CÓLICO NEFRÍTICO",
+      "source_pages": [
+        182
+      ],
+      "label": "CÁLCULO RENAL",
+      "target_id": 327,
+      "target_title": "CÁLCULOS RENALES, ARENILLAS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 481,
+      "entry_title": "COMEDONES",
+      "source_pages": [
+        187,
+        188
+      ],
+      "label": "ROSÁCEA UNI o BILATERAL",
+      "target_id": 1782,
+      "target_title": "ROSÁCEA UNILATERAL O BILATERAL",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 482,
+      "entry_title": "COMERSE LAS UÑAS",
+      "source_pages": [
+        188
+      ],
+      "label": "DEDOS DE LAS MANOS",
+      "target_id": 574,
+      "target_title": "DEDOS DE LA MANO",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 492,
+      "entry_title": "CONDUCTO BILIAR INTRAHEPÁTICO Y EXTRAHEPÁTICO",
+      "source_pages": [
+        191
+      ],
+      "label": "CÁNCER de BESÍCULA BILIAR",
+      "target_id": 365,
+      "target_title": "CÁNCER de VESÍCULA BILIAR",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 492,
+      "entry_title": "CONDUCTO BILIAR INTRAHEPÁTICO Y EXTRAHEPÁTICO",
+      "source_pages": [
+        191
+      ],
+      "label": "CIRROSIS HEPÁTICA",
+      "target_id": 433,
+      "target_title": "CIRROSIS HEPÁTICA / CIRRITIS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 495,
+      "entry_title": "CONDUCTOS FARÍNGEOS",
+      "source_pages": [
+        192
+      ],
+      "label": "ALVEOLOS",
+      "target_id": 109,
+      "target_title": "ALVEOLOS PULMONARES",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 503,
+      "entry_title": "CONJUNTIVITIS",
+      "source_pages": [
+        194
+      ],
+      "label": "PÁRPADOS",
+      "target_id": 1573,
+      "target_title": "PÁRPADO",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 504,
+      "entry_title": "CONMOCIÓN CEREBRAL",
+      "source_pages": [
+        194
+      ],
+      "label": "ACCIDENTE DEPORTIVO",
+      "target_id": 21,
+      "target_title": "ACCIDENTE DEPORTIVO / DOMÉSTICO",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 504,
+      "entry_title": "CONMOCIÓN CEREBRAL",
+      "source_pages": [
+        194
+      ],
+      "label": "DOMÉSTICO",
+      "target_id": 21,
+      "target_title": "ACCIDENTE DEPORTIVO / DOMÉSTICO",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 513,
+      "entry_title": "CONTUSIÓN",
+      "source_pages": [
+        196
+      ],
+      "label": "ACCIDENTE DEPORTIVO",
+      "target_id": 21,
+      "target_title": "ACCIDENTE DEPORTIVO / DOMÉSTICO",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 513,
+      "entry_title": "CONTUSIÓN",
+      "source_pages": [
+        196
+      ],
+      "label": "DOMÉSTICO",
+      "target_id": 21,
+      "target_title": "ACCIDENTE DEPORTIVO / DOMÉSTICO",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 516,
+      "entry_title": "COQUELUCHE",
+      "source_pages": [
+        197
+      ],
+      "label": "TOS COMPULSIVA",
+      "target_id": 1960,
+      "target_title": "TOS CONVULSIVA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 518,
+      "entry_title": "CORAZÓN",
+      "source_pages": [
+        198,
+        199
+      ],
+      "label": "PERICARDIO",
+      "target_id": 1600,
+      "target_title": "PERICARDIO, Pericarditis",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 523,
+      "entry_title": "CORION CUTÁNEO",
+      "source_pages": [
+        200
+      ],
+      "label": "ROSÁCEA UNI o BILATERAL",
+      "target_id": 1782,
+      "target_title": "ROSÁCEA UNILATERAL O BILATERAL",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 531,
+      "entry_title": "CORONARIAS, VENAS",
+      "source_pages": [
+        201,
+        202
+      ],
+      "label": "BRANQUICARDIA",
+      "target_id": 289,
+      "target_title": "BRADICARDIA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 543,
+      "entry_title": "CRÁNEO",
+      "source_pages": [
+        205
+      ],
+      "label": "CALOTA",
+      "target_id": 330,
+      "target_title": "CALOTA (Bóveda craneal)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 544,
+      "entry_title": "CRESTA ILÍACA",
+      "source_pages": [
+        206
+      ],
+      "label": "CADERA",
+      "target_id": 315,
+      "target_title": "CADERA, ARTICULACIÓN",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 551,
+      "entry_title": "CROHN, ENFERMEDAD de",
+      "source_pages": [
+        208
+      ],
+      "label": "ÍLEON",
+      "target_id": 1151,
+      "target_title": "ÍLEON (Intestino delgado inferior)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 553,
+      "entry_title": "CUADRICEPS FEMORAL",
+      "source_pages": [
+        209
+      ],
+      "label": "VASTO EXTERNO",
+      "target_id": 2053,
+      "target_title": "VASTO EXTERNO o LATERAL",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 573,
+      "entry_title": "DEBILIDAD del TEJIDO  CONJUNTIVO",
+      "source_pages": [
+        217
+      ],
+      "label": "HEMATOMA",
+      "target_id": 1045,
+      "target_title": "HEMATOMAS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 573,
+      "entry_title": "DEBILIDAD del TEJIDO  CONJUNTIVO",
+      "source_pages": [
+        217
+      ],
+      "label": "TEJIDO CONJUNTIVO",
+      "target_id": 1916,
+      "target_title": "TEJIDO CONECTIVO",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 574,
+      "entry_title": "DEDOS DE LA MANO",
+      "source_pages": [
+        217,
+        218
+      ],
+      "label": "MANOS",
+      "target_id": 1319,
+      "target_title": "MANO",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 578,
+      "entry_title": "DEGLUCION",
+      "source_pages": [
+        220
+      ],
+      "label": "DEISFAGIA",
+      "target_id": 640,
+      "target_title": "DISFAGIA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 586,
+      "entry_title": "DEPRESIÓN",
+      "source_pages": [
+        222,
+        223
+      ],
+      "label": "ANSIEDAD",
+      "target_id": 151,
+      "target_title": "ANSIEDAD Angustia",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 590,
+      "entry_title": "DERMATITIS",
+      "source_pages": [
+        224
+      ],
+      "label": "PIEL, La Dermis",
+      "target_id": 1627,
+      "target_title": "PIEL, DERMIS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 595,
+      "entry_title": "DERMATOMIOSITIS",
+      "source_pages": [
+        225
+      ],
+      "label": "TEJIDO CONJUNTIVO",
+      "target_id": 1916,
+      "target_title": "TEJIDO CONECTIVO",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 595,
+      "entry_title": "DERMATOMIOSITIS",
+      "source_pages": [
+        225
+      ],
+      "label": "PIEL. La dermis",
+      "target_id": 1627,
+      "target_title": "PIEL, DERMIS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 596,
+      "entry_title": "DERMIS",
+      "source_pages": [
+        225
+      ],
+      "label": "PIEL. La dermis",
+      "target_id": 1627,
+      "target_title": "PIEL, DERMIS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 600,
+      "entry_title": "DESCALZAMIENTO DENTAL",
+      "source_pages": [
+        227
+      ],
+      "label": "AVULSIÓN",
+      "target_id": 241,
+      "target_title": "AVULSIÓN DENTAL.",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 601,
+      "entry_title": "DESCARRILAMIENTO METABÓLICO",
+      "source_pages": [
+        227
+      ],
+      "label": "TRASTORNO TALÁMICO",
+      "target_id": 1988,
+      "target_title": "TRASTORNOS TALÁMICOS.",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 603,
+      "entry_title": "DESGARRO MUSCULAR",
+      "source_pages": [
+        227
+      ],
+      "label": "MÚSCULO-ESQUELÉTICO",
+      "target_id": 1420,
+      "target_title": "MÚSCULOS ESQUELÉTICO (Estriado)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 620,
+      "entry_title": "DIAFRAGMA",
+      "source_pages": [
+        233
+      ],
+      "label": "ANSIEDAD",
+      "target_id": 151,
+      "target_title": "ANSIEDAD Angustia",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 622,
+      "entry_title": "DIENTES",
+      "source_pages": [
+        234
+      ],
+      "label": "ESMALTE",
+      "target_id": 837,
+      "target_title": "ESMALTE DE LOS DIENTES",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 626,
+      "entry_title": "DIENTES, APRETAR O RECHINAR",
+      "source_pages": [
+        237
+      ],
+      "label": "BRUXISMO",
+      "target_id": 304,
+      "target_title": "BRUXISMO dientes",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 640,
+      "entry_title": "DISFAGIA",
+      "source_pages": [
+        240
+      ],
+      "label": "ACALASIA",
+      "target_id": 13,
+      "target_title": "ACALASIA ESOFÁGICA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 648,
+      "entry_title": "DISLOCACIÓN de HOMBRO",
+      "source_pages": [
+        242
+      ],
+      "label": "HOMBRO",
+      "target_id": 1130,
+      "target_title": "HOMBROS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 650,
+      "entry_title": "DISNEA",
+      "source_pages": [
+        242,
+        243
+      ],
+      "label": "ASMA",
+      "target_id": 212,
+      "target_title": "ASMA (ASMA BRONQUIAL)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 663,
+      "entry_title": "DISTROFIA MUSCULAR",
+      "source_pages": [
+        246
+      ],
+      "label": "MIODISTOFIA",
+      "target_id": 1392,
+      "target_title": "MIODISTROFIA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 665,
+      "entry_title": "DIVERTÍCULO VESICAL",
+      "source_pages": [
+        247
+      ],
+      "label": "DIVERTÍCULO",
+      "target_id": 664,
+      "target_title": "DIVERTÍCULO, DIVERTICULITIS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 667,
+      "entry_title": "DOLOR",
+      "source_pages": [
+        247
+      ],
+      "label": "DOLOR en REUMATOLOGÍA",
+      "target_id": 1767,
+      "target_title": "REUMATOLOGÍA (dolor)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 668,
+      "entry_title": "DOLOR de CABEZA",
+      "source_pages": [
+        247
+      ],
+      "label": "CEFALEA",
+      "target_id": 400,
+      "target_title": "CEFALEAS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 680,
+      "entry_title": "DUODENO (Excepto bulbo)",
+      "source_pages": [
+        251
+      ],
+      "label": "ESTÓMAGO",
+      "target_id": 870,
+      "target_title": "ESTÓMAGO, GENERAL",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 688,
+      "entry_title": "ECLAMPSIA",
+      "source_pages": [
+        254
+      ],
+      "label": "HIPERTENSIÓN",
+      "target_id": 1105,
+      "target_title": "HIPERTENSIÓN arterial",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 722,
+      "entry_title": "ENDOMETRIO",
+      "source_pages": [
+        263
+      ],
+      "label": "ENDOMETROSIS",
+      "target_id": 723,
+      "target_title": "ENDOMETRIOSIS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 725,
+      "entry_title": "ENDOMICOSIS",
+      "source_pages": [
+        264
+      ],
+      "label": "CANDIDIASIS INTESTINAL",
+      "target_id": 366,
+      "target_title": "CÁNDIDAS",
+      "status": "resolved",
+      "resolution": "explicit_subtopic_in_source"
+    },
+    {
+      "entry_id": 726,
+      "entry_title": "ENFERMEDAD CARDÍACA PULMONAR",
+      "source_pages": [
+        264
+      ],
+      "label": "COR PULMONAE",
+      "target_id": 517,
+      "target_title": "COR PULMONALE",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 732,
+      "entry_title": "ENFERMEDAD DE BECHTEREW",
+      "source_pages": [
+        265
+      ],
+      "label": "ESPONDILITIS ANQUISOLANTE",
+      "target_id": 857,
+      "target_title": "ESPONDILITIS ANQUILOSANTE",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 737,
+      "entry_title": "ENFERMEDAD de CHARCOT",
+      "source_pages": [
+        265
+      ],
+      "label": "ESCLEROSIS LATERAL AMIOTRÓFICA",
+      "target_id": 825,
+      "target_title": "ESCLEROSIS LATERAL AMIOTRÓFICA (ELA)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 746,
+      "entry_title": "ENFERMEDAD DE LOU GEHRIG",
+      "source_pages": [
+        267
+      ],
+      "label": "ESCLEROSIS LATERAL AMIOTRÓFICA",
+      "target_id": 825,
+      "target_title": "ESCLEROSIS LATERAL AMIOTRÓFICA (ELA)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 817,
+      "entry_title": "ESCÁPULA",
+      "source_pages": [
+        283
+      ],
+      "label": "OMOPLATOS",
+      "target_id": 1502,
+      "target_title": "OMOPLATO",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 823,
+      "entry_title": "ESCLEROSIS",
+      "source_pages": [
+        285
+      ],
+      "label": "ENFERMEDADES CRÓNICAS",
+      "target_id": 761,
+      "target_title": "ENFERMEDADES CRÓNICAS e INCURABLES",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 823,
+      "entry_title": "ESCLEROSIS",
+      "source_pages": [
+        285
+      ],
+      "label": "ESCLEROSIS EN PLACAS",
+      "target_id": 824,
+      "target_title": "ESCLEROSIS en PLACA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 823,
+      "entry_title": "ESCLEROSIS",
+      "source_pages": [
+        285
+      ],
+      "label": "ESCLEROSIS LATERAL AMIOTRÓFICA",
+      "target_id": 825,
+      "target_title": "ESCLEROSIS LATERAL AMIOTRÓFICA (ELA)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 825,
+      "entry_title": "ESCLEROSIS LATERAL AMIOTRÓFICA (ELA)",
+      "source_pages": [
+        285,
+        286
+      ],
+      "label": "ENFERMEDADES CRÓNICAS",
+      "target_id": 761,
+      "target_title": "ENFERMEDADES CRÓNICAS e INCURABLES",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 827,
+      "entry_title": "ESCLEROSIS MÚLTIPLE",
+      "source_pages": [
+        286,
+        287
+      ],
+      "label": "ENFERMEDADES CRÓNICAS",
+      "target_id": 761,
+      "target_title": "ENFERMEDADES CRÓNICAS e INCURABLES",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 827,
+      "entry_title": "ESCLEROSIS MÚLTIPLE",
+      "source_pages": [
+        286,
+        287
+      ],
+      "label": "ESCLEROSIS LATERAL AMIOTRÓFICA",
+      "target_id": 825,
+      "target_title": "ESCLEROSIS LATERAL AMIOTRÓFICA (ELA)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 832,
+      "entry_title": "ESCROTO",
+      "source_pages": [
+        288
+      ],
+      "label": "HIDROCELE",
+      "target_id": 1077,
+      "target_title": "HIDROCELE TESTICULAR",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 834,
+      "entry_title": "ESFENOIDES",
+      "source_pages": [
+        288
+      ],
+      "label": "CALOTA",
+      "target_id": 330,
+      "target_title": "CALOTA (Bóveda craneal)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 839,
+      "entry_title": "ESÓFAGO en GENERAL",
+      "source_pages": [
+        290
+      ],
+      "label": "HERNIA de HIATO",
+      "target_id": 1063,
+      "target_title": "HERNIA de HIATO O DIAFRAGMÁTICA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 840,
+      "entry_title": "ESÓFAGO, dos tercios superiores",
+      "source_pages": [
+        290
+      ],
+      "label": "ESÓFAGO",
+      "target_id": 839,
+      "target_title": "ESÓFAGO en GENERAL",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 841,
+      "entry_title": "ESÓFAGO, tercio inferior",
+      "source_pages": [
+        290,
+        291
+      ],
+      "label": "ESÓFAGO",
+      "target_id": 839,
+      "target_title": "ESÓFAGO en GENERAL",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 843,
+      "entry_title": "ESPALDA CÓNCAVA",
+      "source_pages": [
+        291
+      ],
+      "label": "HIPERLORDOSIS",
+      "target_id": 1098,
+      "target_title": "HIPERLORDOSIS LUMBAR",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 852,
+      "entry_title": "ESPINA de LENOIR",
+      "source_pages": [
+        293
+      ],
+      "label": "ESPOLÓN CALCÁNEA",
+      "target_id": 856,
+      "target_title": "ESPOLONES CALCÁNEOS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 857,
+      "entry_title": "ESPONDILITIS ANQUILOSANTE",
+      "source_pages": [
+        294
+      ],
+      "label": "ENFERMEDADES CRÓNICAS",
+      "target_id": 761,
+      "target_title": "ENFERMEDADES CRÓNICAS e INCURABLES",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 869,
+      "entry_title": "ESTILOIDES TEMPORAL",
+      "source_pages": [
+        299
+      ],
+      "label": "CALOTA",
+      "target_id": 330,
+      "target_title": "CALOTA (Bóveda craneal)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 871,
+      "entry_title": "ESTÓMAGO, CURVA MAYOR.",
+      "source_pages": [
+        300
+      ],
+      "label": "ESTÓMAGO",
+      "target_id": 870,
+      "target_title": "ESTÓMAGO, GENERAL",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 872,
+      "entry_title": "ESTÓMAGO, Curva menor.",
+      "source_pages": [
+        300,
+        301
+      ],
+      "label": "ESTÓMAGO",
+      "target_id": 870,
+      "target_title": "ESTÓMAGO, GENERAL",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 880,
+      "entry_title": "ESTRÉS",
+      "source_pages": [
+        304
+      ],
+      "label": "ANSIEDAD",
+      "target_id": 151,
+      "target_title": "ANSIEDAD Angustia",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 881,
+      "entry_title": "ESTRÍAS",
+      "source_pages": [
+        304
+      ],
+      "label": "PIEL. La Dermis",
+      "target_id": 1627,
+      "target_title": "PIEL, DERMIS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 882,
+      "entry_title": "ETMOIDES",
+      "source_pages": [
+        304
+      ],
+      "label": "CALOTA",
+      "target_id": 330,
+      "target_title": "CALOTA (Bóveda craneal)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 888,
+      "entry_title": "EXOFORIA",
+      "source_pages": [
+        306
+      ],
+      "label": "ESTRAVISMO",
+      "target_id": 876,
+      "target_title": "ESTRABISMO",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 889,
+      "entry_title": "EXOFTALMIA",
+      "source_pages": [
+        306
+      ],
+      "label": "BOCIO",
+      "target_id": 279,
+      "target_title": "BOCIO (Nódulos múltiples)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 894,
+      "entry_title": "EXTREMIDADES SUPERIORES",
+      "source_pages": [
+        307
+      ],
+      "label": "BRAZOS",
+      "target_id": 293,
+      "target_title": "BRAZO",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 911,
+      "entry_title": "FÉMUR",
+      "source_pages": [
+        312
+      ],
+      "label": "CADERA",
+      "target_id": 315,
+      "target_title": "CADERA, ARTICULACIÓN",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 911,
+      "entry_title": "FÉMUR",
+      "source_pages": [
+        312
+      ],
+      "label": "FÉMUR, Cabeza",
+      "target_id": 912,
+      "target_title": "FÉMUR, CABEZA y GENERAL",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 912,
+      "entry_title": "FÉMUR, CABEZA y GENERAL",
+      "source_pages": [
+        312,
+        313
+      ],
+      "label": "CADERA",
+      "target_id": 315,
+      "target_title": "CADERA, ARTICULACIÓN",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 913,
+      "entry_title": "FÉMUR, CUELLO",
+      "source_pages": [
+        313
+      ],
+      "label": "CADERA",
+      "target_id": 315,
+      "target_title": "CADERA, ARTICULACIÓN",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 913,
+      "entry_title": "FÉMUR, CUELLO",
+      "source_pages": [
+        313
+      ],
+      "label": "FÉMUR, CABEZA",
+      "target_id": 912,
+      "target_title": "FÉMUR, CABEZA y GENERAL",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 914,
+      "entry_title": "FÉMUR Y CADERA",
+      "source_pages": [
+        313
+      ],
+      "label": "CADERA",
+      "target_id": 315,
+      "target_title": "CADERA, ARTICULACIÓN",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 914,
+      "entry_title": "FÉMUR Y CADERA",
+      "source_pages": [
+        313
+      ],
+      "label": "FÉMUR, Cabeza",
+      "target_id": 912,
+      "target_title": "FÉMUR, CABEZA y GENERAL",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 920,
+      "entry_title": "FIBROMIALGIA",
+      "source_pages": [
+        314,
+        315
+      ],
+      "label": "ENFERMEDADES CRÓNICAS",
+      "target_id": 761,
+      "target_title": "ENFERMEDADES CRÓNICAS e INCURABLES",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 925,
+      "entry_title": "FIBROSITIS",
+      "source_pages": [
+        316
+      ],
+      "label": "FIBRMIALGIA",
+      "target_id": 920,
+      "target_title": "FIBROMIALGIA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 944,
+      "entry_title": "FOBIAS",
+      "source_pages": [
+        321
+      ],
+      "label": "MIEDO a las ALTURAS",
+      "target_id": 1380,
+      "target_title": "MIEDO a las ALTURAS (al VACÍO)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 948,
+      "entry_title": "FRACTURA de CRÁNEO",
+      "source_pages": [
+        322
+      ],
+      "label": "CALOTA",
+      "target_id": 330,
+      "target_title": "CALOTA (Bóveda craneal)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 949,
+      "entry_title": "FRACTURA de FÉMUR",
+      "source_pages": [
+        322,
+        323
+      ],
+      "label": "CADERA",
+      "target_id": 315,
+      "target_title": "CADERA, ARTICULACIÓN",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 949,
+      "entry_title": "FRACTURA de FÉMUR",
+      "source_pages": [
+        322,
+        323
+      ],
+      "label": "FÉMUR, CABEZA",
+      "target_id": 912,
+      "target_title": "FÉMUR, CABEZA y GENERAL",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 952,
+      "entry_title": "FRACTURA MALEOLAR",
+      "source_pages": [
+        324
+      ],
+      "label": "PIÉ",
+      "target_id": 1632,
+      "target_title": "PIES",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 954,
+      "entry_title": "FRENTE",
+      "source_pages": [
+        324,
+        325
+      ],
+      "label": "CALOTA",
+      "target_id": 330,
+      "target_title": "CALOTA (Bóveda craneal)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 957,
+      "entry_title": "FRONTAL",
+      "source_pages": [
+        325,
+        326
+      ],
+      "label": "CALOTA (glavela)",
+      "target_id": 330,
+      "target_title": "CALOTA (Bóveda craneal)",
+      "status": "resolved",
+      "resolution": "explicit_subtopic_in_source"
+    },
+    {
+      "entry_id": 961,
+      "entry_title": "FURÚNCULO",
+      "source_pages": [
+        326
+      ],
+      "label": "FORÚNCULO",
+      "target_id": 946,
+      "target_title": "FORÚNCULOS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 965,
+      "entry_title": "GANGLIÓN",
+      "source_pages": [
+        327
+      ],
+      "label": "QUISTE EN LA MUÑECA",
+      "target_id": 1731,
+      "target_title": "QUISTES EN LA MUÑECA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 967,
+      "entry_title": "GANGLIOS LINFÁTICOS",
+      "source_pages": [
+        328
+      ],
+      "label": "CÁNCER de los GANGLIOS LINFÁTICVOS",
+      "target_id": 345,
+      "target_title": "CANCER de GANGLIOS LINFÁTICOS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 967,
+      "entry_title": "GANGLIOS LINFÁTICOS",
+      "source_pages": [
+        328
+      ],
+      "label": "GANGLIOS NOBLES",
+      "target_id": 968,
+      "target_title": "GANGLIOS NOBLES (Ganglios del cuello)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 973,
+      "entry_title": "GASTRITIS",
+      "source_pages": [
+        330
+      ],
+      "label": "ESTÓMAGO",
+      "target_id": 870,
+      "target_title": "ESTÓMAGO, GENERAL",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 978,
+      "entry_title": "GENU VALGO",
+      "source_pages": [
+        332
+      ],
+      "label": "CADERA",
+      "target_id": 315,
+      "target_title": "CADERA, ARTICULACIÓN",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 979,
+      "entry_title": "GENU VARO",
+      "source_pages": [
+        332,
+        333
+      ],
+      "label": "CADERA",
+      "target_id": 315,
+      "target_title": "CADERA, ARTICULACIÓN",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 983,
+      "entry_title": "GLABELA",
+      "source_pages": [
+        334
+      ],
+      "label": "CALOTA",
+      "target_id": 330,
+      "target_title": "CALOTA (Bóveda craneal)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 999,
+      "entry_title": "GLÁNDULAS SALIVALES",
+      "source_pages": [
+        337
+      ],
+      "label": "GLÁNDULA SUBLINGUAL",
+      "target_id": 1001,
+      "target_title": "GLÁNDULAS SUBLINGUALES",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 999,
+      "entry_title": "GLÁNDULAS SALIVALES",
+      "source_pages": [
+        337
+      ],
+      "label": "GLÁNDULA SUBLINGUAL (Conductos)",
+      "target_id": 1002,
+      "target_title": "GLÁNDULAS SUBLINGUALES (conductos)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 999,
+      "entry_title": "GLÁNDULAS SALIVALES",
+      "source_pages": [
+        337
+      ],
+      "label": "SUBMUCOS BUCAL",
+      "target_id": 1896,
+      "target_title": "SUBMUCOSA BUCAL",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1001,
+      "entry_title": "GLÁNDULAS SUBLINGUALES",
+      "source_pages": [
+        338
+      ],
+      "label": "GLÁNDULA SUBLINGUAL (Conductos)",
+      "target_id": 1002,
+      "target_title": "GLÁNDULAS SUBLINGUALES (conductos)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1001,
+      "entry_title": "GLÁNDULAS SUBLINGUALES",
+      "source_pages": [
+        338
+      ],
+      "label": "SUBMUCOS BUCAL",
+      "target_id": 1896,
+      "target_title": "SUBMUCOSA BUCAL",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1002,
+      "entry_title": "GLÁNDULAS SUBLINGUALES (conductos)",
+      "source_pages": [
+        338
+      ],
+      "label": "GLÁNDULAS SALVIALES",
+      "target_id": 999,
+      "target_title": "GLÁNDULAS SALIVALES",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1002,
+      "entry_title": "GLÁNDULAS SUBLINGUALES (conductos)",
+      "source_pages": [
+        338
+      ],
+      "label": "GLÁNDULA SUBLINGUAL",
+      "target_id": 1001,
+      "target_title": "GLÁNDULAS SUBLINGUALES",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1002,
+      "entry_title": "GLÁNDULAS SUBLINGUALES (conductos)",
+      "source_pages": [
+        338
+      ],
+      "label": "SUBMUCOS BUCAL",
+      "target_id": 1896,
+      "target_title": "SUBMUCOSA BUCAL",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1021,
+      "entry_title": "GÓNADAS",
+      "source_pages": [
+        343
+      ],
+      "label": "OVARIOS",
+      "target_id": 1531,
+      "target_title": "OVARIO",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1022,
+      "entry_title": "GONARTROSIS",
+      "source_pages": [
+        343
+      ],
+      "label": "ARTROSIS RODILLA",
+      "target_id": 208,
+      "target_title": "ARTROSIS de RODILLA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1025,
+      "entry_title": "GOTA",
+      "source_pages": [
+        344
+      ],
+      "label": "RIÑÓN, CANALES COLECTORES",
+      "target_id": 1777,
+      "target_title": "RIÑÓN (El canal colector)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1027,
+      "entry_title": "GRANOS",
+      "source_pages": [
+        345
+      ],
+      "label": "ECCEMA",
+      "target_id": 692,
+      "target_title": "ECZEMA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1031,
+      "entry_title": "GRIPE",
+      "source_pages": [
+        346,
+        347
+      ],
+      "label": "BRONQUITIS",
+      "target_id": 302,
+      "target_title": "BRONQUITIS y BRONQUITIS CRÓNICA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1035,
+      "entry_title": "GUTTA ROSACEA",
+      "source_pages": [
+        347
+      ],
+      "label": "ROSÁCEA UNI o BILATERAL",
+      "target_id": 1782,
+      "target_title": "ROSÁCEA UNILATERAL O BILATERAL",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1037,
+      "entry_title": "HALITOSIS",
+      "source_pages": [
+        349
+      ],
+      "label": "ALIENTO",
+      "target_id": 103,
+      "target_title": "ALIENTO (mal)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1043,
+      "entry_title": "HELMINTOSIS",
+      "source_pages": [
+        350
+      ],
+      "label": "TENIA",
+      "target_id": 1925,
+      "target_title": "TENIA, TENIASIS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1058,
+      "entry_title": "HEMORRAGIA SUBARACNOIDEA",
+      "source_pages": [
+        354
+      ],
+      "label": "MENINGIOMAS",
+      "target_id": 1345,
+      "target_title": "MENINGIOMA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1078,
+      "entry_title": "HIDROPESÍA",
+      "source_pages": [
+        361
+      ],
+      "label": "EDEMA",
+      "target_id": 695,
+      "target_title": "EDEMA (Hinchazón)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1080,
+      "entry_title": "HÍGADO",
+      "source_pages": [
+        362
+      ],
+      "label": "CIRROSIS HEPÁTICA",
+      "target_id": 433,
+      "target_title": "CIRROSIS HEPÁTICA / CIRRITIS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1086,
+      "entry_title": "HIPERACUSIA",
+      "source_pages": [
+        364
+      ],
+      "label": "ANSIEDAD",
+      "target_id": 151,
+      "target_title": "ANSIEDAD Angustia",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1092,
+      "entry_title": "HIPERHIDROSIS PALMAR",
+      "source_pages": [
+        366
+      ],
+      "label": "MANOS",
+      "target_id": 1319,
+      "target_title": "MANO",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1094,
+      "entry_title": "HIPERKALEMIA O HIPERPOTASEMIA",
+      "source_pages": [
+        367
+      ],
+      "label": "HIPOKALIEMIA",
+      "target_id": 1120,
+      "target_title": "HIPOKALIEMIA O HIPOPOTASEMIA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1095,
+      "entry_title": "HIPERKERATOSIS",
+      "source_pages": [
+        367
+      ],
+      "label": "QUERATOSIS",
+      "target_id": 1722,
+      "target_title": "QUERATOSIS / HIPERQUERATOSIS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1102,
+      "entry_title": "HIPERPOTASEMIA",
+      "source_pages": [
+        369
+      ],
+      "label": "HIPERKALEMIA",
+      "target_id": 1094,
+      "target_title": "HIPERKALEMIA O HIPERPOTASEMIA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1103,
+      "entry_title": "HIPERQUERATOSIS",
+      "source_pages": [
+        369
+      ],
+      "label": "QUERATOSIS",
+      "target_id": 1722,
+      "target_title": "QUERATOSIS / HIPERQUERATOSIS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1110,
+      "entry_title": "HIPERVENTILACIÓN",
+      "source_pages": [
+        372
+      ],
+      "label": "ANSIEDAD",
+      "target_id": 151,
+      "target_title": "ANSIEDAD Angustia",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1113,
+      "entry_title": "HIPOACUSIA",
+      "source_pages": [
+        372,
+        373
+      ],
+      "label": "SORDERA",
+      "target_id": 1888,
+      "target_title": "SORDERA (sordomudez)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1116,
+      "entry_title": "HIPOCONDRIA",
+      "source_pages": [
+        373,
+        374
+      ],
+      "label": "ANSIEDAD",
+      "target_id": 151,
+      "target_title": "ANSIEDAD Angustia",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1120,
+      "entry_title": "HIPOKALIEMIA O HIPOPOTASEMIA",
+      "source_pages": [
+        375
+      ],
+      "label": "HIPERKALIEMIA",
+      "target_id": 1094,
+      "target_title": "HIPERKALEMIA O HIPERPOTASEMIA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1122,
+      "entry_title": "HIPOPOTASEMIA",
+      "source_pages": [
+        376
+      ],
+      "label": "HIPOKALIEMIA",
+      "target_id": 1120,
+      "target_title": "HIPOKALIEMIA O HIPOPOTASEMIA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1124,
+      "entry_title": "HIPOTENSIÓN ARTERIAL",
+      "source_pages": [
+        376
+      ],
+      "label": "HIPERTENSIÓN",
+      "target_id": 1105,
+      "target_title": "HIPERTENSIÓN arterial",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1125,
+      "entry_title": "HIPOTENSIÓN ORTOSTÁTICA",
+      "source_pages": [
+        377
+      ],
+      "label": "HIPOTENSIÓN",
+      "target_id": 1124,
+      "target_title": "HIPOTENSIÓN ARTERIAL",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1136,
+      "entry_title": "HUESO ALVEOLAR O DENTAL",
+      "source_pages": [
+        381
+      ],
+      "label": "MANDÍBULA",
+      "target_id": 1314,
+      "target_title": "MANDÍBULA y MAXILARES",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1137,
+      "entry_title": "HUESOS",
+      "source_pages": [
+        381,
+        382
+      ],
+      "label": "CÁCNER de HUESOS",
+      "target_id": 347,
+      "target_title": "CÁNCER de HUESOS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1139,
+      "entry_title": "HUESOS FRÁGILES",
+      "source_pages": [
+        382
+      ],
+      "label": "OSTOGÉNESIS IMPERFECTA",
+      "target_id": 1519,
+      "target_title": "OSTEOGÉNESIS IMPERFECTA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1139,
+      "entry_title": "HUESOS FRÁGILES",
+      "source_pages": [
+        382
+      ],
+      "label": "CONDODISTROFIA",
+      "target_id": 489,
+      "target_title": "CONDRODISTROFIA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1141,
+      "entry_title": "HÚMERO",
+      "source_pages": [
+        382,
+        383
+      ],
+      "label": "HOMBRO",
+      "target_id": 1130,
+      "target_title": "HOMBROS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1153,
+      "entry_title": "ILÍACO, HUESO",
+      "source_pages": [
+        387
+      ],
+      "label": "CADERA",
+      "target_id": 315,
+      "target_title": "CADERA, ARTICULACIÓN",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1162,
+      "entry_title": "INDIGESTIÓN",
+      "source_pages": [
+        389,
+        390
+      ],
+      "label": "ESTÓMAGO",
+      "target_id": 870,
+      "target_title": "ESTÓMAGO, GENERAL",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1171,
+      "entry_title": "INFECCIONES VÍRICAS",
+      "source_pages": [
+        392,
+        393
+      ],
+      "label": "INFECCIONES",
+      "target_id": 1166,
+      "target_title": "INFECCIÓN",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1188,
+      "entry_title": "INIÓN",
+      "source_pages": [
+        395
+      ],
+      "label": "CALOTA",
+      "target_id": 330,
+      "target_title": "CALOTA (Bóveda craneal)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1190,
+      "entry_title": "INSOMNIO",
+      "source_pages": [
+        395
+      ],
+      "label": "ANSIEDAD",
+      "target_id": 151,
+      "target_title": "ANSIEDAD Angustia",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1201,
+      "entry_title": "INTESTINO DELGADO",
+      "source_pages": [
+        398
+      ],
+      "label": "CÁNCE de INTESTINO",
+      "target_id": 348,
+      "target_title": "CÁNCER de INTESTINO",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1201,
+      "entry_title": "INTESTINO DELGADO",
+      "source_pages": [
+        398
+      ],
+      "label": "DUODENO",
+      "target_id": 680,
+      "target_title": "DUODENO (Excepto bulbo)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1201,
+      "entry_title": "INTESTINO DELGADO",
+      "source_pages": [
+        398
+      ],
+      "label": "ÍLEON",
+      "target_id": 1151,
+      "target_title": "ÍLEON (Intestino delgado inferior)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1201,
+      "entry_title": "INTESTINO DELGADO",
+      "source_pages": [
+        398
+      ],
+      "label": "YEYUNO",
+      "target_id": 2091,
+      "target_title": "YEYUNO (intestino delgado superior)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1212,
+      "entry_title": "ISQUIOTIBIALES",
+      "source_pages": [
+        401
+      ],
+      "label": "PIERNA",
+      "target_id": 1628,
+      "target_title": "PIERNAS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1214,
+      "entry_title": "JAQUECA",
+      "source_pages": [
+        403
+      ],
+      "label": "MIGRAÑA",
+      "target_id": 1388,
+      "target_title": "MIGRAÑAS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1216,
+      "entry_title": "JUANETES",
+      "source_pages": [
+        403
+      ],
+      "label": "HALLUX VALGUS",
+      "target_id": 1038,
+      "target_title": "HALLUX VALGUS (JUANETES, CALLOS)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1219,
+      "entry_title": "KILLIAN, PÓLIPOS de",
+      "source_pages": [
+        405
+      ],
+      "label": "NARIZ, PÓLIPOS",
+      "target_id": 1428,
+      "target_title": "NARIZ, PÓLIPOS (VER EN PÓLIPO NASO-FARÍNGEO EN LIBRO AZUL)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1221,
+      "entry_title": "LABERINTITIS (LABERINTO)",
+      "source_pages": [
+        407
+      ],
+      "label": "NISTAGMOS",
+      "target_id": 1474,
+      "target_title": "NISTAGMO (Nistagmus)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1222,
+      "entry_title": "LABERINTO",
+      "source_pages": [
+        407
+      ],
+      "label": "LABERINTITIS",
+      "target_id": 1221,
+      "target_title": "LABERINTITIS (LABERINTO)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1228,
+      "entry_title": "LAMBDA",
+      "source_pages": [
+        409
+      ],
+      "label": "CALOTA",
+      "target_id": 330,
+      "target_title": "CALOTA (Bóveda craneal)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1241,
+      "entry_title": "LEUCEMIA DE CÉLULAS DE BURKITT",
+      "source_pages": [
+        413
+      ],
+      "label": "LINFOMA DE BURKITT",
+      "target_id": 1257,
+      "target_title": "LINFOMA DE BURKITT Inmunodeficiencia",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1243,
+      "entry_title": "LEUCOPENIA",
+      "source_pages": [
+        413
+      ],
+      "label": "GLÓBULSO BLANCOS",
+      "target_id": 1012,
+      "target_title": "GLÓBULOS BLANCOS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1256,
+      "entry_title": "LINFOMA",
+      "source_pages": [
+        417
+      ],
+      "label": "LINFOMA de  BURKITT",
+      "target_id": 1257,
+      "target_title": "LINFOMA DE BURKITT Inmunodeficiencia",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1269,
+      "entry_title": "LITIASIS RENAL",
+      "source_pages": [
+        420
+      ],
+      "label": "CÁLCULOS RENALES",
+      "target_id": 327,
+      "target_title": "CÁLCULOS RENALES, ARENILLAS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1270,
+      "entry_title": "LLAGAS",
+      "source_pages": [
+        420
+      ],
+      "label": "ÚLCERAS",
+      "target_id": 2012,
+      "target_title": "ÚLCERA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1276,
+      "entry_title": "LOU GEHRIG, ENFERMEDAD de",
+      "source_pages": [
+        422
+      ],
+      "label": "ESCLEROSIS LATERAL AMIOTRÓFICA",
+      "target_id": 825,
+      "target_title": "ESCLEROSIS LATERAL AMIOTRÓFICA (ELA)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1279,
+      "entry_title": "LUMBALGIA",
+      "source_pages": [
+        422
+      ],
+      "label": "DOLORES en la ESPALDA",
+      "target_id": 672,
+      "target_title": "DOLORES de ESPALDA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1283,
+      "entry_title": "LUPUS ERITEMATOSO",
+      "source_pages": [
+        423,
+        424
+      ],
+      "label": "PIEL, La Dermis",
+      "target_id": 1627,
+      "target_title": "PIEL, DERMIS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1284,
+      "entry_title": "LUXACIÓN",
+      "source_pages": [
+        424
+      ],
+      "label": "LUXACIÓN RECIDIVANTE",
+      "target_id": 1290,
+      "target_title": "LUXACIÓN RECIDIVANTE O RECIDIVA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1288,
+      "entry_title": "LUXACIÓN de CADERA",
+      "source_pages": [
+        425
+      ],
+      "label": "CADERA",
+      "target_id": 315,
+      "target_title": "CADERA, ARTICULACIÓN",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1289,
+      "entry_title": "LUXACIÓN de la MANDÍBULA",
+      "source_pages": [
+        425
+      ],
+      "label": "MANDÍBULA",
+      "target_id": 1314,
+      "target_title": "MANDÍBULA y MAXILARES",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1294,
+      "entry_title": "MAL ALIENTO",
+      "source_pages": [
+        428
+      ],
+      "label": "ALIENTO",
+      "target_id": 103,
+      "target_title": "ALIENTO (mal)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1297,
+      "entry_title": "MALARIA",
+      "source_pages": [
+        428
+      ],
+      "label": "BAZO (Esplenomegalia)",
+      "target_id": 257,
+      "target_title": "BAZO",
+      "status": "resolved",
+      "resolution": "explicit_subtopic_in_source"
+    },
+    {
+      "entry_id": 1300,
+      "entry_title": "MALESTAR de ESTÓMAGO",
+      "source_pages": [
+        429
+      ],
+      "label": "ESTÓMAGO",
+      "target_id": 870,
+      "target_title": "ESTÓMAGO, GENERAL",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1301,
+      "entry_title": "MAMAS",
+      "source_pages": [
+        429,
+        430
+      ],
+      "label": "MAMAS – LATERALIDAD Y LOCACLIZACIÓN",
+      "target_id": 1306,
+      "target_title": "MAMAS – LATERALIDAD y LOCALIZACIÓN",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1302,
+      "entry_title": "MAMAS – CONDUCTOS GALACTÓFOROS",
+      "source_pages": [
+        431
+      ],
+      "label": "MAMAS – LATERALIDAD Y LOCACLIZACIÓN",
+      "target_id": 1306,
+      "target_title": "MAMAS – LATERALIDAD y LOCALIZACIÓN",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1303,
+      "entry_title": "MAMAS – DERMIS DEL PECHO",
+      "source_pages": [
+        432
+      ],
+      "label": "MAMAS – LATERALIDAD Y LOCACLIZACIÓN",
+      "target_id": 1306,
+      "target_title": "MAMAS – LATERALIDAD y LOCALIZACIÓN",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1304,
+      "entry_title": "MAMAS – DESARROLLO DE UN SOLO PECHO",
+      "source_pages": [
+        432
+      ],
+      "label": "MAMAS – LATERALIDAD Y LOCACLIZACIÓN",
+      "target_id": 1306,
+      "target_title": "MAMAS – LATERALIDAD y LOCALIZACIÓN",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1305,
+      "entry_title": "MAMAS – GLÁNDULA MAMARIA.",
+      "source_pages": [
+        433
+      ],
+      "label": "MAMAS – LATERALIDAD Y LOCACLIZACIÓN",
+      "target_id": 1306,
+      "target_title": "MAMAS – LATERALIDAD y LOCALIZACIÓN",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1307,
+      "entry_title": "MAMAS – NACER SIN PEZÓN",
+      "source_pages": [
+        434,
+        435
+      ],
+      "label": "MAMAS – LATERALIDAD Y LOCACLIZACIÓN",
+      "target_id": 1306,
+      "target_title": "MAMAS – LATERALIDAD y LOCALIZACIÓN",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1308,
+      "entry_title": "MAMAS – TEJIDO CONJUNTIVO",
+      "source_pages": [
+        435
+      ],
+      "label": "MAMAS – LATERALIDAD Y LOCACLIZACIÓN",
+      "target_id": 1306,
+      "target_title": "MAMAS – LATERALIDAD y LOCALIZACIÓN",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1309,
+      "entry_title": "MAMAS – TERMINACIONES NERVIOSAS DEL PECHO",
+      "source_pages": [
+        435
+      ],
+      "label": "MAMAS – LATERALIDAD Y LOCACLIZACIÓN",
+      "target_id": 1306,
+      "target_title": "MAMAS – LATERALIDAD y LOCALIZACIÓN",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1310,
+      "entry_title": "MAMAS – TIPOS DE CANCER (HISTOLOGÍA)",
+      "source_pages": [
+        436,
+        437
+      ],
+      "label": "MAMAS – LATERALIDAD Y LOCACLIZACIÓN",
+      "target_id": 1306,
+      "target_title": "MAMAS – LATERALIDAD y LOCALIZACIÓN",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1311,
+      "entry_title": "MAMAS – PECHOS DEMASIADO GRANDES",
+      "source_pages": [
+        437
+      ],
+      "label": "MAMAS – LATERALIDAD Y LOCACLIZACIÓN",
+      "target_id": 1306,
+      "target_title": "MAMAS – LATERALIDAD y LOCALIZACIÓN",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1314,
+      "entry_title": "MANDÍBULA y MAXILARES",
+      "source_pages": [
+        438
+      ],
+      "label": "BRUXISMO",
+      "target_id": 304,
+      "target_title": "BRUXISMO dientes",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1316,
+      "entry_title": "MANGUITO de los ROTADORES (HOMBRO)",
+      "source_pages": [
+        438,
+        439
+      ],
+      "label": "HOMBRO",
+      "target_id": 1130,
+      "target_title": "HOMBROS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1319,
+      "entry_title": "MANO",
+      "source_pages": [
+        439
+      ],
+      "label": "METACARPOS",
+      "target_id": 1360,
+      "target_title": "METACARPIANOS, HUESOS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1319,
+      "entry_title": "MANO",
+      "source_pages": [
+        439
+      ],
+      "label": "PALMAS de la MANO",
+      "target_id": 1536,
+      "target_title": "PALMAS DE LAS MANOS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1320,
+      "entry_title": "MAREOS",
+      "source_pages": [
+        439,
+        440
+      ],
+      "label": "VÉRTIGOS",
+      "target_id": 2070,
+      "target_title": "VÉRTIGO",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1321,
+      "entry_title": "MARFIL",
+      "source_pages": [
+        440
+      ],
+      "label": "DNTINA",
+      "target_id": 584,
+      "target_title": "DENTINA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1323,
+      "entry_title": "MASTOIDES",
+      "source_pages": [
+        440
+      ],
+      "label": "CALOTA",
+      "target_id": 330,
+      "target_title": "CALOTA (Bóveda craneal)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1327,
+      "entry_title": "MAXILAR",
+      "source_pages": [
+        440
+      ],
+      "label": "MANDÍBULA",
+      "target_id": 1314,
+      "target_title": "MANDÍBULA y MAXILARES",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1330,
+      "entry_title": "MÉDULA ESPINAL",
+      "source_pages": [
+        441
+      ],
+      "label": "SISTEMA NERVIOSO",
+      "target_id": 1876,
+      "target_title": "SISTEMA NERVIOSOS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1346,
+      "entry_title": "MENINGITIS",
+      "source_pages": [
+        446
+      ],
+      "label": "MENONGIOMA",
+      "target_id": 1345,
+      "target_title": "MENINGIOMA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1356,
+      "entry_title": "MENTIROSO",
+      "source_pages": [
+        448
+      ],
+      "label": "EXAGERACIÓN",
+      "target_id": 884,
+      "target_title": "EXAGERACIONES",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1357,
+      "entry_title": "MENTÓN",
+      "source_pages": [
+        448
+      ],
+      "label": "MANDÍBULA",
+      "target_id": 1314,
+      "target_title": "MANDÍBULA y MAXILARES",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1360,
+      "entry_title": "METACARPIANOS, HUESOS",
+      "source_pages": [
+        449
+      ],
+      "label": "MANOS",
+      "target_id": 1319,
+      "target_title": "MANO",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1361,
+      "entry_title": "METÁSTASIS",
+      "source_pages": [
+        449,
+        450
+      ],
+      "label": "METÁSTASIS PULMONARES",
+      "target_id": 1362,
+      "target_title": "METÁSTASIS PULMUNARES",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1363,
+      "entry_title": "METATARSOS",
+      "source_pages": [
+        450
+      ],
+      "label": "PIE",
+      "target_id": 1632,
+      "target_title": "PIES",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1381,
+      "entry_title": "MIEDO a VOLAR",
+      "source_pages": [
+        455
+      ],
+      "label": "MIEDO A LAS ALTURAS",
+      "target_id": 1380,
+      "target_title": "MIEDO a las ALTURAS (al VACÍO)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1382,
+      "entry_title": "MIEDO al CÁNCER",
+      "source_pages": [
+        455
+      ],
+      "label": "METÁSTASIS PULMONAR",
+      "target_id": 1362,
+      "target_title": "METÁSTASIS PULMUNARES",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1383,
+      "entry_title": "MIELINA",
+      "source_pages": [
+        455
+      ],
+      "label": "ESCLEROSIS LATERAL AMIOTRÓFICA",
+      "target_id": 825,
+      "target_title": "ESCLEROSIS LATERAL AMIOTRÓFICA (ELA)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1392,
+      "entry_title": "MIODISTROFIA",
+      "source_pages": [
+        458
+      ],
+      "label": "ESCLEROSIS LATERAL AMIOTRÓFICA",
+      "target_id": 825,
+      "target_title": "ESCLEROSIS LATERAL AMIOTRÓFICA (ELA)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1400,
+      "entry_title": "MIXEDEMIA",
+      "source_pages": [
+        460
+      ],
+      "label": "EDEMAS",
+      "target_id": 695,
+      "target_title": "EDEMA (Hinchazón)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1403,
+      "entry_title": "MONONUCLEOSIS INFECCIOSA",
+      "source_pages": [
+        460,
+        461
+      ],
+      "label": "GANGLIOS NOBLES",
+      "target_id": 968,
+      "target_title": "GANGLIOS NOBLES (Ganglios del cuello)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1414,
+      "entry_title": "MUGUET",
+      "source_pages": [
+        463
+      ],
+      "label": "CANDIDIASIS BUCAL",
+      "target_id": 366,
+      "target_title": "CÁNDIDAS",
+      "status": "resolved",
+      "resolution": "explicit_subtopic_in_source"
+    },
+    {
+      "entry_id": 1419,
+      "entry_title": "MÚSCULOS",
+      "source_pages": [
+        464,
+        465
+      ],
+      "label": "MÚSCULO-ESQUELÉTICO (Estriado)",
+      "target_id": 1420,
+      "target_title": "MÚSCULOS ESQUELÉTICO (Estriado)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1426,
+      "entry_title": "NARIZ",
+      "source_pages": [
+        467,
+        468
+      ],
+      "label": "NARIZ, PÓLIPOS",
+      "target_id": 1428,
+      "target_title": "NARIZ, PÓLIPOS (VER EN PÓLIPO NASO-FARÍNGEO EN LIBRO AZUL)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1427,
+      "entry_title": "NARIZ (Hemorragia)",
+      "source_pages": [
+        468
+      ],
+      "label": "EPISTAXIS. Hemorragia nasal",
+      "target_id": 797,
+      "target_title": "EPISTAXIS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1428,
+      "entry_title": "NARIZ, PÓLIPOS (VER EN PÓLIPO NASO-FARÍNGEO EN LIBRO AZUL)",
+      "source_pages": [
+        468,
+        469
+      ],
+      "label": "KILIAN, PÓLIPOS de",
+      "target_id": 1219,
+      "target_title": "KILLIAN, PÓLIPOS de",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1429,
+      "entry_title": "NARIZ, SENOS PARANASALES",
+      "source_pages": [
+        469
+      ],
+      "label": "NARIZ, PÓLIPOS",
+      "target_id": 1428,
+      "target_title": "NARIZ, PÓLIPOS (VER EN PÓLIPO NASO-FARÍNGEO EN LIBRO AZUL)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1430,
+      "entry_title": "NASOFARINGE",
+      "source_pages": [
+        469,
+        470
+      ],
+      "label": "NARIZ, PÓLIPOS",
+      "target_id": 1428,
+      "target_title": "NARIZ, PÓLIPOS (VER EN PÓLIPO NASO-FARÍNGEO EN LIBRO AZUL)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1436,
+      "entry_title": "NECROSIS del PARÉNQUIMA RENAL",
+      "source_pages": [
+        471
+      ],
+      "label": "PARÉNQUIMA RENAL",
+      "target_id": 1564,
+      "target_title": "PARÉNQUIMA RENAL (RIÑÓN)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1439,
+      "entry_title": "NEFROBLASTOMA",
+      "source_pages": [
+        472
+      ],
+      "label": "PARÉNQUIMA RENAL",
+      "target_id": 1564,
+      "target_title": "PARÉNQUIMA RENAL (RIÑÓN)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1440,
+      "entry_title": "NEFROLITIASIS",
+      "source_pages": [
+        472
+      ],
+      "label": "CÁLCULOS RENALES",
+      "target_id": 327,
+      "target_title": "CÁLCULOS RENALES, ARENILLAS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1448,
+      "entry_title": "NEUMONÍA",
+      "source_pages": [
+        474
+      ],
+      "label": "ALVEOLOS",
+      "target_id": 109,
+      "target_title": "ALVEOLOS PULMONARES",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1449,
+      "entry_title": "NEUMONÍA ATÍPICA",
+      "source_pages": [
+        474
+      ],
+      "label": "ALVEOLOS",
+      "target_id": 109,
+      "target_title": "ALVEOLOS PULMONARES",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1452,
+      "entry_title": "NEURALGIA CRURAL",
+      "source_pages": [
+        475
+      ],
+      "label": "CRURALGIAS Lumbares",
+      "target_id": 552,
+      "target_title": "CRURALGIAS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1453,
+      "entry_title": "NEURALGIA DEL TRIGÉMINO",
+      "source_pages": [
+        476
+      ],
+      "label": "CARA",
+      "target_id": 374,
+      "target_title": "CARA (Parálisis facial).",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1465,
+      "entry_title": "NEUROSIS de ANSIEDAD",
+      "source_pages": [
+        479
+      ],
+      "label": "ANSIEDAD",
+      "target_id": 151,
+      "target_title": "ANSIEDAD Angustia",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1475,
+      "entry_title": "NOCTAMBULISMO",
+      "source_pages": [
+        482
+      ],
+      "label": "LUNATISMO",
+      "target_id": 1282,
+      "target_title": "LUNATISMO (sonambulismo)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1482,
+      "entry_title": "OBESIDAD Y SOBREPESO",
+      "source_pages": [
+        485,
+        486
+      ],
+      "label": "EDEMAS",
+      "target_id": 695,
+      "target_title": "EDEMA (Hinchazón)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1484,
+      "entry_title": "OCCIPITAL, HUESO",
+      "source_pages": [
+        486
+      ],
+      "label": "CALOTA",
+      "target_id": 330,
+      "target_title": "CALOTA (Bóveda craneal)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1491,
+      "entry_title": "OIDIOMYCOSIS",
+      "source_pages": [
+        488
+      ],
+      "label": "CÁNDIDIASIS INTESTINAL",
+      "target_id": 366,
+      "target_title": "CÁNDIDAS",
+      "status": "resolved",
+      "resolution": "explicit_subtopic_in_source"
+    },
+    {
+      "entry_id": 1493,
+      "entry_title": "OÍDO EXTERNO",
+      "source_pages": [
+        488,
+        489
+      ],
+      "label": "ECZEMA DEL CONDUCTO AUDITIVO",
+      "target_id": 685,
+      "target_title": "ECCEMA del CONDUCTO AUDITIVO",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1494,
+      "entry_title": "OÍDO INTERNO",
+      "source_pages": [
+        489
+      ],
+      "label": "LABERINTITIS",
+      "target_id": 1221,
+      "target_title": "LABERINTITIS (LABERINTO)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1495,
+      "entry_title": "OÍDO MEDIO",
+      "source_pages": [
+        489,
+        490
+      ],
+      "label": "SORDERA",
+      "target_id": 1888,
+      "target_title": "SORDERA (sordomudez)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1502,
+      "entry_title": "OMOPLATO",
+      "source_pages": [
+        492
+      ],
+      "label": "HOMBRO",
+      "target_id": 1130,
+      "target_title": "HOMBROS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1510,
+      "entry_title": "ORIFICIO UTERINO",
+      "source_pages": [
+        493
+      ],
+      "label": "CUELLO UTERINO",
+      "target_id": 560,
+      "target_title": "CUELLO DEL ÚTERO",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1518,
+      "entry_title": "OSTEOCONDRITIS DISECANTE DE CADERA",
+      "source_pages": [
+        495
+      ],
+      "label": "CADERA",
+      "target_id": 315,
+      "target_title": "CADERA, ARTICULACIÓN",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1518,
+      "entry_title": "OSTEOCONDRITIS DISECANTE DE CADERA",
+      "source_pages": [
+        495
+      ],
+      "label": "FÉMUR, CABEZA",
+      "target_id": 912,
+      "target_title": "FÉMUR, CABEZA y GENERAL",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1524,
+      "entry_title": "OSTEOPOROSIS",
+      "source_pages": [
+        497,
+        498
+      ],
+      "label": "DESCALCIFICACIÓN ÓSEA",
+      "target_id": 599,
+      "target_title": "DESCALCIFICACIÓN ÓSEA (Osteolisis)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1527,
+      "entry_title": "OTITIS CATARRAL",
+      "source_pages": [
+        499
+      ],
+      "label": "OITIS MEDIA SEROSA",
+      "target_id": 1528,
+      "target_title": "OTITIS MEDIA SEROSA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1529,
+      "entry_title": "OTITIS SECRETORA",
+      "source_pages": [
+        499
+      ],
+      "label": "OITIS MEDIA SEROSA",
+      "target_id": 1528,
+      "target_title": "OTITIS MEDIA SEROSA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1531,
+      "entry_title": "OVARIO",
+      "source_pages": [
+        500
+      ],
+      "label": "CÁNCER de OVARIOS en CÉLULAS GERMINATIVAS",
+      "target_id": 352,
+      "target_title": "CÁNCER de OVARIOS.",
+      "status": "resolved",
+      "resolution": "explicit_subtopic_in_source"
+    },
+    {
+      "entry_id": 1536,
+      "entry_title": "PALMAS DE LAS MANOS",
+      "source_pages": [
+        503,
+        504
+      ],
+      "label": "MANOS",
+      "target_id": 1319,
+      "target_title": "MANO",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1536,
+      "entry_title": "PALMAS DE LAS MANOS",
+      "source_pages": [
+        503,
+        504
+      ],
+      "label": "METACARPOS",
+      "target_id": 1360,
+      "target_title": "METACARPIANOS, HUESOS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1539,
+      "entry_title": "PANADIZO",
+      "source_pages": [
+        504
+      ],
+      "label": "DEDOS de las MANOS",
+      "target_id": 574,
+      "target_title": "DEDOS DE LA MANO",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1542,
+      "entry_title": "PÁNICO",
+      "source_pages": [
+        505
+      ],
+      "label": "ANSIEDAD",
+      "target_id": 151,
+      "target_title": "ANSIEDAD Angustia",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1550,
+      "entry_title": "PARAGANGLIOMA ADRENAL",
+      "source_pages": [
+        507
+      ],
+      "label": "FEOCROMACITOMA",
+      "target_id": 915,
+      "target_title": "FEOCROMOCITOMA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1554,
+      "entry_title": "PARÁLISIS DE BELL",
+      "source_pages": [
+        508
+      ],
+      "label": "CARA",
+      "target_id": 374,
+      "target_title": "CARA (Parálisis facial).",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1556,
+      "entry_title": "PARÁLISIS FACIAL",
+      "source_pages": [
+        509
+      ],
+      "label": "CARA",
+      "target_id": 374,
+      "target_title": "CARA (Parálisis facial).",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1557,
+      "entry_title": "PARÁLISIS INFANTIL",
+      "source_pages": [
+        509
+      ],
+      "label": "POLIOMELITIS",
+      "target_id": 1664,
+      "target_title": "POLIOMIELITIS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1566,
+      "entry_title": "PARIETAL, HUESO",
+      "source_pages": [
+        511
+      ],
+      "label": "CALOTA",
+      "target_id": 330,
+      "target_title": "CALOTA (Bóveda craneal)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1568,
+      "entry_title": "PARKINSON OCULAR",
+      "source_pages": [
+        512
+      ],
+      "label": "NISTAGMUS",
+      "target_id": 1474,
+      "target_title": "NISTAGMO (Nistagmus)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1591,
+      "entry_title": "PELVIS RENAL",
+      "source_pages": [
+        518,
+        519
+      ],
+      "label": "CÁLCULOS RENALES, ARENILLA",
+      "target_id": 327,
+      "target_title": "CÁLCULOS RENALES, ARENILLAS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1591,
+      "entry_title": "PELVIS RENAL",
+      "source_pages": [
+        518,
+        519
+      ],
+      "label": "RIÑÓN, CANALES COLECTORES",
+      "target_id": 1777,
+      "target_title": "RIÑÓN (El canal colector)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1593,
+      "entry_title": "PEÑASCO",
+      "source_pages": [
+        519
+      ],
+      "label": "CALOTA",
+      "target_id": 330,
+      "target_title": "CALOTA (Bóveda craneal)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1611,
+      "entry_title": "PESADEZ DE ESTÓMAGO",
+      "source_pages": [
+        525
+      ],
+      "label": "ESTÓMAGO",
+      "target_id": 870,
+      "target_title": "ESTÓMAGO, GENERAL",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1622,
+      "entry_title": "PIEDRA DEL RIÑÓN",
+      "source_pages": [
+        527
+      ],
+      "label": "CÁLCULOS RENALES",
+      "target_id": 327,
+      "target_title": "CÁLCULOS RENALES, ARENILLAS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1626,
+      "entry_title": "PIEL, HIPODERMIS",
+      "source_pages": [
+        529
+      ],
+      "label": "GRASAS",
+      "target_id": 1028,
+      "target_title": "GRASA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1658,
+      "entry_title": "POLAQUIURIA",
+      "source_pages": [
+        538
+      ],
+      "label": "MICCIÓN FRECUENTES",
+      "target_id": 1372,
+      "target_title": "MICCIÓN FRECUENTE",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1668,
+      "entry_title": "PÓLIPOS",
+      "source_pages": [
+        540
+      ],
+      "label": "KILIAN, PÓLIPOS",
+      "target_id": 1219,
+      "target_title": "KILLIAN, PÓLIPOS de",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1668,
+      "entry_title": "PÓLIPOS",
+      "source_pages": [
+        540
+      ],
+      "label": "NARIZ, PÓLIPOS",
+      "target_id": 1428,
+      "target_title": "NARIZ, PÓLIPOS (VER EN PÓLIPO NASO-FARÍNGEO EN LIBRO AZUL)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1672,
+      "entry_title": "POLIPOS NASALES",
+      "source_pages": [
+        541
+      ],
+      "label": "KILIAN, PÓLIPOS",
+      "target_id": 1219,
+      "target_title": "KILLIAN, PÓLIPOS de",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1672,
+      "entry_title": "POLIPOS NASALES",
+      "source_pages": [
+        541
+      ],
+      "label": "NARIZ, PÓLIPOS",
+      "target_id": 1428,
+      "target_title": "NARIZ, PÓLIPOS (VER EN PÓLIPO NASO-FARÍNGEO EN LIBRO AZUL)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1682,
+      "entry_title": "PRESIÓN SANGUÍNEA",
+      "source_pages": [
+        543
+      ],
+      "label": "HIPERTENSIÓN",
+      "target_id": 1105,
+      "target_title": "HIPERTENSIÓN arterial",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1682,
+      "entry_title": "PRESIÓN SANGUÍNEA",
+      "source_pages": [
+        543
+      ],
+      "label": "HIPOTENSIÓN",
+      "target_id": 1124,
+      "target_title": "HIPOTENSIÓN ARTERIAL",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1685,
+      "entry_title": "PROBLEMAS OCULARES",
+      "source_pages": [
+        544
+      ],
+      "label": "DESPRENDIMIENTO de la RETINA",
+      "target_id": 612,
+      "target_title": "DESPRENDIMIENTO de RETINA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1686,
+      "entry_title": "PROBLEMAS RESPIRATORIOS",
+      "source_pages": [
+        544
+      ],
+      "label": "ASMA",
+      "target_id": 212,
+      "target_title": "ASMA (ASMA BRONQUIAL)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1691,
+      "entry_title": "PRONADOR REDONDO",
+      "source_pages": [
+        546
+      ],
+      "label": "EPITROCLITIS",
+      "target_id": 802,
+      "target_title": "EPITROCLEITIS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1711,
+      "entry_title": "PULMONES",
+      "source_pages": [
+        551,
+        552
+      ],
+      "label": "ALVEOLOS",
+      "target_id": 109,
+      "target_title": "ALVEOLOS PULMONARES",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1719,
+      "entry_title": "QUERATITIS (córnea)",
+      "source_pages": [
+        555
+      ],
+      "label": "CÓRNEA",
+      "target_id": 526,
+      "target_title": "CÓRNEA y CONJUNTIVA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1744,
+      "entry_title": "RED BILIAR",
+      "source_pages": [
+        562
+      ],
+      "label": "CÁNCER de BESÍCULA BILIAR",
+      "target_id": 365,
+      "target_title": "CÁNCER de VESÍCULA BILIAR",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1757,
+      "entry_title": "RETENCIÓN DE LÍQUIDOS EN PIERNAS",
+      "source_pages": [
+        564
+      ],
+      "label": "EDEMA",
+      "target_id": 695,
+      "target_title": "EDEMA (Hinchazón)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1773,
+      "entry_title": "RINOFIMA",
+      "source_pages": [
+        569
+      ],
+      "label": "ROSÁCEA UNI o BILATERAL",
+      "target_id": 1782,
+      "target_title": "ROSÁCEA UNILATERAL O BILATERAL",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1776,
+      "entry_title": "RIÑÓN",
+      "source_pages": [
+        569,
+        570
+      ],
+      "label": "PARÉNQUIMA RENAL",
+      "target_id": 1564,
+      "target_title": "PARÉNQUIMA RENAL (RIÑÓN)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1782,
+      "entry_title": "ROSÁCEA UNILATERAL O BILATERAL",
+      "source_pages": [
+        573
+      ],
+      "label": "PIEL. La Dermis",
+      "target_id": 1627,
+      "target_title": "PIEL, DERMIS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1790,
+      "entry_title": "SABAÑONES",
+      "source_pages": [
+        577
+      ],
+      "label": "DEDOS de las MANOS",
+      "target_id": 574,
+      "target_title": "DEDOS DE LA MANO",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1793,
+      "entry_title": "SACRO",
+      "source_pages": [
+        577,
+        578
+      ],
+      "label": "CADERAS",
+      "target_id": 315,
+      "target_title": "CADERA, ARTICULACIÓN",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1800,
+      "entry_title": "SANGRE",
+      "source_pages": [
+        579,
+        580
+      ],
+      "label": "TEJIDO CONJUNTIVO",
+      "target_id": 1916,
+      "target_title": "TEJIDO CONECTIVO",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1806,
+      "entry_title": "SARNA",
+      "source_pages": [
+        581
+      ],
+      "label": "PIEL. La epidermis",
+      "target_id": 1625,
+      "target_title": "PIEL, EPIDERMIS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1834,
+      "entry_title": "SILLA TURCA",
+      "source_pages": [
+        586
+      ],
+      "label": "CALOTA",
+      "target_id": 330,
+      "target_title": "CALOTA (Bóveda craneal)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1845,
+      "entry_title": "SÍNDROME DE DIÓGENES",
+      "source_pages": [
+        588
+      ],
+      "label": "TRASTORNO OBSESIVO COMPULSIVO (TOC)",
+      "target_id": 1987,
+      "target_title": "TRASTORNO OBSESIVO-COMPULSIVO",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1847,
+      "entry_title": "SÍNDROME DE EMBOLISMO GRASO",
+      "source_pages": [
+        588
+      ],
+      "label": "EMBOLIA GRASOSA",
+      "target_id": 708,
+      "target_title": "EMBOLIA",
+      "status": "resolved",
+      "resolution": "explicit_subtopic_in_source"
+    },
+    {
+      "entry_id": 1852,
+      "entry_title": "SÍNDROME de los TÚBULOS COLECTORES RENALES (TCR)",
+      "source_pages": [
+        589,
+        590
+      ],
+      "label": "RIÑÓN, Túbulos colectores",
+      "target_id": 1777,
+      "target_title": "RIÑÓN (El canal colector)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1869,
+      "entry_title": "SINUSITIS POLIPOIDEA",
+      "source_pages": [
+        593
+      ],
+      "label": "NARIZ, PÓLIPOS",
+      "target_id": 1428,
+      "target_title": "NARIZ, PÓLIPOS (VER EN PÓLIPO NASO-FARÍNGEO EN LIBRO AZUL)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1877,
+      "entry_title": "SISTEMA RESPIRATORIO.",
+      "source_pages": [
+        595
+      ],
+      "label": "ALVEOLOS",
+      "target_id": 109,
+      "target_title": "ALVEOLOS PULMONARES",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1882,
+      "entry_title": "SOBREPESO por LÍQUIDOS",
+      "source_pages": [
+        596
+      ],
+      "label": "EDEMA",
+      "target_id": 695,
+      "target_title": "EDEMA (Hinchazón)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1887,
+      "entry_title": "SONAMBULISMO",
+      "source_pages": [
+        597
+      ],
+      "label": "LUNATISMO",
+      "target_id": 1282,
+      "target_title": "LUNATISMO (sonambulismo)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1889,
+      "entry_title": "SORDOMUDEZ",
+      "source_pages": [
+        598
+      ],
+      "label": "SORDERA",
+      "target_id": 1888,
+      "target_title": "SORDERA (sordomudez)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1896,
+      "entry_title": "SUBMUCOSA BUCAL",
+      "source_pages": [
+        599
+      ],
+      "label": "ALIENTO",
+      "target_id": 103,
+      "target_title": "ALIENTO (mal)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1896,
+      "entry_title": "SUBMUCOSA BUCAL",
+      "source_pages": [
+        599
+      ],
+      "label": "ARDOR en la LENGUA",
+      "target_id": 180,
+      "target_title": "ARDOR de LENGUA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1898,
+      "entry_title": "SUDOR de MANOS",
+      "source_pages": [
+        600
+      ],
+      "label": "HIPERDROSIS PALMAR",
+      "target_id": 1092,
+      "target_title": "HIPERHIDROSIS PALMAR",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1899,
+      "entry_title": "SUDOR de PIES",
+      "source_pages": [
+        600
+      ],
+      "label": "HIPERDROSIS PLANTAR",
+      "target_id": 1093,
+      "target_title": "HIPERHIDROSIS PLANTAR",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1900,
+      "entry_title": "SUDORACIÓN",
+      "source_pages": [
+        600
+      ],
+      "label": "PIEL – LA DERMIS",
+      "target_id": 1627,
+      "target_title": "PIEL, DERMIS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1902,
+      "entry_title": "SUPRARRENALES",
+      "source_pages": [
+        601,
+        602
+      ],
+      "label": "CUSHING, SÍNDROME",
+      "target_id": 566,
+      "target_title": "CUSHING, SÍNDROME de",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1910,
+      "entry_title": "TALÓN",
+      "source_pages": [
+        604,
+        605
+      ],
+      "label": "ESPOLÓN CALCÁNEO",
+      "target_id": 856,
+      "target_title": "ESPOLONES CALCÁNEOS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1919,
+      "entry_title": "TEMPORAL, HUESO",
+      "source_pages": [
+        608
+      ],
+      "label": "CALOTA",
+      "target_id": 330,
+      "target_title": "CALOTA (Bóveda craneal)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1921,
+      "entry_title": "TENDÓN CALCÁNEO.",
+      "source_pages": [
+        608
+      ],
+      "label": "ENDÓN de AQUILES",
+      "target_id": 1922,
+      "target_title": "TENDÓN de AQUILES",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1926,
+      "entry_title": "TERATOMA",
+      "source_pages": [
+        610
+      ],
+      "label": "OVARIOS",
+      "target_id": 1531,
+      "target_title": "OVARIO",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1928,
+      "entry_title": "TESTÍCULOS",
+      "source_pages": [
+        611
+      ],
+      "label": "CRIPTORQUIDIA",
+      "target_id": 545,
+      "target_title": "CRIPTORQUIDIA / CRIPTORQUISMO",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1943,
+      "entry_title": "TINNITUS",
+      "source_pages": [
+        615
+      ],
+      "label": "SÍNDROME DE MENIER",
+      "target_id": 1853,
+      "target_title": "SÍNDROME DE MÉNIÈRE",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1945,
+      "entry_title": "TIROGLOSO",
+      "source_pages": [
+        616
+      ],
+      "label": "TIROIDES, CANALES ESCRETORES",
+      "target_id": 1947,
+      "target_title": "TIROIDES, CANALES EXCRETORES.",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1948,
+      "entry_title": "TIROICELE",
+      "source_pages": [
+        617
+      ],
+      "label": "BOCIO",
+      "target_id": 279,
+      "target_title": "BOCIO (Nódulos múltiples)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1953,
+      "entry_title": "TOBILLO, ESGUINCE",
+      "source_pages": [
+        618,
+        619
+      ],
+      "label": "ESGUINCE",
+      "target_id": 836,
+      "target_title": "ESGUINCES",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1961,
+      "entry_title": "TOS FERINA",
+      "source_pages": [
+        621
+      ],
+      "label": "TOS COMPULSIVA",
+      "target_id": 1960,
+      "target_title": "TOS CONVULSIVA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1962,
+      "entry_title": "TOXICIDAD",
+      "source_pages": [
+        621
+      ],
+      "label": "INTOXICACIÓN de la SANGRE (Septicemia)",
+      "target_id": 1205,
+      "target_title": "INTOXICACIÓN de la SANGRE",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1967,
+      "entry_title": "TRANSPIRACIÓN",
+      "source_pages": [
+        622
+      ],
+      "label": "PIEL – LA DERMIS",
+      "target_id": 1627,
+      "target_title": "PIEL, DERMIS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1990,
+      "entry_title": "TRÍCEPS",
+      "source_pages": [
+        628
+      ],
+      "label": "HOMBRO",
+      "target_id": 1130,
+      "target_title": "HOMBROS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1991,
+      "entry_title": "TRICOTILOMANÍA",
+      "source_pages": [
+        629
+      ],
+      "label": "CABELLOS",
+      "target_id": 311,
+      "target_title": "CABELLO",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 1993,
+      "entry_title": "TROCÁNTER MAYOR",
+      "source_pages": [
+        629,
+        630
+      ],
+      "label": "CADERA",
+      "target_id": 315,
+      "target_title": "CADERA, ARTICULACIÓN",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 2006,
+      "entry_title": "TÚBULOS COLECTORES del RIÑÓN",
+      "source_pages": [
+        633
+      ],
+      "label": "RIÑÓN, TÚBULOS COLECTORES",
+      "target_id": 1777,
+      "target_title": "RIÑÓN (El canal colector)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 2015,
+      "entry_title": "ÚLCERA DUODENAL",
+      "source_pages": [
+        635
+      ],
+      "label": "DUODENO",
+      "target_id": 680,
+      "target_title": "DUODENO (Excepto bulbo)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 2037,
+      "entry_title": "VAGINA",
+      "source_pages": [
+        643
+      ],
+      "label": "SEQUEDAD VAGINAL",
+      "target_id": 1824,
+      "target_title": "SEQUEDAD de VAGINA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 2044,
+      "entry_title": "VAINA DE MIELINA",
+      "source_pages": [
+        645
+      ],
+      "label": "SISTEMA NERVIOSO",
+      "target_id": 1876,
+      "target_title": "SISTEMA NERVIOSOS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 2053,
+      "entry_title": "VASTO EXTERNO o LATERAL",
+      "source_pages": [
+        647
+      ],
+      "label": "MUSCULOS, LISTA",
+      "target_id": 1419,
+      "target_title": "MÚSCULOS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 2054,
+      "entry_title": "VASTO INTERNO",
+      "source_pages": [
+        647
+      ],
+      "label": "MUSCULOS, LISTA",
+      "target_id": 1419,
+      "target_title": "MÚSCULOS",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 2055,
+      "entry_title": "VEGETACIONES NASOFARINGEAS",
+      "source_pages": [
+        648
+      ],
+      "label": "KILIAN, PÓLIPOS de",
+      "target_id": 1219,
+      "target_title": "KILLIAN, PÓLIPOS de",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 2055,
+      "entry_title": "VEGETACIONES NASOFARINGEAS",
+      "source_pages": [
+        648
+      ],
+      "label": "NARIZ, PÓLIPOS",
+      "target_id": 1428,
+      "target_title": "NARIZ, PÓLIPOS (VER EN PÓLIPO NASO-FARÍNGEO EN LIBRO AZUL)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 2056,
+      "entry_title": "VEJEZ",
+      "source_pages": [
+        648
+      ],
+      "label": "ACHAQUES",
+      "target_id": 24,
+      "target_title": "ACHAQUES de la EDAD",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 2069,
+      "entry_title": "VÉRTICE CRANEAL",
+      "source_pages": [
+        655
+      ],
+      "label": "CALOTA",
+      "target_id": 330,
+      "target_title": "CALOTA (Bóveda craneal)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 2070,
+      "entry_title": "VÉRTIGO",
+      "source_pages": [
+        655,
+        656
+      ],
+      "label": "MIEDO a las ALTURAS",
+      "target_id": 1380,
+      "target_title": "MIEDO a las ALTURAS (al VACÍO)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 2073,
+      "entry_title": "VESTIBULITIS",
+      "source_pages": [
+        657
+      ],
+      "label": "LABERINTITIS",
+      "target_id": 1221,
+      "target_title": "LABERINTITIS (LABERINTO)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 2081,
+      "entry_title": "VISTA, PROBLEMAS",
+      "source_pages": [
+        658
+      ],
+      "label": "DESPRENDIMIENTO de la RETINA",
+      "target_id": 612,
+      "target_title": "DESPRENDIMIENTO de RETINA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 2084,
+      "entry_title": "VÓMER",
+      "source_pages": [
+        659
+      ],
+      "label": "CALOTA",
+      "target_id": 330,
+      "target_title": "CALOTA (Bóveda craneal)",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    },
+    {
+      "entry_id": 2088,
+      "entry_title": "VULVA",
+      "source_pages": [
+        659
+      ],
+      "label": "VAJINA",
+      "target_id": 2037,
+      "target_title": "VAGINA",
+      "status": "resolved",
+      "resolution": "source_title_variant"
+    }
+  ]
+}

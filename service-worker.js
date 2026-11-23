@@ -1,4 +1,4 @@
-const CACHE_NAME = "bioemocional-v1";
+const CACHE_NAME = "bioemocional-2016-v2";
 
 const urlsToCache = [
   "./",
